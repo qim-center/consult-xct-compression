@@ -1,0 +1,14 @@
+# Pixi
+.pixi/*
+!.pixi/config.toml
+
+# Python
+*.py[cod]
+__pycache__/
+.venv/
+
+# Distribution
+*.egg-info/
+
+# Editors
+.vscode/
