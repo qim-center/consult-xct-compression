@@ -11,6 +11,9 @@
   show <nonumber>: set heading(numbering: none)
   set math.equation(numbering: "(1)")
 
+  // show link: underline.with(offset: 0.15em)
+  show link: set text(fill: primary-color, font: "DejaVu Sans Mono", size: 0.8em)
+
   set page(
     numbering: "1/1",
     margin: (
