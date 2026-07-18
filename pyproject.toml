@@ -5,7 +5,7 @@ authors = [
     { name = "Jeppe Klitgaard", email = "s250250@dtu.dk" },
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = ["qim3d @ git+https://github.com/qim-center/qim3d", "ipykernel<7"]
 
 [tool.pixi.activation.env]
 JUST_JUSTFILE = "$PIXI_PROJECT_ROOT/justfile"
@@ -24,7 +24,12 @@ default = { solve-group = "default" }
 
 [tool.pixi.dependencies]
 polars = ">=1.42.1,<2"
+pyarrow = ">=25.0.0,<26"
 psutil = ">=7.2.2,<8"
+
+# Viz
+matplotlib = ">=3.11.0,<4"
+seaborn = ">=0.13.2,<0.14"
 
 # Compression binaries
 imagemagick = ">=7.1.2_27,<8"
@@ -33,5 +38,20 @@ lzip = ">=1.21,<2"
 plzip = { version = ">=1.11,<2", channel = "dnachun" }
 
 # Development tools - not in separate group because this is not a library project
-ipykernel = "<7"
+# ipykernel = "<7"
 ruff = ">=0.15.21,<0.16"
+libjxl = ">=0.12.0,<0.13"
+libjxl-tools = ">=0.12.0,<0.13"
+
+# Zarr
+zarr = ">=3.2.1,<4"
+ome-zarr = ">=0.17.0,<0.18"
+ome-zarr-models = ">=1.5,<2"
+pydantic-zarr = ">=0.10.0,<0.11"
+imagecodecs = ">=2026.6.26,<2027"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
