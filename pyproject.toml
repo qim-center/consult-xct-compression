@@ -5,7 +5,10 @@ authors = [
     { name = "Jeppe Klitgaard", email = "s250250@dtu.dk" },
 ]
 requires-python = ">=3.14"
-dependencies = ["qim3d @ git+https://github.com/qim-center/qim3d", "ipykernel<7"]
+dependencies = ["qim3d @ git+https://github.com/qim-center/qim3d", "ipykernel<7", "scientific-pydantic"]
+
+[project.scripts]
+comptest = "comptest.cli.__main__:app"
 
 [tool.pixi.activation.env]
 JUST_JUSTFILE = "$PIXI_PROJECT_ROOT/justfile"
@@ -49,6 +52,9 @@ ome-zarr = ">=0.17.0,<0.18"
 ome-zarr-models = ">=1.5,<2"
 pydantic-zarr = ">=0.10.0,<0.11"
 imagecodecs = ">=2026.6.26,<2027"
+typer = ">=0.27.0,<0.28"
+einops = ">=0.8.2,<0.9"
+plotnine = ">=0.15.7,<0.16"
 
 [tool.ruff.lint]
 extend-select = ["I"]
