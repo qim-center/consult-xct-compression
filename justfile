@@ -18,15 +18,15 @@ cd-201:
 # Formats the code using ruff
 [group: 'format']
 format:
-    uv run ruff check . --fix
-    uv run ruff format .
+    pixi run ruff check . --fix
+    pixi run ruff format .
 
 # Checks the code for linting errors
 [group: 'format']
 lint:
-    uv run ruff check .
+    pixi run ruff check .
 
 # Runs the test suite
 [group: 'test']
 test:
-    uv run pytest
+    pixi run pytest
