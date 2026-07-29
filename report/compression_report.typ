@@ -9,6 +9,7 @@
 #import "@preview/subpar:0.2.2"
 #import algorithmic: algorithm, algorithm-figure, style-algorithm
 
+
 #import "preamble_funcs.typ": mathformatter, mref
 #import "style.typ": frontpage-1, style
 #import "tableaux.typ" as tableaux
@@ -64,13 +65,19 @@
   #lorem(100)
 ]
 
+// -- Title Page ---
 #frontpage-1(front-content: abstract, authors: authors, date: datetime(year: 2026, month: 7, day: 30))
+
+// --- Frontmatter ---
+#set page(numbering: "I")
 #counter(page).update(1)
 #counter(heading).update(0)
-
 #outline()
 
+// --- Content ---
 #pagebreak(weak: true)
+#set page(numbering: "1")
+#counter(page).update(1)
 = Introduction <sec:intro>
 This report investigates compressibility of X-Ray CT data in the form of both projections and volumetric reconstructions with the goal of proposing compression schemes suitable for various applications, with the primary focus being on archival storage of large datasets.
 
@@ -94,7 +101,7 @@ which is also commonly expressed as a ratio, e.g. $η = ratio(10, 1)$, indicates
 
 A related quantity is the _space saving_, $σ$, which refers to the fraction of the uncompressed data size that is saved by compression,
 $
-  σ ≔ 1 - η,
+  σ ≔ 1 - 1/η,
 $
 where the previous example of $η = ratio(10, 1)$ corresponds to a space saving of $σ = 90%$.
 
@@ -121,6 +128,12 @@ X-Ray CT projection data is most commonly stored as a series of 2D `TIFF` images
 TODO RATES?
 
 == Encodings / Formats
+
+#block(breakable: false)[
+@tbl:encodings contains an overview of various encoding schemes that have been considered for inclusion in this study, along with their suitability for the task at hand.
+
+As a minimal requirement, the codecs are required to support unsigned integers of 16 bit depth,
+which excludes some older and web-focused codecs, as well as those only supporting floating-point numbers.
 
 #let evaler(x, ..args) = {
   let pattern = regex("\|([^|]*)\|")
@@ -153,7 +166,9 @@ TODO RATES?
       show text: set text(size: 1.1em)
       std.strong(it)
     }),
+    caption: include("encodings_caption.typ"),
   ) <tbl:encodings>
+]
 ]
 
 === JPEG-XL <sec:jpeg-xl>
@@ -196,8 +211,29 @@ Options:
 
 = Conclusions <sec:conclusions>
 
+// --- Backmatter ---
+#pagebreak(weak: true)
+#set page(numbering: "i")
+#counter(page).update(1)
 #bibliography(
   ("references.bib", "zotero_references.bib"),
 )
+
+// Appendix
+#set heading(numbering: none, supplement: [Appendix])
+= Appendix <app>
+#set heading(numbering: "A.1", supplement: [Appendix])
+#counter(heading).update(1)
+
+== A note of TIFF stacks <app:tiff-size>
+
+While TIFF is just a container format and can in fact contain multiple images in a single container,
+we rarely see this in XCT due to the fact that the total TIFF file size is limited to 4 GiB due to the 32-bit offset used in the TIFF file format.
+
+This limitation is present in the standard `libtiff` library, but removed in the `BigTIFF` library.
+Unfortunately, choosing to use BigTIFF means that the produced files are no longer compatible with the
+much more widely used `libtiff` library.
+
+For this reason, we and others usually opt for storing each projection or layer as a separate TIFF file in a directory.
 
 // #table()
