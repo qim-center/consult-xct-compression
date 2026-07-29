@@ -165,7 +165,10 @@ BASE_JPEGXL_CONFIG = {
 # TODO: In 3.15 switch to unpacking in list comprehension
 JPEGXL_EFFORT_CONFIGS = [
     _C(
+        name=f"jpegxl-effort-{i}",
         series="jpegxl-effort",
+        vary_var="effort",
+        vary_value=i,
         is_lossless=True,
         serializer=(codecs.Jpegxl, {
             "effort": i,
@@ -175,9 +178,33 @@ JPEGXL_EFFORT_CONFIGS = [
     ) for i in range (1, 8)
 ]
 
+JPEGXL_CHUNK_CONFIGS = [
+    _C(
+        name=f"jpegxl-chunk-{i}",
+        series="jpegxl-chunk",
+        is_lossless=True,
+        serializer=(codecs.Jpegxl, {
+            "lossless": True,
+            "effort": 5,
+        } | BASE_JPEGXL_CONFIG),
+        chunks=(i, ..., ...),
+    ) for i in [1, 2, 3, 4, 5, 10, 25]
+]
+
+LERC_LOSSLESS_CONFIGS = [
+    _C(
+        name="lerc-level-0",
+        series="lerc-lossless",
+        is_lossless=True,
+        serializer=(codecs.Lerc, {"level": 0}),
+        chunks=(5, ..., ...),
+    )
+]
 CURATED_CONFIGS = [
     # JPEG XL: Vary effort
-    *JPEGXL_EFFORT_CONFIGS
+    # *JPEGXL_EFFORT_CONFIGS,
+    *JPEGXL_CHUNK_CONFIGS,
+    *LERC_LOSSLESS_CONFIGS
 ]
 
 

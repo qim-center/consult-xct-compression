@@ -1,6 +1,6 @@
 #BSUB -q hpc
 ### This should be 1 to {the numnber returned by --num-indices}
-#BSUB -J lossless_projection_tests[1-16]
+#BSUB -J lossless_projection_tests[1-7]
 #BSUB -n 16
 #BSUB -W 01:00
 #BSUB -R "rusage[mem=2GB]"
@@ -14,4 +14,4 @@ pixi run comptest \
     lossless_curated \
     $index \
     --dataset-path /dtu/3d-imaging-center/projects/2026_DANFIX_201/analysis/compression/datasets/Canislupus_CZM_712 \
-    --run-id "curated_lossless_2026-07-27T09:12:48+02:00"
+    --run-id "2026-07-27T10:43:35+02:00"

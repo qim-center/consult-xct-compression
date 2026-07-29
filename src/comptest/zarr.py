@@ -53,6 +53,8 @@ def compression_test(
         name=config.get_name(),
         id=config.get_pathlike_str(),
         series=config.series,
+        vary_var=config.vary_var,
+        vary_value=config.vary_value,
         dataset_name=dataset_name,
         dataset_path=dataset_path,
         start_dt=start_dt,

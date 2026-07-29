@@ -30,10 +30,6 @@ def run_lossless_test(
         Path("output"),
         help="Path to the directory where the output will be saved.",
     ),
-    num_indices: bool = typer.Option(
-        False,
-        help="If set, return number of configurations instead of running the test.",
-    ),
 ):
     match run_type:
         case RunType.LOSSLESS_CURATED:
@@ -43,17 +39,12 @@ def run_lossless_test(
         case _:
             raise ValueError(f"Unknown run type: {run_type}")
 
-    if num_indices:
-        typer.echo(len(configs))
-        raise typer.Exit()
-
     config = configs[index]
     test = lossless_compression_test(dataset_path, config)
 
     output_dir = output_path / run_type.value / run_id / dataset_path.stem
     output_dir.mkdir(parents=True, exist_ok=True)
-    output_file = output_dir / f"test_{test.id}.json"
+    output_file = output_dir / f"test_{test.name}.json"
 
     with output_file.open("w") as f:
         f.write(test.model_dump_json(indent=4, fallback=repr))
-
