@@ -4,11 +4,9 @@ from comptest.sh import ProcessResult, run_process
 
 
 def imagemagick(
-    input_path: Path, output_path: Path | None = None, args: list[str] | None = None
+    input_path: Path, output_path: Path | None = None, *args: str
 ) -> tuple[Path, ProcessResult]:
     assert input_path.is_file()
-
-    args = args or []
 
     if output_path is None:
         output_path = input_path.with_name(

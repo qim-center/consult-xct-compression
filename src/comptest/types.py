@@ -1,11 +1,14 @@
+from collections.abc import Callable
 from datetime import datetime
 from pathlib import Path
 from typing import Annotated, Any, TypeVar
 
 import imagecodecs.zarr
+import numpy as np
 import numpy.typing as npt
-from pydantic import BaseModel, ConfigDict, PlainSerializer
+from pydantic import BaseModel, ConfigDict, Field, PlainSerializer
 from scientific_pydantic import EllipsisLiteral as EllipsisTypeAdapted
+from scientific_pydantic.numpy import DTypeAdapter
 from zarr.abc.codec import BaseCodec
 
 
@@ -13,6 +16,7 @@ def _serialize_type(value: type[Any]) -> str:
     return value.__name__
 
 
+DType = Annotated[np.dtype, DTypeAdapter()]
 T = TypeVar("T")
 
 JSONSerializableType = Annotated[
@@ -20,26 +24,25 @@ JSONSerializableType = Annotated[
 ]
 
 
-_CallableLike = tuple[JSONSerializableType[BaseCodec], dict[str, Any]]
+_CompressorLike = JSONSerializableType[BaseCodec] | Callable
+# (callable, args, kwargs)
+_CallableLike = tuple[
+    _CompressorLike, tuple[Any, ...], dict[str, Any]
+]
 
 
-class ZarrCompressionConfig(BaseModel):
+
+class BaseCompressionConfig(BaseModel):
     name: str | None = None
     series: str
+    vary_var: str | None = None
+    vary_value: str | int | None = None
+    groupings: dict[str, Any] = Field(default_factory=dict)
     is_lossless: bool
 
-    chunks: tuple[
-        int | EllipsisTypeAdapted, ...
-    ]  # Change EllipsisTypeAdapted -> typing.EllipsisType when below is fixed:
-    # https://github.com/pydantic/pydantic/issues/13467
-    # https://github.com/pydantic/pydantic/pull/13484
+    allowed_dtypes: set[DType]
 
-    filters: _CallableLike | None = None
-    serializer: _CallableLike | None = None
-    compressors: list[_CallableLike] | None = None
-
-    # Extra fields are assumed to be additional kwargs for zarr
-    model_config = ConfigDict(extra="allow")
+    extra: dict[str, Any] = Field(default_factory=dict)
 
     def get_pathlike_str(self) -> str:
         """
@@ -53,6 +56,24 @@ class ZarrCompressionConfig(BaseModel):
             return self.name
         else:
             return self.get_pathlike_str()
+
+class FileStackCompressionConfig(BaseCompressionConfig):
+    compressor: _CallableLike
+
+
+class ZarrCompressionConfig(BaseCompressionConfig):
+    chunks: tuple[
+        int | EllipsisTypeAdapted, ...
+    ]  # Change EllipsisTypeAdapted -> typing.EllipsisType when below is fixed:
+    # https://github.com/pydantic/pydantic/issues/13467
+    # https://github.com/pydantic/pydantic/pull/13484
+
+    filters: _CallableLike | None = None
+    serializer: _CallableLike | None = None
+    compressors: list[_CallableLike] | None = None
+
+    # Extra fields are assumed to be additional kwargs for zarr
+    model_config = ConfigDict(extra="allow")
 
     def get_zarr_kwargs(self, arr: npt.NDArray) -> dict[str, Any]:
         zarr_kwargs = {}
@@ -93,6 +114,12 @@ class CompressionTest(BaseModel):
     name: str
     id: str
     series: str
+    vary_var: str | None
+    vary_value: str | int | None
+
+    # Used to define other groupings in a series, i.e. distinguishing between compression executable or something like that.
+    # These are essentially factors that are not general enough to be in the main model
+    groupings: dict[str, Any] = Field(default_factory=dict)
 
     dataset_name: str
     dataset_path: Path
@@ -101,23 +128,28 @@ class CompressionTest(BaseModel):
     end_dt: datetime
     total_time_seconds: float
 
-    config: ZarrCompressionConfig
+    config: BaseCompressionConfig | ZarrCompressionConfig
 
     # A baseline to compare against
     # We run a simple test to ensure that compression of a known configuration is roughly the same
     # This is a sanity check to ensure we don't accidentally get affected by hardware changes, etc on the HPC cluster
     baseline_test: CompressionTest | None
+    host: str
 
     compress_time_seconds: float
 
     nbytes: int
     nbytes_stored: int
 
+    npixels: int
+
     bitrate: float
     bitrate_compressed: float
 
     compression_ratio: float
+    space_saving: float
 
     lossless: bool
     # Needs to be _NDArraya since zarr.info_complete() can return _fill_value=numpy scalar
-    array_info: dict[str, Any]
+    # array_info: dict[str, Any]  # TODO MOVE TO EXTRA
+    extra: dict[str, Any] = Field(default_factory=dict)

@@ -3,7 +3,11 @@ from pathlib import Path
 
 import typer
 
-from comptest.lossless_tests import CONFIG_INSTANCES, CURATED_CONFIGS, lossless_compression_test
+from comptest.lossless_tests import (
+    CONFIG_INSTANCES,
+    CURATED_CONFIGS,
+    lossless_compression_test,
+)
 
 app = typer.Typer(name="comptest")
 

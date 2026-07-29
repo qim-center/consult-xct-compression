@@ -1,11 +1,10 @@
+import os
 import resource
 import shutil
 import subprocess
+import sys
 import time
 from dataclasses import dataclass
-from multiprocessing import Manager, Process
-from multiprocessing.managers import ValueProxy
-from typing import Any
 
 
 @dataclass(frozen=True, slots=True)
@@ -41,36 +40,17 @@ class ProcessResult:
     returncode: int
 
 
-def _run_process(
-    command: str,
-    args: list[str],
-    kwargs: dict[str, Any],
-    result: ValueProxy[ProcessResult],
-) -> None:
-
-    wall_time_start = time.perf_counter()
-    # Need to use lower-level `Popen` instead of `run` to get PID
-    proc = subprocess.Popen([command, *args], **kwargs)
-    proc.wait()
-    wall_time = time.perf_counter() - wall_time_start
-
-    rusage = resource.getrusage(resource.RUSAGE_CHILDREN)
-
-    result.value = ProcessResult(
-        time=ProcessTiming(
-            wall=wall_time, user=rusage.ru_utime, system=rusage.ru_stime
-        ),
-        memory=ProcessMemoryUsage(max_rss=rusage.ru_maxrss),
-        returncode=proc.returncode,
-    )
+def _max_rss_bytes(rusage: resource.struct_rusage) -> int:
+    # Linux reports ru_maxrss in KiB; macOS reports bytes.
+    if sys.platform.startswith("linux"):
+        return rusage.ru_maxrss * 1024
+    return rusage.ru_maxrss
 
 
-# See: https://valarmorghulis.io/tech/202505-measuring-cpu-memory-python-subprocess/
 def run_process(
     command: str,
     args: list[str] | None = None,
     *,
-    shell: bool = False,
     env: dict[str, str] | None = None,
 ) -> ProcessResult:
     args = args or []
@@ -79,16 +59,26 @@ def run_process(
     fq_exe = shutil.which(command)
     kwargs = {
         "env": env,
-        "shell": shell,
     }
 
-    with Manager() as manager:
-        result = manager.Value(ProcessResult, None)
-        proc = Process(target=_run_process, args=(fq_exe, args, kwargs, result))
-        proc.start()
-        proc.join()
+    argv = [fq_exe, *args]
 
-        assert result.value is not None, (
-            "ProcessResult should not be None after process completion"
-        )
-        return result.value
+    wall_time_start = time.perf_counter()
+    proc = subprocess.Popen(argv, **kwargs)
+
+    # Do not call proc.wait(): wait4 both waits and returns this child's
+    # individual resource usage.
+    _, wait_status, rusage = os.wait4(proc.pid, 0)
+    proc.returncode = os.waitstatus_to_exitcode(wait_status)
+
+    return ProcessResult(
+        time=ProcessTiming(
+            wall=time.perf_counter() - wall_time_start,
+            user=rusage.ru_utime,
+            system=rusage.ru_stime,
+        ),
+        memory=ProcessMemoryUsage(
+            max_rss=_max_rss_bytes(rusage),
+        ),
+        returncode=proc.returncode,
+    )
