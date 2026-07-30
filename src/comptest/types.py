@@ -130,9 +130,9 @@ class CompressionTest(BaseCompressionConfig):
     dataset_name: str
     dataset_path: Path
 
-    start_dt: datetime
-    end_dt: datetime
-    total_time_seconds: float
+    start_wall_dt: datetime
+    end_wall_dt: datetime
+    total_wall_time_seconds: float
 
     config: FileStackCompressionConfig | ZarrCompressionConfig
 
@@ -142,8 +142,10 @@ class CompressionTest(BaseCompressionConfig):
     baseline_test: CompressionTest | None
     host: str
 
-    compress_time_seconds: float
-    decompress_time_seconds: float
+    compress_wall_time_seconds: float
+    compress_user_time_seconds: float
+    decompress_wall_time_seconds: float
+    decompress_user_time_seconds: float
 
     uncompressed_size: int
     actual_uncompressed_size: int
@@ -151,8 +153,10 @@ class CompressionTest(BaseCompressionConfig):
 
     n_elements: int
 
-    compression_rate: float  # In terms of uncompressed data over time, bytes/sec
-    decompression_rate: float  # In terms of uncompressed data over time, bytes/sec
+    compression_wall_rate: float  # In terms of uncompressed data over wall time, bytes/sec
+    compression_user_rate: float  # In terms of uncompressed data over user time, bytes/sec
+    decompression_wall_rate: float  # In terms of uncompressed data over wall time, bytes/sec
+    decompression_user_rate: float  # In terms of uncompressed data over user time, bytes/sec
 
     bitrate_uncompressed: float
     bitrate_compressed: float

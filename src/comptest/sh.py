@@ -10,26 +10,6 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True, slots=True)
-class ProcessTiming:
-    """
-    Dataclass for storing timing information of a process.
-    """
-
-    wall: float
-    user: float
-    system: float
-
-
-@dataclass(frozen=True, slots=True)
-class ProcessMemoryUsage:
-    """
-    Dataclass for storing memory usage information of a process.
-    """
-
-    max_rss: int  # Maximum resident set size used (in bytes), "max memory used"
-
-
-@dataclass(frozen=True, slots=True)
 class ProcessResult:
     """
     Dataclass for storing the result of a process.
@@ -37,8 +17,12 @@ class ProcessResult:
     Features timing information as well.
     """
 
-    time: ProcessTiming
-    memory: ProcessMemoryUsage
+    wall_time: float
+    user_time: float
+    system_time: float
+
+    memory_max_rss: int  # Maximum resident set size used (in bytes), "max memory used"
+
     returncode: int
 
     stdout: str
@@ -109,14 +93,10 @@ def run_process(
             stderr = ""
 
     return ProcessResult(
-        time=ProcessTiming(
-            wall=time.perf_counter() - wall_time_start,
-            user=rusage.ru_utime,
-            system=rusage.ru_stime,
-        ),
-        memory=ProcessMemoryUsage(
-            max_rss=_max_rss_bytes(rusage),
-        ),
+        wall_time=time.perf_counter() - wall_time_start,
+        user_time=rusage.ru_utime,
+        system_time=rusage.ru_stime,
+        memory_max_rss=_max_rss_bytes(rusage),
         returncode=proc.returncode,
         stdout=stdout,
         stderr=stderr,

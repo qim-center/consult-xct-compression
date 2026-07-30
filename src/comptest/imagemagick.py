@@ -6,7 +6,7 @@ from comptest.utils.bulk import bulk_wrapper
 
 def compress(
     input_path: Path, output_path: Path, *args: str
-) -> tuple[Path, ProcessResult]:
+) -> ProcessResult:
     assert input_path.is_file()
 
     result = run_process("magick", [*args, str(input_path), str(output_path)])
@@ -18,12 +18,12 @@ def compress(
             + f" and input file: {input_path}"
         )
 
-    return output_path, result
+    return result
 
 
 def decompress(
     input_path: Path, output_path: Path, *args: str
-) -> tuple[Path, ProcessResult]:
+) -> ProcessResult:
     assert input_path.is_file()
 
     if not args:
@@ -39,7 +39,7 @@ def decompress(
             + f" and input file: {input_path}"
         )
 
-    return output_path, result
+    return result
 
 
 def compare(path_a: Path, path_b: Path, *args: str) -> bool:
@@ -60,7 +60,7 @@ def compress_bulk(
     *args: str,
     n_jobs: int | None = None,
     joblib_kwargs: dict | None = None,
-) -> list[tuple[Path, ProcessResult]]:
+) -> list[ProcessResult]:
     return bulk_wrapper(
         compress,
         input_paths,
@@ -77,7 +77,7 @@ def decompress_bulk(
     *args: str,
     n_jobs: int | None = None,
     joblib_kwargs: dict | None = None,
-) -> list[tuple[Path, ProcessResult]]:
+) -> list[ProcessResult]:
     return bulk_wrapper(
         decompress,
         input_paths,
