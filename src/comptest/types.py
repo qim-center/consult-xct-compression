@@ -1,7 +1,7 @@
 from collections.abc import Callable
 from datetime import datetime
 from pathlib import Path
-from typing import Annotated, Any, TypeVar
+from typing import Annotated, Any, Literal, TypeVar
 
 import imagecodecs.zarr
 import numpy as np
@@ -33,15 +33,32 @@ _CallableLike = tuple[
 
 
 class BaseCompressionConfig(BaseModel):
-    name: str | None = None
+    name: str
     series: str
-    vary_var: str | None = None
-    vary_value: str | int | None = None
-    groupings: dict[str, Any] = Field(default_factory=dict)
-    is_lossless: bool
+    subseries: str | None = None
+
+    paradigm: Literal["file_stack", "zarr"]
+    lossless: bool
 
     allowed_dtypes: set[DType]
 
+    ### Groupings
+    implementation: Literal["libtiff/tiffcp", "imagemagick", "zarr/imagecodecs", "tifffile"]
+    # libtiff has this for some codecs
+    differencing: Literal["none", "horizontal", "float"] | None = None
+    predictor: int | None = None
+    # General effort parameter
+    effort: int | None = None
+    # General quality parameter, usually 0-100, 100 is lossless
+    quality: int | None = None
+    # Used for zerror in ZERC for example
+    tolerance: float | None = None
+    # Subcodec, used by some libtiff, note 'none' and None are not the same!
+    subcodec: Literal["none", "deflate", "zstd"] | str | None = None
+    subcodec_index: int | None = None
+
+
+    # Put extra groupings here, but add them as optional if they are reused often
     extra: dict[str, Any] = Field(default_factory=dict)
 
     def get_pathlike_str(self) -> str:
@@ -51,14 +68,11 @@ class BaseCompressionConfig(BaseModel):
         """
         return self.model_dump_json(indent=None, ensure_ascii=True)
 
-    def get_name(self) -> str:
-        if self.name is not None:
-            return self.name
-        else:
-            return self.get_pathlike_str()
 
 class FileStackCompressionConfig(BaseCompressionConfig):
     compressor: _CallableLike
+    decompressor: _CallableLike
+    comparer: _CallableLike
 
 
 class ZarrCompressionConfig(BaseCompressionConfig):
@@ -110,16 +124,8 @@ class ZarrCompressionConfig(BaseCompressionConfig):
         return zarr_kwargs
 
 
-class CompressionTest(BaseModel):
-    name: str
+class CompressionTest(BaseCompressionConfig):
     id: str
-    series: str
-    vary_var: str | None
-    vary_value: str | int | None
-
-    # Used to define other groupings in a series, i.e. distinguishing between compression executable or something like that.
-    # These are essentially factors that are not general enough to be in the main model
-    groupings: dict[str, Any] = Field(default_factory=dict)
 
     dataset_name: str
     dataset_path: Path
@@ -128,7 +134,7 @@ class CompressionTest(BaseModel):
     end_dt: datetime
     total_time_seconds: float
 
-    config: BaseCompressionConfig | ZarrCompressionConfig
+    config: FileStackCompressionConfig | ZarrCompressionConfig
 
     # A baseline to compare against
     # We run a simple test to ensure that compression of a known configuration is roughly the same
@@ -137,19 +143,26 @@ class CompressionTest(BaseModel):
     host: str
 
     compress_time_seconds: float
+    decompress_time_seconds: float
 
-    nbytes: int
-    nbytes_stored: int
+    uncompressed_size: int
+    actual_uncompressed_size: int
+    compressed_size: int
 
-    npixels: int
+    n_elements: int
 
-    bitrate: float
+    compression_rate: float  # In terms of uncompressed data over time, bytes/sec
+    decompression_rate: float  # In terms of uncompressed data over time, bytes/sec
+
+    bitrate_uncompressed: float
     bitrate_compressed: float
 
     compression_ratio: float
     space_saving: float
 
-    lossless: bool
+    was_actually_lossless: bool | None = None
+
+    runner_extra: dict[str, Any] = Field(default_factory=dict)
+
     # Needs to be _NDArraya since zarr.info_complete() can return _fill_value=numpy scalar
     # array_info: dict[str, Any]  # TODO MOVE TO EXTRA
-    extra: dict[str, Any] = Field(default_factory=dict)

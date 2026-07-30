@@ -1,7 +1,6 @@
 from logging import DEBUG
 
-from comptest import libtiff as libtiff
-from comptest.imagemagick import imagemagick as imagemagick
+from comptest import imagemagick as imagemagick, libtiff as libtiff
 from comptest.logging import setup_logging
 from comptest.sh import (
     ProcessMemoryUsage as ProcessMemoryUsage,
