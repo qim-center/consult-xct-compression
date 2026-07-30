@@ -39,6 +39,9 @@ class ProcessResult:
     memory: ProcessMemoryUsage
     returncode: int
 
+    stdout: str
+    stderr: str
+
 
 def _max_rss_bytes(rusage: resource.struct_rusage) -> int:
     # Linux reports ru_maxrss in KiB; macOS reports bytes.
@@ -71,6 +74,10 @@ def run_process(
     _, wait_status, rusage = os.wait4(proc.pid, 0)
     proc.returncode = os.waitstatus_to_exitcode(wait_status)
 
+    stdout_b, stderr_b = proc.communicate()
+    stdout = stdout_b.decode() if stdout_b is not None else ""
+    stderr = stderr_b.decode() if stderr_b is not None else ""
+
     return ProcessResult(
         time=ProcessTiming(
             wall=time.perf_counter() - wall_time_start,
@@ -81,4 +88,6 @@ def run_process(
             max_rss=_max_rss_bytes(rusage),
         ),
         returncode=proc.returncode,
+        stdout=stdout,
+        stderr=stderr,
     )
