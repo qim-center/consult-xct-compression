@@ -144,8 +144,10 @@ class CompressionTest(BaseCompressionConfig):
 
     compress_wall_time_seconds: float
     compress_user_time_seconds: float
+    compress_system_time_seconds: float
     decompress_wall_time_seconds: float
     decompress_user_time_seconds: float
+    decompress_system_time_seconds: float
 
     uncompressed_size: int
     actual_uncompressed_size: int
