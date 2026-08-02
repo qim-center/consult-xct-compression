@@ -19,6 +19,8 @@ def compress(
             f"tiffcp failed with return code: {result.returncode}"
             + f" for arguments: {args}"
             + f" and input file: {input_path}"
+            + f" and stdout: {result.stdout}"
+            + f" and stderr: {result.stderr}"
         )
 
     return result
@@ -46,6 +48,8 @@ def decompress(
             f"tiffcp failed with return code: {result.returncode}"
             + f" for arguments: {args}"
             + f" and input file: {input_path}"
+            + f" and stdout: {result.stdout}"
+            + f" and stderr: {result.stderr}"
         )
 
     return result

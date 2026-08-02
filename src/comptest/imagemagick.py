@@ -16,6 +16,8 @@ def compress(
             "imagemagick failed with return code: " + str(result.returncode)
             + f" for arguments: {args}"
             + f" and input file: {input_path}"
+            + f" and stdout: {result.stdout}"
+            + f" and stderr: {result.stderr}"
         )
 
     return result
@@ -37,6 +39,8 @@ def decompress(
             + str(result.returncode)
             + f" for arguments: {args}"
             + f" and input file: {input_path}"
+            + f" and stdout: {result.stdout}"
+            + f" and stderr: {result.stderr}"
         )
 
     return result
