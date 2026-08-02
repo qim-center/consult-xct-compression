@@ -30,6 +30,37 @@ _CallableLike = tuple[
     _CompressorLike, tuple[Any, ...], dict[str, Any]
 ]
 
+DTYPE_BOOL = {np.bool_}
+DTYPE_UINT8 = {np.uint8}
+DTYPE_UINT16 = {np.uint16}
+DTYPE_UINT8_UINT16 = {np.uint8, np.uint16}
+DTYPE_UINT32 = {np.uint32}
+DTYPE_UINT = {
+    np.bool_,
+    np.uint8,
+    np.uint16,
+    np.uint32,
+    np.uint64,
+}
+DTYPE_SINT = {
+    np.int8,
+    np.int16,
+    np.int32,
+    np.int64,
+}
+DTYPE_INT = DTYPE_UINT.union(DTYPE_SINT)
+DTYPE_FLOAT = {
+    np.float16,
+    np.float32,
+    np.float64,
+    np.float128,
+}
+DTYPE_COMPLEX = {
+    np.complex64,
+    np.complex128,
+    np.complex256,
+}
+DTYPE_ANY = DTYPE_INT.union(DTYPE_FLOAT).union(DTYPE_COMPLEX)
 
 
 class BaseCompressionConfig(BaseModel):
@@ -166,9 +197,39 @@ class CompressionTest(BaseCompressionConfig):
     compression_ratio: float
     space_saving: float
 
-    was_actually_lossless: bool | None = None
+    was_actually_lossless: bool
+
+    # Useful for computing summary statistics later, all in bytes
+    images_input_sizes: dict[str, int] | None
+    images_uncompressed_sizes: dict[str, int] | None
+    images_compressed_sizes: dict[str, int] | None
 
     runner_extra: dict[str, Any] = Field(default_factory=dict)
 
     # Needs to be _NDArraya since zarr.info_complete() can return _fill_value=numpy scalar
     # array_info: dict[str, Any]  # TODO MOVE TO EXTRA
+
+    def summary(self) -> dict[str, Any]:
+        return {
+            "name": self.name,
+            "dataset_name": self.dataset_name,
+            "lossless": self.lossless,
+            "total_wall_time_seconds": self.total_wall_time_seconds,
+            "compress_wall_time_seconds": self.compress_wall_time_seconds,
+            "compress_user_time_seconds": self.compress_user_time_seconds,
+            "compress_system_time_seconds": self.compress_system_time_seconds,
+            "decompress_wall_time_seconds": self.decompress_wall_time_seconds,
+            "decompress_user_time_seconds": self.decompress_user_time_seconds,
+            "decompress_system_time_seconds": self.decompress_system_time_seconds,
+            "uncompressed_size": self.uncompressed_size,
+            "actual_uncompressed_size": self.actual_uncompressed_size,
+            "compressed_size": self.compressed_size,
+            "compression_wall_rate": self.compression_wall_rate,
+            "compression_user_rate": self.compression_user_rate,
+            "decompression_wall_rate": self.decompression_wall_rate,
+            "decompression_user_rate": self.decompression_user_rate,
+            "bitrate_uncompressed": self.bitrate_uncompressed,
+            "bitrate_compressed": self.bitrate_compressed,
+            "compression_ratio": self.compression_ratio,
+            "space_saving": self.space_saving,
+        }
