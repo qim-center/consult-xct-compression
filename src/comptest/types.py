@@ -1,7 +1,9 @@
+from __future__ import annotations
+
 from collections.abc import Callable
 from datetime import datetime
 from pathlib import Path
-from typing import Annotated, Any, Literal, TypeVar
+from typing import Annotated, Any, Literal, Self, TypeVar
 
 import imagecodecs.zarr
 import numpy as np
@@ -9,6 +11,7 @@ import numpy.typing as npt
 from pydantic import BaseModel, ConfigDict, Field, PlainSerializer
 from scientific_pydantic import EllipsisLiteral as EllipsisTypeAdapted
 from scientific_pydantic.numpy import DTypeAdapter
+from skimage.metrics import structural_similarity
 from zarr.abc.codec import BaseCodec
 
 
@@ -26,9 +29,7 @@ JSONSerializableType = Annotated[
 
 _CompressorLike = JSONSerializableType[BaseCodec] | Callable
 # (callable, args, kwargs)
-_CallableLike = tuple[
-    _CompressorLike, tuple[Any, ...], dict[str, Any]
-]
+_CallableLike = tuple[_CompressorLike, tuple[Any, ...], dict[str, Any]]
 
 DTYPE_BOOL = {np.bool_}
 DTYPE_UINT8 = {np.uint8}
@@ -74,11 +75,14 @@ class BaseCompressionConfig(BaseModel):
     allowed_dtypes: set[DType]
 
     ### Groupings
-    implementation: Literal["libtiff/tiffcp", "imagemagick", "zarr/imagecodecs", "tifffile"]
+    implementation: Literal[
+        "libtiff/tiffcp", "imagemagick", "zarr/imagecodecs", "tifffile"
+    ]
     # libtiff has this for some codecs
     differencing: Literal["none", "horizontal", "float"] | None = None
     predictor: int | None = None
     # General effort parameter
+    effort_cat: Literal["A", "B", "C", "D", "E", "F", "G", "H", "I"] | None = None
     effort: int | None = None
     # General quality parameter, usually 0-100, 100 is lossless
     quality: int | None = None
@@ -87,7 +91,8 @@ class BaseCompressionConfig(BaseModel):
     # Subcodec, used by some libtiff, note 'none' and None are not the same!
     subcodec: Literal["none", "deflate", "zstd"] | str | None = None
     subcodec_index: int | None = None
-
+    # Used to JPEGXL
+    distance: float | None = None
 
     # Put extra groupings here, but add them as optional if they are reused often
     extra: dict[str, Any] = Field(default_factory=dict)
@@ -155,6 +160,70 @@ class ZarrCompressionConfig(BaseCompressionConfig):
         return zarr_kwargs
 
 
+class StructuralSimilarityIndexMetrics(BaseModel):
+    mean: float
+    min: float
+    max: float
+    std: float
+    median: float
+    percentile_25th: float
+    percentile_75th: float
+    histogram_values: list[float]
+    histogram_bin_edges: list[float]
+
+    @staticmethod
+    def get_ssim(
+        reference: npt.NDArray,
+        distorted: npt.NDArray,
+        *,
+        data_range: float | None,
+        gaussian_weights: bool = True,
+        sigma: float = 1.5,
+        use_sample_covariance: bool = False,
+        win_size: int | None = None,
+        gradient: bool = False,
+        channel_axis: int | None = None,
+        **kwargs: Any
+    ) -> npt.NDArray:
+        """
+        Follows Wang et al. (2004) if default parameters are left.
+        """
+        _ssim_mean, ssim_full_part = structural_similarity(
+            reference,
+            distorted,
+            full=True,
+            data_range=data_range,
+            gaussian_weights=gaussian_weights,
+            sigma=sigma,
+            use_sample_covariance=use_sample_covariance,
+            win_size=win_size,
+            gradient=gradient,
+            channel_axis=channel_axis,
+            **kwargs
+        )
+
+        return ssim_full_part
+
+
+    @classmethod
+    def from_ndarray(cls, arr: npt.NDArray) -> Self:
+        hist_range = (0.0, 1.0)
+        edges = np.linspace(*hist_range, num=101)
+        hist, bin_edges = np.histogram(arr, bins=edges, range=hist_range, density=True)
+
+        return cls(
+            mean=float(np.mean(arr)),
+            min=float(np.min(arr)),
+            max=float(np.max(arr)),
+            std=float(np.std(arr)),
+            median=float(np.median(arr)),
+            percentile_25th=float(np.percentile(arr, 25)),
+            percentile_75th=float(np.percentile(arr, 75)),
+            histogram_values=list(hist),
+            histogram_bin_edges=list(bin_edges),
+        )
+
+
 class CompressionTest(BaseCompressionConfig):
     id: str
 
@@ -186,10 +255,18 @@ class CompressionTest(BaseCompressionConfig):
 
     n_elements: int
 
-    compression_wall_rate: float  # In terms of uncompressed data over wall time, bytes/sec
-    compression_user_rate: float  # In terms of uncompressed data over user time, bytes/sec
-    decompression_wall_rate: float  # In terms of uncompressed data over wall time, bytes/sec
-    decompression_user_rate: float  # In terms of uncompressed data over user time, bytes/sec
+    compression_wall_rate: (
+        float  # In terms of uncompressed data over wall time, bytes/sec
+    )
+    compression_user_rate: (
+        float  # In terms of uncompressed data over user time, bytes/sec
+    )
+    decompression_wall_rate: (
+        float  # In terms of uncompressed data over wall time, bytes/sec
+    )
+    decompression_user_rate: (
+        float  # In terms of uncompressed data over user time, bytes/sec
+    )
 
     bitrate_uncompressed: float
     bitrate_compressed: float
@@ -197,7 +274,9 @@ class CompressionTest(BaseCompressionConfig):
     compression_ratio: float
     space_saving: float
 
+    # Image quality metrics
     was_actually_lossless: bool
+    ssim: StructuralSimilarityIndexMetrics | None
 
     # Useful for computing summary statistics later, all in bytes
     images_input_sizes: dict[str, int] | None
