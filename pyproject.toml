@@ -2,12 +2,15 @@
 name = "comptest"
 version = "0.1.0"
 authors = [{ name = "Jeppe Klitgaard", email = "s250250@dtu.dk" }]
-requires-python = ">=3.14"
+requires-python = ">=3.13"
 dependencies = [
     "qim3d @ git+https://github.com/qim-center/qim3d",
     "ipykernel<7",
     "scientific-pydantic",
     "memory-tempfile>=2.2.3,<3",
+    "sewar>=0.4.8,<0.5",
+    "pyiqa>=0.1.16,<0.2",
+    "jax>=0.11.0",
 ]
 
 [project.scripts]
@@ -17,7 +20,7 @@ comptest = "comptest.cli.__main__:app"
 JUST_JUSTFILE = "$PIXI_PROJECT_ROOT/justfile"
 
 [tool.pixi.workspace]
-channels = ["conda-forge", "https://conda.anaconda.org/dnachun"]
+channels = ["conda-forge", "https://conda.anaconda.org/dnachun", "ccpi"]
 platforms = ["linux-64"]
 
 [tool.pixi.pypi-dependencies]
@@ -33,7 +36,7 @@ default = { solve-group = "default" }
 dask = ">=2026.7.1,<2027"
 dask-jobqueue = ">=0.9.0,<0.10"
 einops = ">=0.8.2,<0.9"
-numpy = ">=2.5.1,<3"
+numpy = ">=2,<3"
 polars = ">=1.42.1,<2"
 pyarrow = ">=25.0.0,<26"
 
@@ -70,6 +73,10 @@ psutil = ">=7.2.2,<8"
 sentinel = ">=1.0.0,<2"
 typer = ">=0.27.0,<0.28"
 papermill = ">=2.7.0,<3"
+bidict = ">=0.23.1,<0.24"
+cil = ">=26.0.0,<27"
+tigre = ">=3.1.3,<4"
+scikit-image = ">=0.26.0,<0.27"
 
 # Unsorted
 # ...
