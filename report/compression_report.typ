@@ -1,6 +1,6 @@
 #import "@preview/codly:1.3.0": *
 // #import "@preview/cetz:0.4.2"
-#import "@preview/unify:0.7.1": num, qty
+#import "@preview/unify:0.7.1": num, qty, numrange, qtyrange, add-unit
 #import "@preview/algorithmic:0.1.0"
 #import "@preview/physica:0.9.8": TT, curl, dv, grad, pdv, tensor
 
@@ -30,6 +30,10 @@
 #let vv = mathformatter(underbars: 0, bold: true, upright: false)
 #let mm = mathformatter(underbars: 0, bold: false, upright: true)
 #let vvh = x => math.hat(vv(x))
+
+#add-unit("pixel", "px", "upright(\"px\")")
+
+#let SSIM = $"SSIM"$
 
 #set math.mat(delim: "[")
 #let _thinner-space = 1em / 9
@@ -123,9 +127,26 @@ X-Ray CT projection data is most commonly stored as a series of 2D `TIFF` images
 `TIFF` is by far the most commonly used image file format for storing X-Ray CT projection data and natively supports many different bit-depths and data types, including up to 64-bit integers and 16/32/64-bit floating point numbers, while also supporting up to #num("65 535") channels. Through extensions, it supports a number of compression schemes including lossless and lossy JPEG, LZW, Deflate, PackBits, LERC, and others. It should be noted that some of the more exotic compression extensions, while supported by `libtiff`, are not supported widely supported by image viewers and other software.
 
 
-== Fidelity Metrics <sec:fidelity-metrics>
+== Image Quality Assessment <sec:iqa>
 
-TODO RATES?
+In order to evaluate the quality of lossy compression schemes, we employ a number of _full-reference image quality assessment_ (FR-IQA) metrics. We adopt TODO as our primary quality index, and additionally report several other commonly used measures to ease comparison with the existing literature.
+
+// TOOD: I think this is probably a bad idea since it becomes very sensitive to outliers!
+// In order to make the IQA metrics invariant to the dynamic range of the images, which may vary across datasets
+
+=== Structural Similarity Index Measure (SSIM) <sec:ssim>
+
+We employ the commonly used _structural similarity index measure_ (SSIM), which given a reference image $a$ and a distorted image $b$ of the same size computes a quality index $SSIM(a, b) ∈ [-1, 1]$ over local windows of the images:
+$
+  SSIM(a, b) = ((2μ_a μ_b + c_1) (2σ_(a b) + c_2)) / ((μ_a^2 + μ_b^2 + c_1) (σ_a^2 + σ_b^2 + c_2))
+$ <eq:ssim>
+where $μ_a, μ_b$ are the local means of the images, $σ_a^2, σ_b^2$ are the local variances, $σ_(a b)$ is the local covariance, and $c_1 ≔ (0.01 L)^2, c_2 ≔ (0.03 L)^2$ are small, stabilising constants given the dynamic range $L$ across images of each reference dataset — that is, across all projections or vertical slices of a reconstruction.
+
+To match the canonical parametrisation of Wang et al. @ref:wangImageQualityAssessment2004, the local moments are computed as weighted sums using a circularly symmetric Gaussian kernel with standard deviation $σ_w = qty("1.5", "px")$ such that each window is normalised to unit mass.
+
+Both the mean SSIM and summary statistics of the local SSIM values are computed, where use of the minimum local SSIM value is motivated by @ref:wegenerEffectsFixedrateCT2010.
+
+===
 
 == Encodings / Formats
 
@@ -187,6 +208,24 @@ which excludes some older and web-focused codecs, as well as those only supporti
   - 5: Standard, only 16 bit depth, smaller image sizes
   - 10: Extended, supports 32 bit depth, larger image sizes
 - Note: A lot more options available that are not exposed via `imagecodecs` interface, but could be exposed with patches.
+- `libjxl 0.12` currently broken for f32 data, see:
+  - https://github.com/cgohlke/tifffile/issues/332
+  - https://github.com/libjxl/libjxl/issues/4902
+  - https://github.com/libjxl/libjxl/issues/4905
+  - Hopefully fixed in `libjxl 0.13` (not yet released at time of writing), see: https://github.com/libjxl/libjxl/issues/4894
+
+== Data Collection Methodology <sec:data-collection>
+
+// Find using `bmgroup -w -r`
+#let bmgroup-output = "n-62-11-67 n-62-11-56 n-62-11-68 n-62-11-57 n-62-11-69 n-62-11-58 n-62-11-59 n-62-11-60 n-62-11-61 n-62-11-50 n-62-11-62 n-62-11-51 n-62-11-63 n-62-11-52 n-62-11-64 n-62-11-53 n-62-11-65 n-62-11-54 n-62-11-66 n-62-11-55"
+#let num-hosts-in-group = bmgroup-output.split(" ").len()
+
+To promote reproducibility of the results, all data was collected in August of 2026 on the DTU HPC cluster using nodes belonging to the `rhpccascadelaker` host group consisting of #num-hosts-in-group nodes with `XeonGold6226R` CPUs.
+
+To ensure the benchmarks measure the encoding and decoding speeds as accurately as possible,
+the datasets were first loaded into memory either within the Python interpreter for `zarr`-based tests, or by loading the data into the node-local RAM disk (`tmpfs`) located at `/dev/shm` for executable-based tests.
+
+
 
 = Projection Data <sec:projections>
 
@@ -236,4 +275,6 @@ much more widely used `libtiff` library.
 
 For this reason, we and others usually opt for storing each projection or layer as a separate TIFF file in a directory.
 
-// #table()
+== Note on HPC Host Groups <app:hpc-host-groups>
+
+The hostgroup was chosen by running `bmgroup -w -r` and `nodestat -F` to find a host group with a relatively large number of nodes with the same, modern CPU architecture.
