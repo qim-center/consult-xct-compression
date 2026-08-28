@@ -9,4 +9,6 @@ PROJECT_SCRATCH_DIR = (
     / "analysis"
     / "compression"
 )
-DATASETS_DIR = PROJECT_SCRATCH_DIR / "datasets"
+
+DATASETS_PROJECTIONS_DIR = PROJECT_SCRATCH_DIR / "datasets_projections"
+DATASETS_RECONSTRUCTIONS_DIR = PROJECT_SCRATCH_DIR / "datasets_reconstructions"

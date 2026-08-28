@@ -946,3 +946,9 @@ CONFIGS_VARIABILITY = [
         **_BC_LOSSLESS_TIFFFILE,
     ),
 ] * 4
+
+# Check duplicate names, happens if we forgot f in front of f-string
+names = [c.name for c in CONFIGS]
+if len(names) != len(set(names)):
+    duplicates = set([name for name in names if names.count(name) > 1])
+    raise ValueError(f"Duplicate config names found: {duplicates}")

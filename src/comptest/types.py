@@ -1,4 +1,5 @@
 from __future__ import annotations
+from cil.framework.image_geometry import ImageGeometry
 
 from collections.abc import Callable
 from datetime import datetime
@@ -312,3 +313,40 @@ class CompressionTest(BaseCompressionConfig):
             "compression_ratio": self.compression_ratio,
             "space_saving": self.space_saving,
         }
+
+
+class ReconstructionGeometry(BaseModel):
+    voxel_num_x: int
+    voxel_num_y: int
+    voxel_num_z: int
+    voxel_size_x_m: float
+    voxel_size_y_m: float
+    voxel_size_z_m: float
+    center_x_m: float
+    center_y_m: float
+    center_z_m: float
+
+    @classmethod
+    def from_cil_image_geometry(
+        cls, ig: ImageGeometry, physical_unit_scale_to_m: float = 1.0
+    ) -> Self:
+        return cls(
+            voxel_num_x=ig.voxel_num_x,
+            voxel_num_y=ig.voxel_num_y,
+            voxel_num_z=ig.voxel_num_z,
+            voxel_size_x_m=ig.voxel_size_x * physical_unit_scale_to_m,
+            voxel_size_y_m=ig.voxel_size_y * physical_unit_scale_to_m,
+            voxel_size_z_m=ig.voxel_size_z * physical_unit_scale_to_m,
+            center_x_m=ig.center_x * physical_unit_scale_to_m,
+            center_y_m=ig.center_y * physical_unit_scale_to_m,
+            center_z_m=ig.center_z * physical_unit_scale_to_m,
+        )
+
+    @classmethod
+    def load_json(cls, path: str | Path) -> Self:
+        path = Path(path)
+        return cls.model_validate_json(path.read_text(encoding="utf-8"))
+
+    def save_as_json(self, path: str | Path) -> None:
+        path = Path(path)
+        path.write_text(self.model_dump_json(indent=4, ensure_ascii=True), encoding="utf-8")
