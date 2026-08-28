@@ -6,9 +6,9 @@ Encoding,Pixel Types,Channels,Type,Categories,Unsuitable Reason,Comment
 |JPEG-LS|,"|u2-16|, u2-32",|1/3|,"L, LL",DICOM,,
 |JPEG 2000|,|u1-38|,"|1/3|, $≤#num(16384)$","L, LL","DICOM, TIFF?",,
 |JPEG 2000 (HTJ2K)|,|u1-38|,"|1/3|, $≤#num(16384)$","L, LL",DICOM,,
-|JPEG-XL|,"|u1-24|, u1-32","|1/3|, $≤#num(4099)$","L, LL","DICOM, TIFF?",,
-WEBP,u8,3/4,"L, LL","DICOM, TIFF?",Bit-Depth,
-AVIF,u8/10/12,$≤2^32 +1$,"L, LL",,Bit-Depth,
+|JPEG-XL|,"|u1-24|, u1-32, f16/32","|1/3|, $≤#num(4099)$","L, LL","DICOM, TIFF?",,
+WEBP,u8,3/4,"L, LL","DICOM, TIFF?",Bit-Depth,a
+AVIF,u8/10/12,$≤2^32 +1$,"L, LL",,Bit-Depth,a
 LERC,"i/u8/16/32, f32/64",$≤2^31-1$,"L, LL",TIFF?,,"Error bound available,\
 channels can be planar and/or interleaved"
 Blosc,sd,,,,,a
