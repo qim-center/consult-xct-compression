@@ -778,7 +778,7 @@ TIFFFILE_JPEGXL_LOSSY_CONFIGS_EFFORT_7_BIG = [
         distance=distance,
         compressor=_tf_comp(
             "jpegxl",
-            compressionargs={"distance": distance, "effort": effort},
+            compressionargs={"distance": distance, "effort": 7},
         ),
         **_BC_TIFFFILE,
     )
