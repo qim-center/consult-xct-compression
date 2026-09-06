@@ -1,1 +1,0 @@
-= Structural Similarity Index Measure
