@@ -25,22 +25,21 @@
 
   #underline[Jeppe Klitgaard]#super([a,b,\*]),
   Carsten Gundlach#super([c,d]),
-  Christy Anna Hipsley#super([e,f]),
+  Christy Anna Hipsley#super([e]),
   Mark D. Scherz#super([e]),\
-  Kim Steenstrup Pedersen#super([e,g]),
+  Kim Steenstrup Pedersen#super([e,f]),
   Felipe Delestro Matos#super([a,b]),\
   Anders Bjorholm Dahl#super([a,b,c]),
   Jakob Sauer Jørgensen#super([a,b])
 
   #[
-    #set text(size: 9pt)
+    #set text(size: 10pt)
     #super([a])_Center for Quantification of Imaging Data from MAX IV, Kongens Lyngby, Denmark_\
     #super([b])_Department of Applied Mathematics and Computer Science, Technical University of Denmark, Kongens Lyngby, Denmark_\
     #super([c])_3D Imaging Centre, Technical University of Denmark, Kongens Lyngby, Denmark_\
     #super([d])_Department of Physics, Technical University of Denmark, Kongens Lyngby, Denmark_\
-    #super([e])_Natural History Museum of Denmark, University of Copenhagen, Copenhagen, Denmark_\
-    #super([f])_Department of Biology, University of Copenhagen, Copenhagen, Denmark_\
-    #super([g])_Department of Computer Science, University of Copenhagen, Copenhagen, Denmark_
+    #super([e])_Natural History Museum Denmark, University of Copenhagen, Copenhagen, Denmark_\
+    #super([f])_Department of Computer Science, University of Copenhagen, Copenhagen, Denmark_
   ]
 ]
 // Hack for * footnote
@@ -49,10 +48,12 @@
 #footnote[#super[\*]E-Mail: `s250250@dtu.dk`]
 #counter(footnote).update(0)
 ]
-#let abstract = [
-  The NaturArv3D project#footnote(link("https://3dim.dtu.dk/newsarchive/2025/03/naturarv_3d")) will acquire 3D X-ray images of the full vertebrate collection of the Natural History Museum of Denmark at sub-#quan[10 um] voxel size, in collaboration with the DTU 3D Imaging Centre. The scale of the project necessitates a custom high-throughput X-ray scanner with robotic sample handling, capable of scanning up to 500 samples per week. The expected annual data volume of approximately #quan[1 PB] renders long-term archival storage economically onerous without substantial compression.
+*Keywords*: _X-ray CT, Compression, Natural History_
 
-  The compression ratios (CR), compression and decompression times, and quality loss are determined for in-memory compression tests across a large number of lossless and lossy compression schemes, including JPEG-LS and the recent JPEG XL standard. Relevant subsets of the tests are performed in TIFF, DICOM, and (OME-)Zarr containers in order to determine the most viable archival formats and their compatibility with prevalent image-processing software packages. Quality loss is quantified using common full-reference metrics including SSIM @ref:wangImageQualityAssessment2004, MS-SSIM @ref:wangMultiscaleStructuralSimilarity2003, and PSNR.
+#let abstract = [
+  The NaturArv3D project#footnote(link("https://3dim.dtu.dk/newsarchive/2025/03/naturarv_3d")) will acquire 3D X-ray images of the full vertebrate collection of the Natural History Museum Denmark at sub-#quan[10 um] voxel size, in collaboration with the DTU 3D Imaging Centre. The scale of the project necessitates a custom high-throughput X-ray scanner with robotic sample handling, capable of scanning up to 500 samples per week. The expected annual data volume of approximately #quan[1 PB] renders long-term archival storage economically onerous without substantial compression.
+
+  The compression ratios (CR), compression and decompression times, and quality loss are determined for in-memory compression tests across many lossless and lossy compression schemes, including JPEG-LS and the recent JPEG XL standard. Relevant subsets of the tests are performed in TIFF, DICOM, and Zarr containers in order to determine the most viable archival formats and their compatibility with prevalent image-processing software packages. Quality loss is quantified using common full-reference metrics including SSIM @ref:wangImageQualityAssessment2004, MS-SSIM @ref:wangMultiscaleStructuralSimilarity2003, and PSNR.
 
   We find that lossless schemes yield a maximum CR of 1.75:1, corresponding to a 43% space saving (SS). The JPEG-LS and JPEG XL codecs achieve CRs of 16.3:1 (93.9% SS) and 45.6:1 (97.8% SS), respectively, at imperceptible quality loss ($"PSNR" ≈ #quan[60 dB] "full scale", "3D SSIM" ≈ 0.999$) on a representative 16-bit CT volume. Alongside JPEG 2000, these schemes in combination with a DICOM container constitute the only lossy options widely supported among the surveyed packages. Compression times remain compatible with high-throughput acquisition, while decompression is sufficiently fast to improve access times over the uncompressed, I/O-bound case.
 
@@ -70,7 +71,7 @@
 #if full [
 #pagebreak(weak: true)
 #set page(margin: 0.5cm)
-Word count: #word-count-of(abstract)
+Word count: #word-count-of(abstract, method: "stringify")
 
 #v(1fr)
 
@@ -290,4 +291,14 @@ Cost estimate in abstract:
 - Round up *_Small Detector_* estimate from ≈ 756 GB to 1 PB to account for the fact that some significant portion of samples are to be run on _Large Detector_.
 - Use Cambridge RCS cost estimate, amortized over 5 years:
 - $1 "PB" × 1000 "TB"/"PB" × 475.00 £/("TB" × 5 "yr") × 8.7 "DKK"/£ × (1 - 1 / 45.6) = #znum[3055657.5]$ DKK
+
+#pagebreak(weak: true)
+Input and consent:
+- ✔ Carsten
+- ✔ Christy
+- ✔ Mark
+- ? Kim
+- ✔ Felipe
+- ✔ Anders
+- ✔ Jakob
 ]
