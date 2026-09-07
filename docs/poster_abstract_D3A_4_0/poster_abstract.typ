@@ -6,12 +6,15 @@
 #set text(size: 12pt)
 
 #set page(margin: 2.0cm)
+
+#let full = false
+
 #set document(
   author: "Jeppe Klitgaard",
   date: datetime(year: 2026, month: 09, day: 07),
   title: [
-    Scalable High-Resolution X-Ray CT Pipelines for\
-    Digitalisation of Natural History Collections
+    Compression Strategies for High-Throughput X-Ray CT\
+    of Natural History Collections
   ]
 )
 
@@ -43,22 +46,28 @@
 // Hack for * footnote
 #[
 #set footnote(numbering: (x) => none)
-#footnote[#super[\*]Corresponding author, e-mail: `s250250@dtu.dk`]
+#footnote[#super[\*]E-Mail: `s250250@dtu.dk`]
 #counter(footnote).update(0)
 ]
 #let abstract = [
-  Advances in X-ray detector hardware have led to a substantial increase in matrix sizes, which now commonly reach $4"k" × 4"k"$, with the resulting canonical X-ray Computed Tomography (CT) reconstruction volumes exceeding #quan[100 GB] for 16-bit voxels. This places considerable strain on imaging facilities and their users, driven by the storage costs of high-resolution X-ray imaging.
+  The NaturArv3D project#footnote(link("https://3dim.dtu.dk/newsarchive/2025/03/naturarv_3d")) will acquire 3D X-ray images of the full vertebrate collection of the Natural History Museum of Denmark at sub-#quan[10 um] voxel size, in collaboration with the DTU 3D Imaging Centre. The scale of the project necessitates a custom high-throughput X-ray scanner with robotic sample handling, capable of scanning up to 500 samples per week. The expected annual data volume of approximately #quan[1 PB] renders long-term archival storage economically onerous without substantial compression.
 
-  The compression ratios (CR), compression and decompression times, and quality loss are determined for in-memory compression tests across a large number of lossless and lossy compression schemes, including JPEG-LS and the recent JPEG XL standard. Relevant subsets of the tests are performed in TIFF, DICOM, and (OME-)Zarr containers in order to determine the most viable archival formats and their compatibility with prevalent image processing software packages. Quality loss is quantified using common full-reference metrics including SSIM@ref:wangImageQualityAssessment2004, MS-SSIM@ref:wangMultiscaleStructuralSimilarity2003, and PSNR.
+  The compression ratios (CR), compression and decompression times, and quality loss are determined for in-memory compression tests across a large number of lossless and lossy compression schemes, including JPEG-LS and the recent JPEG XL standard. Relevant subsets of the tests are performed in TIFF, DICOM, and (OME-)Zarr containers in order to determine the most viable archival formats and their compatibility with prevalent image-processing software packages. Quality loss is quantified using common full-reference metrics including SSIM @ref:wangImageQualityAssessment2004, MS-SSIM @ref:wangMultiscaleStructuralSimilarity2003, and PSNR.
 
-  We find that lossless schemes yield a maximal CR of 1.75:1, corresponding to a 43% space saving (SS). The JPEG-LS and JPEG XL codecs achieve CRs of 16.3:1 (93.9% SS) and 45.6:1 (97.8% SS) respectively at imperceptible quality loss ($"PSNR" ≈ #quan[60 dB] "full scale", "3D SSIM" ≈ 0.999$) on a representative 16-bit CT volume. Alongside JPEG 2000, these schemes in combination with a DICOM container constitute the only lossy options widely supported among the surveyed packages. Compression times remain compatible with high-throughput acquisition, while decompression is fast enough that access times improve over the uncompressed, I/O-bound case.
+  We find that lossless schemes yield a maximum CR of 1.75:1, corresponding to a 43% space saving (SS). The JPEG-LS and JPEG XL codecs achieve CRs of 16.3:1 (93.9% SS) and 45.6:1 (97.8% SS), respectively, at imperceptible quality loss ($"PSNR" ≈ #quan[60 dB] "full scale", "3D SSIM" ≈ 0.999$) on a representative 16-bit CT volume. Alongside JPEG 2000, these schemes in combination with a DICOM container constitute the only lossy options widely supported among the surveyed packages. Compression times remain compatible with high-throughput acquisition, while decompression is sufficiently fast to improve access times over the uncompressed, I/O-bound case.
 
-  To illustrate the economic implications, we estimate storage savings for the NaturArv3D collaborative project#footnote(link("https://3dim.dtu.dk/newsarchive/2025/03/naturarv_3d")) between the DTU 3D Imaging Centre and the Natural History Museum of Denmark. Under realistic operating conditions, the expected savings amount to approximately #quan[1 PB] of storage annually relative to the existing data pipeline, which corresponds to an estimated annual cost reduction of 3 million DKK. This underscores that the adoption of lossy compression schemes is decisive for the economic viability of high-throughput X-ray imaging at scale.
+  Relative to the baseline data pipeline without compression, the proposed schemes offer an estimated annual storage-cost saving of 2 million DKK under realistic operating conditions. This underscores that the adoption of lossy compression is decisive for the economic viability of high-throughput X-ray imaging at scale.
 ]
 #abstract
-
+#v(1fr)
+#[
+#set text(size: 10pt)
+// #show heading: set text(size: 12pt)
 #bibliography("zotero_references.bib", title: "References")
+// #bibliography("zotero_references.bib", title: none)
+]
 
+#if full [
 #pagebreak(weak: true)
 #set page(margin: 0.5cm)
 Word count: #word-count-of(abstract)
@@ -156,7 +165,8 @@ Word count: #word-count-of(abstract)
   for compression in compressions {
     let out_cells = ()
     for size in sizes {
-      let uncompressed = size.shape.at(0) * size.shape.at(1) * size.shape.at(2) * (size.bitdepth / 8) * (1 - size.crop)
+      let voxels = size.shape.at(0) * size.shape.at(1) * size.shape.at(2)
+      let uncompressed = voxels * (size.bitdepth / 8) * (1 - size.crop)
       let compressed = uncompressed / compression.ratio
       let compressed_GB = compressed / pow(10, 9)
       let morphsource_USD_per_GB = 3.47
@@ -186,6 +196,10 @@ Word count: #word-count-of(abstract)
             out
           },
           fill: (x, y) => if x == 1 { black.transparentize(95%) },
+
+          num-disp(voxels, unit: "vx"),
+          num-disp(voxels * 500, unit: "vx"),
+          num-disp(voxels * (500 / 7 * 365.2425), unit: "vx"),
 
           num-disp(compressed, unit: "B"),
           num-disp(compressed * 500, unit: "B"),
@@ -276,3 +290,4 @@ Cost estimate in abstract:
 - Round up *_Small Detector_* estimate from ≈ 756 GB to 1 PB to account for the fact that some significant portion of samples are to be run on _Large Detector_.
 - Use Cambridge RCS cost estimate, amortized over 5 years:
 - $1 "PB" × 1000 "TB"/"PB" × 475.00 £/("TB" × 5 "yr") × 8.7 "DKK"/£ × (1 - 1 / 45.6) = #znum[3055657.5]$ DKK
+]
