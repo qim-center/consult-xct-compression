@@ -12,8 +12,10 @@ import numpy.typing as npt
 from pydantic import BaseModel, ConfigDict, Field, PlainSerializer
 from scientific_pydantic import EllipsisLiteral as EllipsisTypeAdapted
 from scientific_pydantic.numpy import DTypeAdapter
-from skimage.metrics import structural_similarity
+
 from zarr.abc.codec import BaseCodec
+
+from comptest.metrics import ssim_map
 
 
 def _serialize_type(value: type[Any]) -> str:
@@ -138,23 +140,29 @@ class ZarrCompressionConfig(BaseCompressionConfig):
         if (
             self.serializer is not None
             and self.serializer[0] is imagecodecs.zarr.Jpegxl
-            and "planar" in self.serializer[1]
-            and self.serializer[1]["planar"]
+            and "planar" in self.serializer[2]
+            and self.serializer[2]["planar"]
             and chunks[0] == 1
         ):
-            self.serializer[1].pop("planar")
+            self.serializer[2].pop("planar")
 
         zarr_kwargs |= {"chunks": chunks}
 
-        # Resolve codecs
+        # Resolve codecs, each held as a (callable, args, kwargs) triple
         if self.filters is not None:
             zarr_kwargs |= {
-                "filters": self.filters[0](**self.filters[1]),
+                "filters": self.filters[0](*self.filters[1], **self.filters[2]),
             }
         if self.serializer is not None:
-            zarr_kwargs |= {"serializer": self.serializer[0](**self.serializer[1])}
+            zarr_kwargs |= {
+                "serializer": self.serializer[0](
+                    *self.serializer[1], **self.serializer[2]
+                )
+            }
         if self.compressors is not None:
-            zarr_kwargs |= {"compressors": [c[0](**c[1]) for c in self.compressors]}
+            zarr_kwargs |= {
+                "compressors": [c[0](*c[1], **c[2]) for c in self.compressors]
+            }
 
         zarr_kwargs |= self.__pydantic_extra__ or {}
 
@@ -177,34 +185,16 @@ class StructuralSimilarityIndexMetrics(BaseModel):
         reference: npt.NDArray,
         distorted: npt.NDArray,
         *,
-        data_range: float | None,
-        gaussian_weights: bool = True,
-        sigma: float = 1.5,
-        use_sample_covariance: bool = False,
-        win_size: int | None = None,
-        gradient: bool = False,
-        channel_axis: int | None = None,
-        **kwargs: Any
+        data_range: float,
+        **kwargs: Any,
     ) -> npt.NDArray:
         """
         Follows Wang et al. (2004) if default parameters are left.
+
+        Scores whatever rank it is given, so a 3D volume is scored as a volume
+        rather than slice by slice. See `comptest.metrics`.
         """
-        _ssim_mean, ssim_full_part = structural_similarity(
-            reference,
-            distorted,
-            full=True,
-            data_range=data_range,
-            gaussian_weights=gaussian_weights,
-            sigma=sigma,
-            use_sample_covariance=use_sample_covariance,
-            win_size=win_size,
-            gradient=gradient,
-            channel_axis=channel_axis,
-            **kwargs
-        )
-
-        return ssim_full_part
-
+        return ssim_map(reference, distorted, data_range=data_range, **kwargs)
 
     @classmethod
     def from_ndarray(cls, arr: npt.NDArray) -> Self:
@@ -212,14 +202,18 @@ class StructuralSimilarityIndexMetrics(BaseModel):
         edges = np.linspace(*hist_range, num=101)
         hist, bin_edges = np.histogram(arr, bins=edges, range=hist_range, density=True)
 
+        # One pass: np.median and two np.percentile calls would each partition
+        # the array again, and for a whole volume that is 1e9 elements a time.
+        percentile_25th, median, percentile_75th = np.percentile(arr, [25, 50, 75])
+
         return cls(
             mean=float(np.mean(arr)),
             min=float(np.min(arr)),
             max=float(np.max(arr)),
             std=float(np.std(arr)),
-            median=float(np.median(arr)),
-            percentile_25th=float(np.percentile(arr, 25)),
-            percentile_75th=float(np.percentile(arr, 75)),
+            median=float(median),
+            percentile_25th=float(percentile_25th),
+            percentile_75th=float(percentile_75th),
             histogram_values=list(hist),
             histogram_bin_edges=list(bin_edges),
         )
@@ -349,4 +343,6 @@ class ReconstructionGeometry(BaseModel):
 
     def save_as_json(self, path: str | Path) -> None:
         path = Path(path)
-        path.write_text(self.model_dump_json(indent=4, ensure_ascii=True), encoding="utf-8")
+        path.write_text(
+            self.model_dump_json(indent=4, ensure_ascii=True), encoding="utf-8"
+        )
