@@ -4,7 +4,8 @@ version = "0.1.0"
 authors = [{ name = "Jeppe Klitgaard", email = "s250250@dtu.dk" }]
 requires-python = ">=3.13"
 dependencies = [
-    "qim3d @ git+https://github.com/qim-center/qim3d@jk/fixes-for-compression-study",
+    "qim3d @ git+https://github.com/qim-center/qim3d",
+    "picax @ git+https://github.com/JeppeKlitgaard/picax",
     "ipykernel<7",
     "scientific-pydantic",
     "memory-tempfile>=2.2.3,<3",
@@ -27,7 +28,6 @@ platforms = ["linux-64", "win-64"]
 
 [tool.pixi.pypi-dependencies]
 comptest = { path = ".", editable = true }
-picax = { path = "picax", editable = true }
 
 [tool.pixi.environments]
 default = { solve-group = "default" }
