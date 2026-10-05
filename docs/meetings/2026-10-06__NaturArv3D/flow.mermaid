@@ -1,0 +1,57 @@
+flowchart TD
+
+    subgraph "QIM Center"
+        QIM["`
+        QIM/3DIM/DTU Projection Archive
+        _Format undecided/out-of-scope_
+        `"]
+    end
+
+    subgraph "NHMD"
+        NMHDArchive["`
+            Archival Storage
+            *OME-Zarr (Compressed)*
+        `"]
+    end
+
+    subgraph Researcher
+        DownloadZarr[Download as OME-Zarr]
+        ViewerZarr[Modern Zarr Viewer]
+        ViewerOld[Older Viewer / Software]
+        ConversionLocal["`
+        Download as TIFF
+        _ome_zarr export {URL} --format tiff-stack output_dir/_
+        `"]
+        ConversionLocal --> ViewerOld
+
+    end
+
+    subgraph "DANFIX"
+        Scanner["`
+            Projections from Scanner
+            _TIFF Projections_
+        `"]
+
+        Scanner --> QIM
+
+        Reconstruction["`
+            Reconstruction Pipeline
+            *TIFF Projections → TIFF Volumes*
+        `"]
+        Scanner --> Reconstruction
+
+        DIMArchive[3DIM Archive?]
+        Reconstruction --> DIMArchive
+
+        DIMConvert["`
+        Conversion
+        *TIFF Volumes → OME-Zarr (compressed)*
+        `"]
+
+        Reconstruction --> DIMConvert
+        DIMConvert --> NMHDArchive
+    end
+
+  NMHDArchive --> ViewerZarr
+  NMHDArchive --> ConversionLocal
+  NMHDArchive --> DownloadZarr
