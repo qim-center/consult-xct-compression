@@ -10,7 +10,7 @@
 #show raw: it => highlight(it, extent: 3pt, fill: gray.transparentize(70%), radius: 5pt)
 #show link: set text(font: "DejaVu Sans Mono", size: 0.8em, fill: navy.lighten(20%))
 
-= Jeppe Update — 2026-08-04
+= Jeppe × Jakob 1-1: NaturArv3D + other stuff — 2026-08-04
 
 == Overview of Time Spent
 - Mostly compression study
@@ -23,8 +23,6 @@
 
 == Qim3D
 - Mostly little fixes for bugs I found when using `qim3d` for compression study
-- No/little movement on DX improvements
-  - Strategy? Approach Felipe, abandon, wait?
 - Top priority:
   - `pre-commit`/formatting currently creates a lot of friction
   - tests _need_ to be run in CI
@@ -40,7 +38,6 @@
   - Ensuring consistent HPC environment
   - ...
 - Gotten overview of most relevant compression methods/codecs
-- Some confusion about project scope after talking with Felipe?
   - Is TIFF hard requirement?
   - File sizes?
 
@@ -138,14 +135,6 @@ Note: Some Zarr stuff, though not shown here.
   - Compression ratio of $12.9$ ($92.2%$ space savings!)
 - Hopefully ran lower distance tests over night, not sure if finished
 - Pretty comparison picture missing :(
-
-== Other
-- Think I got hours sorted (now 15/week)
-- TODO: Reimburse conference ticket
-- Anything I should do before conference?
-  - Would have been great to have compression study done, but _alas_
-- LLM subscription?
-- QIM Platform?
 
 == Show Code
 - Maybe quickly show code any over-all structure
