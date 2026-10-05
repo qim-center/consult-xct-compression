@@ -1,5 +1,4 @@
 from __future__ import annotations
-from cil.framework.image_geometry import ImageGeometry
 
 from collections.abc import Callable
 from datetime import datetime
@@ -9,10 +8,10 @@ from typing import Annotated, Any, Literal, Self, TypeVar
 import imagecodecs.zarr
 import numpy as np
 import numpy.typing as npt
+from cil.framework.image_geometry import ImageGeometry
 from pydantic import BaseModel, ConfigDict, Field, PlainSerializer
 from scientific_pydantic import EllipsisLiteral as EllipsisTypeAdapted
 from scientific_pydantic.numpy import DTypeAdapter
-
 from zarr.abc.codec import BaseCodec
 
 from comptest.metrics import ssim_map
@@ -72,14 +71,14 @@ class BaseCompressionConfig(BaseModel):
     series: str
     subseries: str | None = None
 
-    paradigm: Literal["file_stack", "zarr"]
+    paradigm: Literal["file_stack", "zarr", "dicom"]
     lossless: bool
 
     allowed_dtypes: set[DType]
 
     ### Groupings
     implementation: Literal[
-        "libtiff/tiffcp", "imagemagick", "zarr/imagecodecs", "tifffile"
+        "libtiff/tiffcp", "imagemagick", "zarr/imagecodecs", "tifffile", "pydicom"
     ]
     # libtiff has this for some codecs
     differencing: Literal["none", "horizontal", "float"] | None = None
@@ -169,6 +168,18 @@ class ZarrCompressionConfig(BaseCompressionConfig):
         return zarr_kwargs
 
 
+class DicomCompressionConfig(BaseCompressionConfig):
+    """One single-frame DICOM file per z slice, encapsulated by pydicom."""
+
+    transfer_syntax_uid: str
+    # pydicom plugin names, pinned so a run never silently switches backend
+    # depending on what happens to be installed (e.g. gdcm vs pyjpegls).
+    encoding_plugin: str
+    decoding_plugin: str
+    # Forwarded to Dataset.compress, e.g. {"jls_error": 25} or {"j2k_cr": [8]}.
+    encoder_kwargs: dict[str, Any] = Field(default_factory=dict)
+
+
 class StructuralSimilarityIndexMetrics(BaseModel):
     mean: float
     min: float
@@ -229,7 +240,7 @@ class CompressionTest(BaseCompressionConfig):
     end_wall_dt: datetime
     total_wall_time_seconds: float
 
-    config: FileStackCompressionConfig | ZarrCompressionConfig
+    config: FileStackCompressionConfig | ZarrCompressionConfig | DicomCompressionConfig
 
     # A baseline to compare against
     # We run a simple test to ensure that compression of a known configuration is roughly the same
