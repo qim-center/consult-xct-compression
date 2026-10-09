@@ -80,6 +80,7 @@
   - Built-in support for `imagecodecs` codecs: #link("https://github.com/ome/ome-zarr-py/pull/679", `ome-zarr-py#679`)
   - Even if not merged: shows how easily conversion tool can be made and maintained
 - Reminder, importantly: many codecs are still not _standardised_ in Zarr 3
+  - No standardised lossy codecs as of 2026-10-06
   - Current proposal relies on one specific codec implementation (`imagecodecs`)
   - Upgrade path to standardised codec is expected, but not guaranteed
   - Proposed JPEG XL Extension Specification: #link("https://github.com/zarr-developers/zarr-extensions/pull/70", `zarr-extensions#70`)
@@ -110,7 +111,7 @@ Alternatives remain:
     ]
 + _Optional: Open in Napari (`uvx --with pyqt6 napari output_tiffs`)_
 
-== Demo `ome_zarr` CLI
+#pagebreak(weak: true)
 #align(center + horizon, strong[
   #set text(size: 60pt, fill: black)
   Tool Demo
@@ -133,7 +134,7 @@ Alternatives remain:
   - _Exact timing of conversions and where compression happens is still TBD_.
   - Right-most half may be instructive
 
-#image("flow.svg")
+#image("flow.png", height: 1fr)
 
 
 
@@ -149,14 +150,13 @@ Alternatives remain:
   - Hopefully will be engaging to people
   - Non-finished version to the right
     - _(due to monotonicity of time)_
+#image("flow_poster.svg", height: 1fr)
 ][#align(right)[
     #image("poster.pdf")
   ]
 ]
 
 == Closing Remarks
-- I may not have much more to contribute (at least for a bit?)
-- Always happy to help, don't hestitate to reach out
 - _Everything (?)_ available on private GitHub repo under `qim-center` org
   - #link("https://github.com/qim-center/consult-xct-compression")
     - QIM + Close friends already have access
