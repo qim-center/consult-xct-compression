@@ -1,0 +1,4360 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1062.992126pt" height="432pt" viewBox="0 0 1062.992126 432" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-07T00:16:16.667581</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 432 
+L 1062.992126 432 
+L 1062.992126 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="patch_2">
+   <path d="M 0 432 
+L 1062.992126 432 
+L 1062.992126 0 
+L 0 0 
+z
+" style="fill: #ffffff; stroke: #ffffff; stroke-linejoin: miter"/>
+  </g>
+  <g id="axes_1">
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 175.835389 215.725627 
+L 175.835389 10.629921 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_1">
+      <!-- 10 -->
+      <g style="fill: #555555" transform="translate(165.825702 232.83012) scale(0.18 -0.18)">
+       <defs>
+        <path id="LiberationSans-14" d="M 488 0 
+L 488 478 
+L 1609 478 
+L 1609 3866 
+L 616 3156 
+L 616 3688 
+L 1656 4403 
+L 2175 4403 
+L 2175 478 
+L 3247 478 
+L 3247 0 
+L 488 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LiberationSans-13" d="M 3309 2203 
+Q 3309 1100 2920 518 
+Q 2531 -63 1772 -63 
+Q 1013 -63 631 515 
+Q 250 1094 250 2203 
+Q 250 3338 620 3903 
+Q 991 4469 1791 4469 
+Q 2569 4469 2939 3897 
+Q 3309 3325 3309 2203 
+z
+M 2738 2203 
+Q 2738 3156 2517 3584 
+Q 2297 4013 1791 4013 
+Q 1272 4013 1045 3591 
+Q 819 3169 819 2203 
+Q 819 1266 1048 831 
+Q 1278 397 1778 397 
+Q 2275 397 2506 840 
+Q 2738 1284 2738 2203 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LiberationSans-14"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <path d="M 376.265868 215.725627 
+L 376.265868 10.629921 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_2">
+      <!-- 30 -->
+      <g style="fill: #555555" transform="translate(366.256181 232.83012) scale(0.18 -0.18)">
+       <defs>
+        <path id="LiberationSans-16" d="M 3278 1216 
+Q 3278 606 2890 271 
+Q 2503 -63 1784 -63 
+Q 1116 -63 717 239 
+Q 319 541 244 1131 
+L 825 1184 
+Q 938 403 1784 403 
+Q 2209 403 2451 612 
+Q 2694 822 2694 1234 
+Q 2694 1594 2417 1795 
+Q 2141 1997 1619 1997 
+L 1300 1997 
+L 1300 2484 
+L 1606 2484 
+Q 2069 2484 2323 2686 
+Q 2578 2888 2578 3244 
+Q 2578 3597 2370 3801 
+Q 2163 4006 1753 4006 
+Q 1381 4006 1151 3815 
+Q 922 3625 884 3278 
+L 319 3322 
+Q 381 3863 767 4166 
+Q 1153 4469 1759 4469 
+Q 2422 4469 2789 4161 
+Q 3156 3853 3156 3303 
+Q 3156 2881 2920 2617 
+Q 2684 2353 2234 2259 
+L 2234 2247 
+Q 2728 2194 3003 1916 
+Q 3278 1638 3278 1216 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LiberationSans-16"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <path d="M 595.918287 215.725627 
+L 595.918287 10.629921 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_3">
+      <!-- 100 -->
+      <g style="fill: #555555" transform="translate(580.903756 232.83012) scale(0.18 -0.18)">
+       <use xlink:href="#LiberationSans-14"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(111.21875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <path d="M 796.348767 215.725627 
+L 796.348767 10.629921 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_4">
+      <!-- 300 -->
+      <g style="fill: #555555" transform="translate(781.334235 232.83012) scale(0.18 -0.18)">
+       <use xlink:href="#LiberationSans-16"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(111.21875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <path d="M 1016.001185 215.725627 
+L 1016.001185 10.629921 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_5">
+      <!-- 1000 -->
+      <g style="fill: #555555" transform="translate(995.98181 232.83012) scale(0.18 -0.18)">
+       <use xlink:href="#LiberationSans-14"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(111.21875 0)"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(166.828125 0)"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 65.925702 213.13278 
+L 1052.362205 213.13278 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_6">
+      <!-- 0 -->
+      <g style="fill: #555555" transform="translate(51.916014 219.685026) scale(0.18 -0.18)">
+       <use xlink:href="#LiberationSans-13"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <path d="M 65.925702 151.153461 
+L 1052.362205 151.153461 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_7">
+      <!-- 20 -->
+      <g style="fill: #555555" transform="translate(41.906327 157.705707) scale(0.18 -0.18)">
+       <defs>
+        <path id="LiberationSans-15" d="M 322 0 
+L 322 397 
+Q 481 763 711 1042 
+Q 941 1322 1194 1548 
+Q 1447 1775 1695 1969 
+Q 1944 2163 2144 2356 
+Q 2344 2550 2467 2762 
+Q 2591 2975 2591 3244 
+Q 2591 3606 2378 3806 
+Q 2166 4006 1788 4006 
+Q 1428 4006 1195 3811 
+Q 963 3616 922 3263 
+L 347 3316 
+Q 409 3844 795 4156 
+Q 1181 4469 1788 4469 
+Q 2453 4469 2811 4155 
+Q 3169 3841 3169 3263 
+Q 3169 3006 3051 2753 
+Q 2934 2500 2703 2247 
+Q 2472 1994 1819 1463 
+Q 1459 1169 1246 933 
+Q 1034 697 941 478 
+L 3238 478 
+L 3238 0 
+L 322 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LiberationSans-15"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 65.925702 89.174142 
+L 1052.362205 89.174142 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_8">
+      <!-- 40 -->
+      <g style="fill: #555555" transform="translate(41.906327 95.726388) scale(0.18 -0.18)">
+       <defs>
+        <path id="LiberationSans-17" d="M 2753 997 
+L 2753 0 
+L 2222 0 
+L 2222 997 
+L 147 997 
+L 147 1434 
+L 2163 4403 
+L 2753 4403 
+L 2753 1441 
+L 3372 1441 
+L 3372 997 
+L 2753 997 
+z
+M 2222 3769 
+Q 2216 3750 2134 3603 
+Q 2053 3456 2013 3397 
+L 884 1734 
+L 716 1503 
+L 666 1441 
+L 2222 1441 
+L 2222 3769 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LiberationSans-17"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <path d="M 65.925702 27.194823 
+L 1052.362205 27.194823 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="text_9">
+      <!-- 60 -->
+      <g style="fill: #555555" transform="translate(41.906327 33.747069) scale(0.18 -0.18)">
+       <defs>
+        <path id="LiberationSans-19" d="M 3278 1441 
+Q 3278 744 2900 340 
+Q 2522 -63 1856 -63 
+Q 1113 -63 719 490 
+Q 325 1044 325 2100 
+Q 325 3244 734 3856 
+Q 1144 4469 1900 4469 
+Q 2897 4469 3156 3572 
+L 2619 3475 
+Q 2453 4013 1894 4013 
+Q 1413 4013 1148 3564 
+Q 884 3116 884 2266 
+Q 1038 2550 1316 2698 
+Q 1594 2847 1953 2847 
+Q 2563 2847 2920 2465 
+Q 3278 2084 3278 1441 
+z
+M 2706 1416 
+Q 2706 1894 2472 2153 
+Q 2238 2413 1819 2413 
+Q 1425 2413 1183 2183 
+Q 941 1953 941 1550 
+Q 941 1041 1192 716 
+Q 1444 391 1838 391 
+Q 2244 391 2475 664 
+Q 2706 938 2706 1416 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LiberationSans-19"/>
+       <use xlink:href="#LiberationSans-13" transform="translate(55.609375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5"/>
+    <g id="ytick_6"/>
+    <g id="ytick_7"/>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 129.34587 77.648634 
+L 139.847943 77.648634 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 255.242114 99.368339 
+L 265.744186 99.368339 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 380.524095 110.893017 
+L 391.026168 110.893017 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 504.511681 123.393122 
+L 515.013754 123.393122 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 129.34587 19.952453 
+L 139.847943 19.952453 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 255.242114 42.439229 
+L 265.744186 42.439229 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 380.524095 56.28181 
+L 391.026168 56.28181 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 504.511681 66.552017 
+L 515.013754 66.552017 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 134.596906 19.952453 
+L 134.596906 77.648634 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 260.49315 42.439229 
+L 260.49315 99.368339 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 385.775132 56.28181 
+L 385.775132 110.893017 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 509.762718 66.552017 
+L 509.762718 123.393122 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 131.472794 54.717205 
+L 141.974867 54.717205 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 152.058389 54.633665 
+L 162.560461 54.633665 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 194.139602 66.590697 
+L 204.641674 66.590697 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 221.092842 78.876017 
+L 231.594914 78.876017 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 311.511776 92.075476 
+L 322.013849 92.075476 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 412.549703 114.94458 
+L 423.051775 114.94458 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 131.472794 44.38146 
+L 141.974867 44.38146 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 152.058389 52.971844 
+L 162.560461 52.971844 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 194.139602 64.512782 
+L 204.641674 64.512782 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 221.092842 70.367912 
+L 231.594914 70.367912 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 311.511776 88.637947 
+L 322.013849 88.637947 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 412.549703 100.979856 
+L 423.051775 100.979856 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 136.723831 44.38146 
+L 136.723831 54.717205 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 157.309425 52.971844 
+L 157.309425 54.633665 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 199.390638 64.512782 
+L 199.390638 66.590697 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 226.343878 70.367912 
+L 226.343878 78.876017 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 316.762813 88.637947 
+L 316.762813 92.075476 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 417.800739 100.979856 
+L 417.800739 114.94458 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_3">
+    <path d="M 665.813064 116.579925 
+L 676.315136 116.579925 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 626.455121 112.65057 
+L 636.957193 112.65057 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 586.865197 109.175235 
+L 597.36727 109.175235 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 558.413774 106.894896 
+L 568.915847 106.894896 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 516.893919 103.81801 
+L 527.395992 103.81801 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 453.442152 97.445872 
+L 463.944224 97.445872 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 334.027761 82.064749 
+L 344.529834 82.064749 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 665.813064 102.619649 
+L 676.315136 102.619649 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 626.455121 97.805025 
+L 636.957193 97.805025 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 586.865197 92.834564 
+L 597.36727 92.834564 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 558.413774 89.521825 
+L 568.915847 89.521825 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 516.893919 85.51791 
+L 527.395992 85.51791 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 453.442152 79.329161 
+L 463.944224 79.329161 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 334.027761 70.072513 
+L 344.529834 70.072513 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 671.0641 102.619649 
+L 671.0641 116.579925 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 631.706157 97.805025 
+L 631.706157 112.65057 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 592.116234 92.834564 
+L 592.116234 109.175235 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 563.66481 89.521825 
+L 563.66481 106.894896 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 522.144956 85.51791 
+L 522.144956 103.81801 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 458.693188 79.329161 
+L 458.693188 97.445872 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 339.278797 70.072513 
+L 339.278797 82.064749 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_4">
+    <path d="M 681.461257 122.370925 
+L 691.963329 122.370925 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 578.627726 109.146159 
+L 589.129799 109.146159 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 445.568098 95.12117 
+L 456.070171 95.12117 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 303.731219 77.279953 
+L 314.233292 77.279953 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 156.033514 48.146913 
+L 166.535587 48.146913 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 681.461257 112.601236 
+L 691.963329 112.601236 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 578.627726 103.156696 
+L 589.129799 103.156696 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 445.568098 89.140785 
+L 456.070171 89.140785 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 303.731219 70.245589 
+L 314.233292 70.245589 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 156.033514 44.171447 
+L 166.535587 44.171447 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 686.712293 112.601236 
+L 686.712293 122.370925 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 583.878763 103.156696 
+L 583.878763 109.146159 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 450.819135 89.140785 
+L 450.819135 95.12117 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 308.982255 70.245589 
+L 308.982255 77.279953 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 161.28455 44.171447 
+L 161.28455 48.146913 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_5">
+    <path d="M 132.064803 54.717205 
+L 142.566876 54.717205 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 152.722324 54.633665 
+L 163.224396 54.633665 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 194.97911 66.590697 
+L 205.481183 66.590697 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 222.069929 78.876017 
+L 232.572002 78.876017 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 313.150138 92.075476 
+L 323.65221 92.075476 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 415.423203 114.94458 
+L 425.925275 114.94458 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 132.064803 44.38146 
+L 142.566876 44.38146 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 152.722324 52.971844 
+L 163.224396 52.971844 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 194.97911 64.512782 
+L 205.481183 64.512782 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 222.069929 70.367912 
+L 232.572002 70.367912 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 313.150138 88.637947 
+L 323.65221 88.637947 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 415.423203 100.979856 
+L 425.925275 100.979856 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 137.31584 44.38146 
+L 137.31584 54.717205 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 157.97336 52.971844 
+L 157.97336 54.633665 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 200.230146 64.512782 
+L 200.230146 66.590697 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 227.320966 70.367912 
+L 227.320966 78.876017 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 318.401174 88.637947 
+L 318.401174 92.075476 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 420.674239 100.979856 
+L 420.674239 114.94458 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_6">
+    <path d="M 177.610403 53.938063 
+L 188.112476 53.938063 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 341.049615 83.684027 
+L 351.551687 83.684027 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 275.937819 73.150101 
+L 286.439891 73.150101 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 450.23884 97.588183 
+L 460.740913 97.588183 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 527.145131 104.182378 
+L 537.647203 104.182378 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 689.067536 118.729608 
+L 699.569608 118.729608 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 631.606188 112.842097 
+L 642.108261 112.842097 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 783.291165 127.584098 
+L 793.793238 127.584098 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 858.727708 135.24468 
+L 869.22978 135.24468 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 177.610403 43.583505 
+L 188.112476 43.583505 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 341.049615 60.967828 
+L 351.551687 60.967828 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 275.937819 55.479735 
+L 286.439891 55.479735 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 450.23884 69.1933 
+L 460.740913 69.1933 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 527.145131 76.691423 
+L 537.647203 76.691423 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 689.067536 97.134599 
+L 699.569608 97.134599 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 631.606188 90.577709 
+L 642.108261 90.577709 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 783.291165 107.988297 
+L 793.793238 107.988297 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 858.727708 114.260187 
+L 869.22978 114.260187 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 182.861439 43.583505 
+L 182.861439 53.938063 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 346.300651 60.967828 
+L 346.300651 83.684027 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 281.188855 55.479735 
+L 281.188855 73.150101 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 455.489876 69.1933 
+L 455.489876 97.588183 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 532.396167 76.691423 
+L 532.396167 104.182378 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 694.318572 97.134599 
+L 694.318572 118.729608 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 636.857225 90.577709 
+L 636.857225 112.842097 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 788.542202 107.988297 
+L 788.542202 127.584098 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 863.978744 114.260187 
+L 863.978744 135.24468 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_7">
+    <path d="M 128.564383 44.136032 
+L 139.066456 44.136032 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 278.996853 74.570626 
+L 289.498925 74.570626 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 216.240252 63.214939 
+L 226.742325 63.214939 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 391.005471 91.720104 
+L 401.507543 91.720104 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 471.996228 99.946876 
+L 482.4983 99.946876 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 641.450511 113.723096 
+L 651.952584 113.723096 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 582.2456 108.87448 
+L 592.747672 108.87448 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 738.192535 124.445298 
+L 748.694608 124.445298 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 819.839004 131.166296 
+L 830.341076 131.166296 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 128.564383 32.485342 
+L 139.066456 32.485342 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 278.996853 54.480074 
+L 289.498925 54.480074 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 216.240252 47.570968 
+L 226.742325 47.570968 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 391.005471 63.083164 
+L 401.507543 63.083164 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 471.996228 69.988132 
+L 482.4983 69.988132 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 641.450511 90.026113 
+L 651.952584 90.026113 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 582.2456 82.497333 
+L 592.747672 82.497333 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 738.192535 99.998223 
+L 748.694608 99.998223 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 819.839004 108.29395 
+L 830.341076 108.29395 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 133.81542 32.485342 
+L 133.81542 44.136032 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 284.247889 54.480074 
+L 284.247889 74.570626 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 221.491288 47.570968 
+L 221.491288 63.214939 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 396.256507 63.083164 
+L 396.256507 91.720104 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 477.247264 69.988132 
+L 477.247264 99.946876 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 646.701547 90.026113 
+L 646.701547 113.723096 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 587.496636 82.497333 
+L 587.496636 108.87448 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 743.443572 99.998223 
+L 743.443572 124.445298 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 825.09004 108.29395 
+L 825.09004 131.166296 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_8">
+    <path d="M 142.972875 88.083362 
+L 153.474947 88.083362 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 259.409343 118.571314 
+L 269.911416 118.571314 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 382.891803 130.430884 
+L 393.393876 130.430884 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 514.426321 141.872419 
+L 524.928393 141.872419 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 638.034376 182.840504 
+L 648.536448 182.840504 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 142.972875 80.140903 
+L 153.474947 80.140903 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 259.409343 103.962287 
+L 269.911416 103.962287 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 382.891803 111.562629 
+L 393.393876 111.562629 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 514.426321 126.732815 
+L 524.928393 126.732815 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 638.034376 161.780318 
+L 648.536448 161.780318 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 148.223911 80.140903 
+L 148.223911 88.083362 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 264.66038 103.962287 
+L 264.66038 118.571314 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 388.142839 111.562629 
+L 388.142839 130.430884 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 519.677357 126.732815 
+L 519.677357 141.872419 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 643.285412 161.780318 
+L 643.285412 182.840504 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_9">
+    <path d="M 141.758794 87.60158 
+L 152.260867 87.60158 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 253.317209 119.361641 
+L 263.819281 119.361641 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 372.45303 128.170721 
+L 382.955103 128.170721 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 513.573437 142.759774 
+L 524.075509 142.759774 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 679.870317 183.06827 
+L 690.372389 183.06827 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 141.758794 81.311481 
+L 152.260867 81.311481 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 253.317209 100.298595 
+L 263.819281 100.298595 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 372.45303 111.073747 
+L 382.955103 111.073747 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 513.573437 127.490069 
+L 524.075509 127.490069 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 679.870317 162.263413 
+L 690.372389 162.263413 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 147.00983 81.311481 
+L 147.00983 87.60158 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 258.568245 100.298595 
+L 258.568245 119.361641 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 377.704067 111.073747 
+L 377.704067 128.170721 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 518.824473 127.490069 
+L 518.824473 142.759774 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 685.121353 162.263413 
+L 685.121353 183.06827 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_10">
+    <path d="M 667.978068 131.311114 
+L 678.480141 131.311114 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 528.796654 122.710225 
+L 539.298726 122.710225 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 397.649103 113.172167 
+L 408.151176 113.172167 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 264.734339 101.468873 
+L 275.236411 101.468873 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 140.782952 80.836047 
+L 151.285025 80.836047 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 667.978068 103.265728 
+L 678.480141 103.265728 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 528.796654 93.672524 
+L 539.298726 93.672524 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 397.649103 81.861259 
+L 408.151176 81.861259 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 264.734339 65.936454 
+L 275.236411 65.936454 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 140.782952 48.312415 
+L 151.285025 48.312415 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 673.229104 103.265728 
+L 673.229104 131.311114 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 534.04769 93.672524 
+L 534.04769 122.710225 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 402.90014 81.861259 
+L 402.90014 113.172167 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 269.985375 65.936454 
+L 269.985375 101.468873 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 146.033988 48.312415 
+L 146.033988 80.836047 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_11">
+    <path d="M 409.202177 101.998378 
+L 419.704249 101.998378 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 140.696806 53.452097 
+L 151.198878 53.452097 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 528.615082 114.157332 
+L 539.117154 114.157332 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 642.269813 126.675337 
+L 652.771885 126.675337 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 253.155758 79.022126 
+L 263.65783 79.022126 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 409.202177 89.246414 
+L 419.704249 89.246414 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 140.696806 42.546224 
+L 151.198878 42.546224 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 528.615082 100.444475 
+L 539.117154 100.444475 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 642.269813 107.749631 
+L 652.771885 107.749631 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 253.155758 67.883143 
+L 263.65783 67.883143 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 414.453213 89.246414 
+L 414.453213 101.998378 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 145.947842 42.546224 
+L 145.947842 53.452097 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 533.866118 100.444475 
+L 533.866118 114.157332 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 647.520849 107.749631 
+L 647.520849 126.675337 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 258.406794 67.883143 
+L 258.406794 79.022126 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_12">
+    <path d="M 613.976371 206.403095 
+L 624.478443 206.403095 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 509.122873 182.002468 
+L 519.624945 182.002468 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 382.727262 143.125225 
+L 393.229334 143.125225 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 256.300685 128.299841 
+L 266.802758 128.299841 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 129.858622 113.404208 
+L 140.360695 113.404208 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 613.976371 203.961255 
+L 624.478443 203.961255 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 509.122873 137.921589 
+L 519.624945 137.921589 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 382.727262 113.457888 
+L 393.229334 113.457888 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 256.300685 91.420684 
+L 266.802758 91.420684 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 129.858622 70.624934 
+L 140.360695 70.624934 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 619.227407 203.961255 
+L 619.227407 206.403095 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 514.373909 137.921589 
+L 514.373909 182.002468 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 387.978298 113.457888 
+L 387.978298 143.125225 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 261.551721 91.420684 
+L 261.551721 128.299841 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+    <path d="M 135.109659 70.624934 
+L 135.109659 113.404208 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+   </g>
+   <g id="LineCollection_13">
+    <path d="M 134.588597 48.814095 
+L 134.588597 48.786992 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 260.480885 70.917335 
+L 260.480885 70.890232 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 385.731816 83.600965 
+L 385.731816 83.573862 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 509.688931 94.986121 
+L 509.688931 94.959018 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 134.605216 48.814095 
+L 134.605216 48.786992 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 260.505415 70.917335 
+L 260.505415 70.890232 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 385.818447 83.600965 
+L 385.818447 83.573862 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 509.836504 94.986121 
+L 509.836504 94.959018 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 134.588597 48.800544 
+L 134.605216 48.800544 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 260.480885 70.903784 
+L 260.505415 70.903784 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 385.731816 83.587414 
+L 385.818447 83.587414 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 509.688931 94.972569 
+L 509.836504 94.972569 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_14">
+    <path d="M 110.763725 49.562884 
+L 110.763725 49.535781 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 53.816306 
+L 110.763725 53.789203 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 65.565291 
+L 110.763725 65.538188 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 122.11498 74.635516 
+L 122.11498 74.608413 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 168.461781 90.370263 
+L 168.461781 90.34316 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 261.170291 107.975769 
+L 261.170291 107.948666 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 212.607856 49.562884 
+L 212.607856 49.535781 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 239.274308 53.816306 
+L 239.274308 53.789203 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 292.992873 65.565291 
+L 292.992873 65.538188 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 330.572776 74.635516 
+L 330.572776 74.608413 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 465.063844 90.370263 
+L 465.063844 90.34316 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 574.431188 107.975769 
+L 574.431188 107.948666 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 49.549332 
+L 212.607856 49.549332 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 53.802755 
+L 239.274308 53.802755 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 65.55174 
+L 292.992873 65.55174 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 122.11498 74.621964 
+L 330.572776 74.621964 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 168.461781 90.356711 
+L 465.063844 90.356711 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 261.170291 107.962218 
+L 574.431188 107.962218 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_15">
+    <path d="M 539.984972 109.613338 
+L 539.984972 109.586235 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 497.760879 105.241349 
+L 497.760879 105.214246 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 454.065559 101.018451 
+L 454.065559 100.991348 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 422.187824 98.221912 
+L 422.187824 98.194809 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 372.223756 94.681512 
+L 372.223756 94.654409 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 294.687116 88.401068 
+L 294.687116 88.373965 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 164.116048 76.082182 
+L 164.116048 76.055079 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 802.143228 109.613338 
+L 802.143228 109.586235 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 765.651436 105.241349 
+L 765.651436 105.214246 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 730.166908 101.018451 
+L 730.166908 100.991348 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 705.141796 98.221912 
+L 705.141796 98.194809 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 672.066155 94.681512 
+L 672.066155 94.654409 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 622.699259 88.401068 
+L 622.699259 88.373965 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 514.441547 76.082182 
+L 514.441547 76.055079 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 539.984972 109.599787 
+L 802.143228 109.599787 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 497.760879 105.227798 
+L 765.651436 105.227798 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 454.065559 101.004899 
+L 730.166908 101.004899 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 422.187824 98.208361 
+L 705.141796 98.208361 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 372.223756 94.66796 
+L 672.066155 94.66796 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 294.687116 88.387516 
+L 622.699259 88.387516 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 164.116048 76.068631 
+L 514.441547 76.068631 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_16">
+    <path d="M 365.900405 117.499632 
+L 365.900405 117.472529 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 250.257815 106.164979 
+L 250.257815 106.137876 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 133.661605 92.144529 
+L 133.661605 92.117426 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 73.776322 
+L 110.763725 73.74922 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 46.172731 
+L 110.763725 46.145628 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 1007.524182 117.499632 
+L 1007.524182 117.472529 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 917.49971 106.164979 
+L 917.49971 106.137876 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 767.976664 92.144529 
+L 767.976664 92.117426 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 531.532453 73.776322 
+L 531.532453 73.74922 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 273.368026 46.172731 
+L 273.368026 46.145628 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 365.900405 117.48608 
+L 1007.524182 117.48608 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 250.257815 106.151427 
+L 917.49971 106.151427 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 133.661605 92.130977 
+L 767.976664 92.130977 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 73.762771 
+L 531.532453 73.762771 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 46.15918 
+L 273.368026 46.15918 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_17">
+    <path d="M 110.763725 49.562884 
+L 110.763725 49.535781 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 53.816306 
+L 110.763725 53.789203 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 65.565291 
+L 110.763725 65.538188 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 122.502139 74.635516 
+L 122.502139 74.608413 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 168.666915 90.370263 
+L 168.666915 90.34316 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 261.383721 107.975769 
+L 261.383721 107.948666 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 213.456383 49.562884 
+L 213.456383 49.535781 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 240.249888 53.816306 
+L 240.249888 53.789203 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 294.285084 65.565291 
+L 294.285084 65.538188 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 332.139792 74.635516 
+L 332.139792 74.608413 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 468.135433 90.370263 
+L 468.135433 90.34316 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 579.964758 107.975769 
+L 579.964758 107.948666 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 49.549332 
+L 213.456383 49.549332 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 53.802755 
+L 240.249888 53.802755 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 65.55174 
+L 294.285084 65.55174 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 122.502139 74.621964 
+L 332.139792 74.621964 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 168.666915 90.356711 
+L 468.135433 90.356711 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 261.383721 107.962218 
+L 579.964758 107.962218 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_18">
+    <path d="M 110.763725 48.774335 
+L 110.763725 48.747233 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 227.504649 72.339479 
+L 227.504649 72.312376 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 164.300701 64.32847 
+L 164.300701 64.301367 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 350.384005 83.404293 
+L 350.384005 83.37719 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 434.144185 90.450452 
+L 434.144185 90.423349 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 601.317627 107.945655 
+L 601.317627 107.918552 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 537.658176 101.723455 
+L 537.658176 101.696352 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 704.55542 117.799749 
+L 704.55542 117.772646 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 778.124809 124.765985 
+L 778.124809 124.738882 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 281.623725 48.774335 
+L 281.623725 48.747233 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 465.096652 72.339479 
+L 465.096652 72.312376 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 398.077009 64.32847 
+L 398.077009 64.301367 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 560.595748 83.404293 
+L 560.595748 83.37719 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 630.648149 90.450452 
+L 630.648149 90.423349 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 787.319517 107.945655 
+L 787.319517 107.918552 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 736.056273 101.723455 
+L 736.056273 101.696352 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 872.528983 117.799749 
+L 872.528983 117.772646 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 949.832679 124.765985 
+L 949.832679 124.738882 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 48.760784 
+L 281.623725 48.760784 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 227.504649 72.325928 
+L 465.096652 72.325928 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 164.300701 64.314918 
+L 398.077009 64.314918 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 350.384005 83.390742 
+L 560.595748 83.390742 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 434.144185 90.436901 
+L 630.648149 90.436901 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 601.317627 107.932104 
+L 787.319517 107.932104 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 537.658176 101.709903 
+L 736.056273 101.709903 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 704.55542 117.786197 
+L 872.528983 117.786197 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 778.124809 124.752434 
+L 949.832679 124.752434 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_19">
+    <path d="M 110.763725 38.324238 
+L 110.763725 38.297135 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 176.935927 64.538902 
+L 176.935927 64.511799 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 122.497124 55.406505 
+L 122.497124 55.379402 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 296.035926 77.415185 
+L 296.035926 77.388082 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 383.655191 84.981056 
+L 383.655191 84.953953 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 557.801199 101.888156 
+L 557.801199 101.861053 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 493.655547 95.699458 
+L 493.655547 95.672355 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 666.403788 112.235312 
+L 666.403788 112.208209 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 748.544151 119.743675 
+L 748.544151 119.716572 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 202.477431 38.324238 
+L 202.477431 38.297135 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 391.559852 64.538902 
+L 391.559852 64.511799 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 320.485452 55.406505 
+L 320.485452 55.379402 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 496.477088 77.415185 
+L 496.477088 77.388082 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 570.839337 84.981056 
+L 570.839337 84.953953 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 735.601895 101.888156 
+L 735.601895 101.861053 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 681.337725 95.699458 
+L 681.337725 95.672355 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 820.483355 112.235312 
+L 820.483355 112.208209 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 901.635929 119.743675 
+L 901.635929 119.716572 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 38.310687 
+L 202.477431 38.310687 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 176.935927 64.52535 
+L 391.559852 64.52535 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 122.497124 55.392954 
+L 320.485452 55.392954 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 296.035926 77.401634 
+L 496.477088 77.401634 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 383.655191 84.967504 
+L 570.839337 84.967504 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 557.801199 101.874604 
+L 735.601895 101.874604 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 493.655547 95.685907 
+L 681.337725 95.685907 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 666.403788 112.221761 
+L 820.483355 112.221761 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 748.544151 119.730123 
+L 901.635929 119.730123 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_20">
+    <path d="M 110.763725 84.125684 
+L 110.763725 84.098581 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 149.556467 111.280352 
+L 149.556467 111.25325 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 259.424434 121.010308 
+L 259.424434 120.983205 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 429.295555 134.316169 
+L 429.295555 134.289066 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 638.136523 172.323962 
+L 638.136523 172.29686 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 217.415789 84.125684 
+L 217.415789 84.098581 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 379.764292 111.280352 
+L 379.764292 111.25325 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 516.861245 121.010308 
+L 516.861245 120.983205 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 610.059159 134.316169 
+L 610.059159 134.289066 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 648.4343 172.323962 
+L 648.4343 172.29686 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 84.112133 
+L 217.415789 84.112133 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 149.556467 111.266801 
+L 379.764292 111.266801 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 259.424434 120.996757 
+L 516.861245 120.996757 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 429.295555 134.302617 
+L 610.059159 134.302617 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 638.136523 172.310411 
+L 648.4343 172.310411 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_21">
+    <path d="M 110.763725 84.470082 
+L 110.763725 84.442979 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 140.270105 109.84367 
+L 140.270105 109.816567 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 249.413128 119.635785 
+L 249.413128 119.608683 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 385.597838 135.138473 
+L 385.597838 135.11137 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 678.302756 172.679393 
+L 678.302756 172.65229 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 215.780675 84.470082 
+L 215.780675 84.442979 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 376.866385 109.84367 
+L 376.866385 109.816567 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 505.995005 119.635785 
+L 505.995005 119.608683 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 652.051108 135.138473 
+L 652.051108 135.11137 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 691.93995 172.679393 
+L 691.93995 172.65229 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 84.45653 
+L 215.780675 84.45653 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 140.270105 109.830118 
+L 376.866385 109.830118 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 249.413128 119.622234 
+L 505.995005 119.622234 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 385.597838 135.124921 
+L 652.051108 135.124921 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 678.302756 172.665841 
+L 691.93995 172.665841 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_22">
+    <path d="M 608.819146 117.301973 
+L 608.819146 117.27487 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 470.777934 108.204926 
+L 470.777934 108.177823 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 349.191269 97.530264 
+L 349.191269 97.503161 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 234.563648 83.716215 
+L 234.563648 83.689112 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 120.329476 64.587782 
+L 120.329476 64.560679 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 737.639063 117.301973 
+L 737.639063 117.27487 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 597.317446 108.204926 
+L 597.317446 108.177823 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 456.60901 97.530264 
+L 456.60901 97.503161 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 305.407102 83.716215 
+L 305.407102 83.689112 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 171.738501 64.587782 
+L 171.738501 64.560679 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 608.819146 117.288421 
+L 737.639063 117.288421 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 470.777934 108.191375 
+L 597.317446 108.191375 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 349.191269 97.516713 
+L 456.60901 97.516713 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 234.563648 83.702663 
+L 305.407102 83.702663 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 120.329476 64.574231 
+L 171.738501 64.574231 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_23">
+    <path d="M 225.025092 95.635947 
+L 225.025092 95.608844 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 48.012712 
+L 110.763725 47.985609 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 332.466745 107.314455 
+L 332.466745 107.287352 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 470.787468 117.226036 
+L 470.787468 117.198933 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 139.312281 73.466186 
+L 139.312281 73.439083 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 603.881334 95.635947 
+L 603.881334 95.608844 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 223.052898 48.012712 
+L 223.052898 47.985609 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 735.265492 107.314455 
+L 735.265492 107.287352 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 824.25423 117.226036 
+L 824.25423 117.198933 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 377.501307 73.466186 
+L 377.501307 73.439083 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 225.025092 95.622396 
+L 603.881334 95.622396 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 110.763725 47.99916 
+L 223.052898 47.99916 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 332.466745 107.300903 
+L 735.265492 107.300903 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 470.787468 117.212484 
+L 824.25423 117.212484 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 139.312281 73.452635 
+L 377.501307 73.452635 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="LineCollection_24">
+    <path d="M 619.227407 205.195727 
+L 619.227407 205.168624 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 514.373909 159.97558 
+L 514.373909 159.948477 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 387.978298 128.305108 
+L 387.978298 128.278005 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 261.551721 109.873814 
+L 261.551721 109.846711 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 135.109659 92.028123 
+L 135.109659 92.00102 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 619.227407 205.195727 
+L 619.227407 205.168624 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 514.373909 159.97558 
+L 514.373909 159.948477 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 387.978298 128.305108 
+L 387.978298 128.278005 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 261.551721 109.873814 
+L 261.551721 109.846711 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 135.109659 92.028123 
+L 135.109659 92.00102 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 619.227407 205.182175 
+L 619.227407 205.182175 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 514.373909 159.962028 
+L 514.373909 159.962028 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 387.978298 128.291557 
+L 387.978298 128.291557 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 261.551721 109.860262 
+L 261.551721 109.860262 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+    <path d="M 135.109659 92.014571 
+L 135.109659 92.014571 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 134.596906 48.800544 
+L 260.49315 70.903784 
+L 385.775132 83.587414 
+L 509.762718 94.972569 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke-dasharray: 13.612446,3.403111,2.126945,3.403111; stroke-dashoffset: 0; stroke: #2a78d6; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 136.723831 49.549332 
+L 157.309425 53.802755 
+L 199.390638 65.55174 
+L 226.343878 74.621964 
+L 316.762813 90.356711 
+L 417.800739 107.962218 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke-dasharray: 13.612446,3.403111,2.126945,3.403111; stroke-dashoffset: 0; stroke: #1baf7a; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 339.278797 76.068631 
+L 458.693188 88.387516 
+L 522.144956 94.66796 
+L 563.66481 98.208361 
+L 592.116234 101.004899 
+L 631.706157 105.227798 
+L 671.0641 109.599787 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eb6834; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 161.28455 46.15918 
+L 308.982255 73.762771 
+L 450.819135 92.130977 
+L 583.878763 106.151427 
+L 686.712293 117.48608 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #2a78d6; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 137.31584 49.549332 
+L 157.97336 53.802755 
+L 200.230146 65.55174 
+L 227.320966 74.621964 
+L 318.401174 90.356711 
+L 420.674239 107.962218 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #1baf7a; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 182.861439 48.760784 
+L 281.188855 64.314918 
+L 346.300651 72.325928 
+L 455.489876 83.390742 
+L 532.396167 90.436901 
+L 636.857225 101.709903 
+L 694.318572 107.932104 
+L 788.542202 117.786197 
+L 863.978744 124.752434 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke-dasharray: 7.869695,3.403111; stroke-dashoffset: 0; stroke: #eda100; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 133.81542 38.310687 
+L 221.491288 55.392954 
+L 284.247889 64.52535 
+L 396.256507 77.401634 
+L 477.247264 84.967504 
+L 587.496636 95.685907 
+L 646.701547 101.874604 
+L 743.443572 112.221761 
+L 825.09004 119.730123 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #eda100; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 148.223911 84.112133 
+L 264.66038 111.266801 
+L 388.142839 120.996757 
+L 519.677357 134.302617 
+L 643.285412 172.310411 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke-dasharray: 2.126945,3.509459; stroke-dashoffset: 0; stroke: #e87ba4; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 147.00983 84.45653 
+L 258.568245 109.830118 
+L 377.704067 119.622234 
+L 518.824473 135.124921 
+L 685.121353 172.665841 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke: #e87ba4; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 146.033988 64.574231 
+L 269.985375 83.702663 
+L 402.90014 97.516713 
+L 534.04769 108.191375 
+L 673.229104 117.288421 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke-dasharray: 7.869695,3.403111; stroke-dashoffset: 0; stroke: #008300; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 145.947842 47.99916 
+L 258.406794 73.452635 
+L 414.453213 95.622396 
+L 533.866118 107.300903 
+L 647.520849 117.212484 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke-dasharray: 7.869695,3.403111; stroke-dashoffset: 0; stroke: #4a3aa7; stroke-width: 2.126945"/>
+   </g>
+   <g id="line2d_21">
+    <path d="M 135.109659 92.014571 
+L 261.551721 109.860262 
+L 387.978298 128.291557 
+L 514.373909 159.962028 
+L 619.227407 205.182175 
+" clip-path="url(#pdaca63e0d1)" style="fill: none; stroke-dasharray: 7.869695,3.403111; stroke-dashoffset: 0; stroke: #e34948; stroke-width: 2.126945"/>
+   </g>
+   <g id="PathCollection_1">
+    <path d="M 148.223911 90.002709 
+L 154.114488 84.112133 
+L 148.223911 78.221556 
+L 142.333335 84.112133 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 264.66038 117.157377 
+L 270.550956 111.266801 
+L 264.66038 105.376225 
+L 258.769803 111.266801 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 388.142839 126.887333 
+L 394.033416 120.996757 
+L 388.142839 115.10618 
+L 382.252263 120.996757 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 519.677357 140.193194 
+L 525.567933 134.302617 
+L 519.677357 128.412041 
+L 513.78678 134.302617 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 643.285412 178.200988 
+L 649.175988 172.310411 
+L 643.285412 166.419835 
+L 637.394835 172.310411 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+   </g>
+   <g id="PathCollection_2">
+    <path d="M 182.861439 44.595517 
+L 178.696173 52.926051 
+L 187.026706 52.926051 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 346.300651 68.160661 
+L 342.135384 76.491194 
+L 350.465917 76.491194 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 281.188855 60.149652 
+L 277.023589 68.480185 
+L 285.354122 68.480185 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 455.489876 79.225475 
+L 451.32461 87.556008 
+L 459.655143 87.556008 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 532.396167 86.271634 
+L 528.230901 94.602167 
+L 536.561434 94.602167 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 694.318572 103.766837 
+L 690.153305 112.09737 
+L 698.483838 112.09737 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 636.857225 97.544637 
+L 632.691958 105.87517 
+L 641.022491 105.87517 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 788.542202 113.620931 
+L 784.376935 121.951464 
+L 792.707468 121.951464 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 863.978744 120.587167 
+L 859.813477 128.9177 
+L 868.14401 128.9177 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 673.229104 113.123155 
+L 669.063838 121.453688 
+L 677.394371 121.453688 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #008300; stroke-width: 2.126945"/>
+    <path d="M 534.04769 104.026108 
+L 529.882423 112.356641 
+L 538.212957 112.356641 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #008300; stroke-width: 2.126945"/>
+    <path d="M 402.90014 93.351446 
+L 398.734873 101.681979 
+L 407.065406 101.681979 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #008300; stroke-width: 2.126945"/>
+    <path d="M 269.985375 79.537397 
+L 265.820109 87.86793 
+L 274.150642 87.86793 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #008300; stroke-width: 2.126945"/>
+    <path d="M 146.033988 60.408964 
+L 141.868722 68.739497 
+L 150.199255 68.739497 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #008300; stroke-width: 2.126945"/>
+    <path d="M 414.453213 91.457129 
+L 410.287947 99.787662 
+L 418.61848 99.787662 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 2.126945"/>
+    <path d="M 145.947842 43.833894 
+L 141.782576 52.164427 
+L 150.113109 52.164427 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 2.126945"/>
+    <path d="M 533.866118 103.135637 
+L 529.700852 111.46617 
+L 538.031385 111.46617 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 2.126945"/>
+    <path d="M 647.520849 113.047218 
+L 643.355582 121.377751 
+L 651.686115 121.377751 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 2.126945"/>
+    <path d="M 258.406794 69.287368 
+L 254.241527 77.617901 
+L 262.57206 77.617901 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 2.126945"/>
+    <path d="M 619.227407 201.016909 
+L 615.062141 209.347442 
+L 623.392674 209.347442 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e34948; stroke-width: 2.126945"/>
+    <path d="M 514.373909 155.796762 
+L 510.208642 164.127295 
+L 518.539175 164.127295 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e34948; stroke-width: 2.126945"/>
+    <path d="M 387.978298 124.12629 
+L 383.813032 132.456823 
+L 392.143565 132.456823 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e34948; stroke-width: 2.126945"/>
+    <path d="M 261.551721 105.694996 
+L 257.386455 114.025529 
+L 265.716988 114.025529 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e34948; stroke-width: 2.126945"/>
+    <path d="M 135.109659 87.849305 
+L 130.944392 96.179838 
+L 139.274925 96.179838 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e34948; stroke-width: 2.126945"/>
+   </g>
+   <g id="PathCollection_3">
+    <path d="M 671.0641 113.765053 
+C 672.168742 113.765053 673.228289 113.326174 674.009388 112.545075 
+C 674.790488 111.763975 675.229366 110.704428 675.229366 109.599787 
+C 675.229366 108.495145 674.790488 107.435598 674.009388 106.654498 
+C 673.228289 105.873399 672.168742 105.43452 671.0641 105.43452 
+C 669.959458 105.43452 668.899911 105.873399 668.118812 106.654498 
+C 667.337712 107.435598 666.898833 108.495145 666.898833 109.599787 
+C 666.898833 110.704428 667.337712 111.763975 668.118812 112.545075 
+C 668.899911 113.326174 669.959458 113.765053 671.0641 113.765053 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+    <path d="M 631.706157 109.393064 
+C 632.810799 109.393064 633.870346 108.954185 634.651445 108.173086 
+C 635.432545 107.391986 635.871424 106.332439 635.871424 105.227798 
+C 635.871424 104.123156 635.432545 103.063609 634.651445 102.282509 
+C 633.870346 101.50141 632.810799 101.062531 631.706157 101.062531 
+C 630.601516 101.062531 629.541969 101.50141 628.760869 102.282509 
+C 627.979769 103.063609 627.540891 104.123156 627.540891 105.227798 
+C 627.540891 106.332439 627.979769 107.391986 628.760869 108.173086 
+C 629.541969 108.954185 630.601516 109.393064 631.706157 109.393064 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+    <path d="M 592.116234 105.170166 
+C 593.220875 105.170166 594.280422 104.731287 595.061522 103.950188 
+C 595.842621 103.169088 596.2815 102.109541 596.2815 101.004899 
+C 596.2815 99.900258 595.842621 98.840711 595.061522 98.059611 
+C 594.280422 97.278512 593.220875 96.839633 592.116234 96.839633 
+C 591.011592 96.839633 589.952045 97.278512 589.170945 98.059611 
+C 588.389846 98.840711 587.950967 99.900258 587.950967 101.004899 
+C 587.950967 102.109541 588.389846 103.169088 589.170945 103.950188 
+C 589.952045 104.731287 591.011592 105.170166 592.116234 105.170166 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+    <path d="M 563.66481 102.373627 
+C 564.769452 102.373627 565.828999 101.934749 566.610099 101.153649 
+C 567.391198 100.37255 567.830077 99.313002 567.830077 98.208361 
+C 567.830077 97.103719 567.391198 96.044172 566.610099 95.263073 
+C 565.828999 94.481973 564.769452 94.043094 563.66481 94.043094 
+C 562.560169 94.043094 561.500622 94.481973 560.719522 95.263073 
+C 559.938423 96.044172 559.499544 97.103719 559.499544 98.208361 
+C 559.499544 99.313002 559.938423 100.37255 560.719522 101.153649 
+C 561.500622 101.934749 562.560169 102.373627 563.66481 102.373627 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+    <path d="M 522.144956 98.833227 
+C 523.249597 98.833227 524.309144 98.394348 525.090244 97.613248 
+C 525.871343 96.832149 526.310222 95.772602 526.310222 94.66796 
+C 526.310222 93.563318 525.871343 92.503771 525.090244 91.722672 
+C 524.309144 90.941572 523.249597 90.502694 522.144956 90.502694 
+C 521.040314 90.502694 519.980767 90.941572 519.199667 91.722672 
+C 518.418568 92.503771 517.979689 93.563318 517.979689 94.66796 
+C 517.979689 95.772602 518.418568 96.832149 519.199667 97.613248 
+C 519.980767 98.394348 521.040314 98.833227 522.144956 98.833227 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+    <path d="M 458.693188 92.552783 
+C 459.797829 92.552783 460.857376 92.113904 461.638476 91.332805 
+C 462.419576 90.551705 462.858454 89.492158 462.858454 88.387516 
+C 462.858454 87.282875 462.419576 86.223328 461.638476 85.442228 
+C 460.857376 84.661129 459.797829 84.22225 458.693188 84.22225 
+C 457.588546 84.22225 456.528999 84.661129 455.7479 85.442228 
+C 454.9668 86.223328 454.527921 87.282875 454.527921 88.387516 
+C 454.527921 89.492158 454.9668 90.551705 455.7479 91.332805 
+C 456.528999 92.113904 457.588546 92.552783 458.693188 92.552783 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+    <path d="M 339.278797 80.233897 
+C 340.383439 80.233897 341.442986 79.795019 342.224086 79.013919 
+C 343.005185 78.23282 343.444064 77.173272 343.444064 76.068631 
+C 343.444064 74.963989 343.005185 73.904442 342.224086 73.123343 
+C 341.442986 72.342243 340.383439 71.903364 339.278797 71.903364 
+C 338.174156 71.903364 337.114609 72.342243 336.333509 73.123343 
+C 335.55241 73.904442 335.113531 74.963989 335.113531 76.068631 
+C 335.113531 77.173272 335.55241 78.23282 336.333509 79.013919 
+C 337.114609 79.795019 338.174156 80.233897 339.278797 80.233897 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+    <path d="M 686.712293 121.651347 
+C 687.816935 121.651347 688.876482 121.212468 689.657581 120.431369 
+C 690.438681 119.650269 690.87756 118.590722 690.87756 117.48608 
+C 690.87756 116.381439 690.438681 115.321892 689.657581 114.540792 
+C 688.876482 113.759693 687.816935 113.320814 686.712293 113.320814 
+C 685.607652 113.320814 684.548105 113.759693 683.767005 114.540792 
+C 682.985905 115.321892 682.547027 116.381439 682.547027 117.48608 
+C 682.547027 118.590722 682.985905 119.650269 683.767005 120.431369 
+C 684.548105 121.212468 685.607652 121.651347 686.712293 121.651347 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 583.878763 110.316694 
+C 584.983404 110.316694 586.042951 109.877815 586.824051 109.096716 
+C 587.60515 108.315616 588.044029 107.256069 588.044029 106.151427 
+C 588.044029 105.046786 587.60515 103.987239 586.824051 103.206139 
+C 586.042951 102.42504 584.983404 101.986161 583.878763 101.986161 
+C 582.774121 101.986161 581.714574 102.42504 580.933474 103.206139 
+C 580.152375 103.987239 579.713496 105.046786 579.713496 106.151427 
+C 579.713496 107.256069 580.152375 108.315616 580.933474 109.096716 
+C 581.714574 109.877815 582.774121 110.316694 583.878763 110.316694 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 450.819135 96.296244 
+C 451.923776 96.296244 452.983323 95.857365 453.764423 95.076266 
+C 454.545522 94.295166 454.984401 93.235619 454.984401 92.130977 
+C 454.984401 91.026336 454.545522 89.966789 453.764423 89.185689 
+C 452.983323 88.40459 451.923776 87.965711 450.819135 87.965711 
+C 449.714493 87.965711 448.654946 88.40459 447.873846 89.185689 
+C 447.092747 89.966789 446.653868 91.026336 446.653868 92.130977 
+C 446.653868 93.235619 447.092747 94.295166 447.873846 95.076266 
+C 448.654946 95.857365 449.714493 96.296244 450.819135 96.296244 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 308.982255 77.928037 
+C 310.086897 77.928037 311.146444 77.489159 311.927544 76.708059 
+C 312.708643 75.92696 313.147522 74.867413 313.147522 73.762771 
+C 313.147522 72.658129 312.708643 71.598582 311.927544 70.817483 
+C 311.146444 70.036383 310.086897 69.597504 308.982255 69.597504 
+C 307.877614 69.597504 306.818067 70.036383 306.036967 70.817483 
+C 305.255868 71.598582 304.816989 72.658129 304.816989 73.762771 
+C 304.816989 74.867413 305.255868 75.92696 306.036967 76.708059 
+C 306.818067 77.489159 307.877614 77.928037 308.982255 77.928037 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 161.28455 50.324446 
+C 162.389192 50.324446 163.448739 49.885568 164.229839 49.104468 
+C 165.010938 48.323369 165.449817 47.263822 165.449817 46.15918 
+C 165.449817 45.054538 165.010938 43.994991 164.229839 43.213892 
+C 163.448739 42.432792 162.389192 41.993913 161.28455 41.993913 
+C 160.179909 41.993913 159.120362 42.432792 158.339262 43.213892 
+C 157.558163 43.994991 157.119284 45.054538 157.119284 46.15918 
+C 157.119284 47.263822 157.558163 48.323369 158.339262 49.104468 
+C 159.120362 49.885568 160.179909 50.324446 161.28455 50.324446 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 137.31584 53.714599 
+C 138.420481 53.714599 139.480028 53.27572 140.261128 52.49462 
+C 141.042228 51.713521 141.481106 50.653974 141.481106 49.549332 
+C 141.481106 48.444691 141.042228 47.385144 140.261128 46.604044 
+C 139.480028 45.822944 138.420481 45.384066 137.31584 45.384066 
+C 136.211198 45.384066 135.151651 45.822944 134.370552 46.604044 
+C 133.589452 47.385144 133.150573 48.444691 133.150573 49.549332 
+C 133.150573 50.653974 133.589452 51.713521 134.370552 52.49462 
+C 135.151651 53.27572 136.211198 53.714599 137.31584 53.714599 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 157.97336 57.968021 
+C 159.078001 57.968021 160.137548 57.529142 160.918648 56.748043 
+C 161.699748 55.966943 162.138626 54.907396 162.138626 53.802755 
+C 162.138626 52.698113 161.699748 51.638566 160.918648 50.857466 
+C 160.137548 50.076367 159.078001 49.637488 157.97336 49.637488 
+C 156.868718 49.637488 155.809171 50.076367 155.028072 50.857466 
+C 154.246972 51.638566 153.808093 52.698113 153.808093 53.802755 
+C 153.808093 54.907396 154.246972 55.966943 155.028072 56.748043 
+C 155.809171 57.529142 156.868718 57.968021 157.97336 57.968021 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 200.230146 69.717006 
+C 201.334788 69.717006 202.394335 69.278128 203.175435 68.497028 
+C 203.956534 67.715928 204.395413 66.656381 204.395413 65.55174 
+C 204.395413 64.447098 203.956534 63.387551 203.175435 62.606452 
+C 202.394335 61.825352 201.334788 61.386473 200.230146 61.386473 
+C 199.125505 61.386473 198.065958 61.825352 197.284858 62.606452 
+C 196.503759 63.387551 196.06488 64.447098 196.06488 65.55174 
+C 196.06488 66.656381 196.503759 67.715928 197.284858 68.497028 
+C 198.065958 69.278128 199.125505 69.717006 200.230146 69.717006 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 227.320966 78.787231 
+C 228.425607 78.787231 229.485154 78.348352 230.266254 77.567252 
+C 231.047353 76.786153 231.486232 75.726606 231.486232 74.621964 
+C 231.486232 73.517323 231.047353 72.457776 230.266254 71.676676 
+C 229.485154 70.895576 228.425607 70.456698 227.320966 70.456698 
+C 226.216324 70.456698 225.156777 70.895576 224.375677 71.676676 
+C 223.594578 72.457776 223.155699 73.517323 223.155699 74.621964 
+C 223.155699 75.726606 223.594578 76.786153 224.375677 77.567252 
+C 225.156777 78.348352 226.216324 78.787231 227.320966 78.787231 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 318.401174 94.521978 
+C 319.505816 94.521978 320.565363 94.083099 321.346462 93.302 
+C 322.127562 92.5209 322.566441 91.461353 322.566441 90.356711 
+C 322.566441 89.25207 322.127562 88.192523 321.346462 87.411423 
+C 320.565363 86.630324 319.505816 86.191445 318.401174 86.191445 
+C 317.296533 86.191445 316.236985 86.630324 315.455886 87.411423 
+C 314.674786 88.192523 314.235908 89.25207 314.235908 90.356711 
+C 314.235908 91.461353 314.674786 92.5209 315.455886 93.302 
+C 316.236985 94.083099 317.296533 94.521978 318.401174 94.521978 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 420.674239 112.127484 
+C 421.778881 112.127484 422.838428 111.688606 423.619527 110.907506 
+C 424.400627 110.126407 424.839506 109.06686 424.839506 107.962218 
+C 424.839506 106.857576 424.400627 105.798029 423.619527 105.01693 
+C 422.838428 104.23583 421.778881 103.796951 420.674239 103.796951 
+C 419.569598 103.796951 418.510051 104.23583 417.728951 105.01693 
+C 416.947851 105.798029 416.508973 106.857576 416.508973 107.962218 
+C 416.508973 109.06686 416.947851 110.126407 417.728951 110.907506 
+C 418.510051 111.688606 419.569598 112.127484 420.674239 112.127484 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 133.81542 42.475953 
+C 134.920061 42.475953 135.979608 42.037074 136.760708 41.255975 
+C 137.541807 40.474875 137.980686 39.415328 137.980686 38.310687 
+C 137.980686 37.206045 137.541807 36.146498 136.760708 35.365398 
+C 135.979608 34.584299 134.920061 34.14542 133.81542 34.14542 
+C 132.710778 34.14542 131.651231 34.584299 130.870131 35.365398 
+C 130.089032 36.146498 129.650153 37.206045 129.650153 38.310687 
+C 129.650153 39.415328 130.089032 40.474875 130.870131 41.255975 
+C 131.651231 42.037074 132.710778 42.475953 133.81542 42.475953 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 284.247889 68.690617 
+C 285.352531 68.690617 286.412078 68.251738 287.193177 67.470639 
+C 287.974277 66.689539 288.413156 65.629992 288.413156 64.52535 
+C 288.413156 63.420709 287.974277 62.361162 287.193177 61.580062 
+C 286.412078 60.798962 285.352531 60.360084 284.247889 60.360084 
+C 283.143248 60.360084 282.083701 60.798962 281.302601 61.580062 
+C 280.521501 62.361162 280.082623 63.420709 280.082623 64.52535 
+C 280.082623 65.629992 280.521501 66.689539 281.302601 67.470639 
+C 282.083701 68.251738 283.143248 68.690617 284.247889 68.690617 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 221.491288 59.55822 
+C 222.59593 59.55822 223.655477 59.119341 224.436577 58.338242 
+C 225.217676 57.557142 225.656555 56.497595 225.656555 55.392954 
+C 225.656555 54.288312 225.217676 53.228765 224.436577 52.447665 
+C 223.655477 51.666566 222.59593 51.227687 221.491288 51.227687 
+C 220.386647 51.227687 219.3271 51.666566 218.546 52.447665 
+C 217.764901 53.228765 217.326022 54.288312 217.326022 55.392954 
+C 217.326022 56.497595 217.764901 57.557142 218.546 58.338242 
+C 219.3271 59.119341 220.386647 59.55822 221.491288 59.55822 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 396.256507 81.5669 
+C 397.361149 81.5669 398.420696 81.128022 399.201795 80.346922 
+C 399.982895 79.565823 400.421774 78.506275 400.421774 77.401634 
+C 400.421774 76.296992 399.982895 75.237445 399.201795 74.456346 
+C 398.420696 73.675246 397.361149 73.236367 396.256507 73.236367 
+C 395.151865 73.236367 394.092318 73.675246 393.311219 74.456346 
+C 392.530119 75.237445 392.09124 76.296992 392.09124 77.401634 
+C 392.09124 78.506275 392.530119 79.565823 393.311219 80.346922 
+C 394.092318 81.128022 395.151865 81.5669 396.256507 81.5669 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 477.247264 89.132771 
+C 478.351906 89.132771 479.411453 88.693892 480.192552 87.912793 
+C 480.973652 87.131693 481.412531 86.072146 481.412531 84.967504 
+C 481.412531 83.862863 480.973652 82.803316 480.192552 82.022216 
+C 479.411453 81.241117 478.351906 80.802238 477.247264 80.802238 
+C 476.142622 80.802238 475.083075 81.241117 474.301976 82.022216 
+C 473.520876 82.803316 473.081997 83.862863 473.081997 84.967504 
+C 473.081997 86.072146 473.520876 87.131693 474.301976 87.912793 
+C 475.083075 88.693892 476.142622 89.132771 477.247264 89.132771 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 646.701547 106.039871 
+C 647.806189 106.039871 648.865736 105.600992 649.646836 104.819893 
+C 650.427935 104.038793 650.866814 102.979246 650.866814 101.874604 
+C 650.866814 100.769963 650.427935 99.710416 649.646836 98.929316 
+C 648.865736 98.148217 647.806189 97.709338 646.701547 97.709338 
+C 645.596906 97.709338 644.537359 98.148217 643.756259 98.929316 
+C 642.97516 99.710416 642.536281 100.769963 642.536281 101.874604 
+C 642.536281 102.979246 642.97516 104.038793 643.756259 104.819893 
+C 644.537359 105.600992 645.596906 106.039871 646.701547 106.039871 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 587.496636 99.851173 
+C 588.601278 99.851173 589.660825 99.412295 590.441924 98.631195 
+C 591.223024 97.850095 591.661903 96.790548 591.661903 95.685907 
+C 591.661903 94.581265 591.223024 93.521718 590.441924 92.740619 
+C 589.660825 91.959519 588.601278 91.52064 587.496636 91.52064 
+C 586.391994 91.52064 585.332447 91.959519 584.551348 92.740619 
+C 583.770248 93.521718 583.331369 94.581265 583.331369 95.685907 
+C 583.331369 96.790548 583.770248 97.850095 584.551348 98.631195 
+C 585.332447 99.412295 586.391994 99.851173 587.496636 99.851173 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 743.443572 116.387027 
+C 744.548213 116.387027 745.60776 115.948149 746.38886 115.167049 
+C 747.169959 114.38595 747.608838 113.326403 747.608838 112.221761 
+C 747.608838 111.117119 747.169959 110.057572 746.38886 109.276473 
+C 745.60776 108.495373 744.548213 108.056494 743.443572 108.056494 
+C 742.33893 108.056494 741.279383 108.495373 740.498283 109.276473 
+C 739.717184 110.057572 739.278305 111.117119 739.278305 112.221761 
+C 739.278305 113.326403 739.717184 114.38595 740.498283 115.167049 
+C 741.279383 115.948149 742.33893 116.387027 743.443572 116.387027 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 825.09004 123.89539 
+C 826.194682 123.89539 827.254229 123.456511 828.035328 122.675411 
+C 828.816428 121.894312 829.255307 120.834765 829.255307 119.730123 
+C 829.255307 118.625482 828.816428 117.565934 828.035328 116.784835 
+C 827.254229 116.003735 826.194682 115.564857 825.09004 115.564857 
+C 823.985398 115.564857 822.925851 116.003735 822.144752 116.784835 
+C 821.363652 117.565934 820.924773 118.625482 820.924773 119.730123 
+C 820.924773 120.834765 821.363652 121.894312 822.144752 122.675411 
+C 822.925851 123.456511 823.985398 123.89539 825.09004 123.89539 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+    <path d="M 147.00983 88.621797 
+C 148.114472 88.621797 149.174019 88.182918 149.955119 87.401819 
+C 150.736218 86.620719 151.175097 85.561172 151.175097 84.45653 
+C 151.175097 83.351889 150.736218 82.292342 149.955119 81.511242 
+C 149.174019 80.730143 148.114472 80.291264 147.00983 80.291264 
+C 145.905189 80.291264 144.845642 80.730143 144.064542 81.511242 
+C 143.283443 82.292342 142.844564 83.351889 142.844564 84.45653 
+C 142.844564 85.561172 143.283443 86.620719 144.064542 87.401819 
+C 144.845642 88.182918 145.905189 88.621797 147.00983 88.621797 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 258.568245 113.995385 
+C 259.672887 113.995385 260.732434 113.556506 261.513533 112.775407 
+C 262.294633 111.994307 262.733512 110.93476 262.733512 109.830118 
+C 262.733512 108.725477 262.294633 107.66593 261.513533 106.88483 
+C 260.732434 106.103731 259.672887 105.664852 258.568245 105.664852 
+C 257.463604 105.664852 256.404056 106.103731 255.622957 106.88483 
+C 254.841857 107.66593 254.402979 108.725477 254.402979 109.830118 
+C 254.402979 110.93476 254.841857 111.994307 255.622957 112.775407 
+C 256.404056 113.556506 257.463604 113.995385 258.568245 113.995385 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 377.704067 123.787501 
+C 378.808708 123.787501 379.868255 123.348622 380.649355 122.567522 
+C 381.430454 121.786423 381.869333 120.726876 381.869333 119.622234 
+C 381.869333 118.517592 381.430454 117.458045 380.649355 116.676946 
+C 379.868255 115.895846 378.808708 115.456967 377.704067 115.456967 
+C 376.599425 115.456967 375.539878 115.895846 374.758778 116.676946 
+C 373.977679 117.458045 373.5388 118.517592 373.5388 119.622234 
+C 373.5388 120.726876 373.977679 121.786423 374.758778 122.567522 
+C 375.539878 123.348622 376.599425 123.787501 377.704067 123.787501 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 518.824473 139.290188 
+C 519.929115 139.290188 520.988662 138.851309 521.769761 138.07021 
+C 522.550861 137.28911 522.98974 136.229563 522.98974 135.124921 
+C 522.98974 134.02028 522.550861 132.960733 521.769761 132.179633 
+C 520.988662 131.398534 519.929115 130.959655 518.824473 130.959655 
+C 517.719831 130.959655 516.660284 131.398534 515.879185 132.179633 
+C 515.098085 132.960733 514.659207 134.02028 514.659207 135.124921 
+C 514.659207 136.229563 515.098085 137.28911 515.879185 138.07021 
+C 516.660284 138.851309 517.719831 139.290188 518.824473 139.290188 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+    <path d="M 685.121353 176.831108 
+C 686.225995 176.831108 687.285542 176.392229 688.066641 175.611129 
+C 688.847741 174.83003 689.28662 173.770483 689.28662 172.665841 
+C 689.28662 171.5612 688.847741 170.501652 688.066641 169.720553 
+C 687.285542 168.939453 686.225995 168.500575 685.121353 168.500575 
+C 684.016712 168.500575 682.957164 168.939453 682.176065 169.720553 
+C 681.394965 170.501652 680.956087 171.5612 680.956087 172.665841 
+C 680.956087 173.770483 681.394965 174.83003 682.176065 175.611129 
+C 682.957164 176.392229 684.016712 176.831108 685.121353 176.831108 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+   </g>
+   <g id="PathCollection_4">
+    <path d="M 130.43164 52.96581 
+L 138.762173 52.96581 
+L 138.762173 44.635277 
+L 130.43164 44.635277 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 256.327884 75.06905 
+L 264.658417 75.06905 
+L 264.658417 66.738517 
+L 256.327884 66.738517 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 381.609865 87.75268 
+L 389.940398 87.75268 
+L 389.940398 79.422147 
+L 381.609865 79.422147 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 505.597451 99.137836 
+L 513.927984 99.137836 
+L 513.927984 90.807303 
+L 505.597451 90.807303 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+    <path d="M 132.558564 53.714599 
+L 140.889097 53.714599 
+L 140.889097 45.384066 
+L 132.558564 45.384066 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 153.144158 57.968021 
+L 161.474691 57.968021 
+L 161.474691 49.637488 
+L 153.144158 49.637488 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 195.225372 69.717006 
+L 203.555905 69.717006 
+L 203.555905 61.386473 
+L 195.225372 61.386473 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 222.178611 78.787231 
+L 230.509145 78.787231 
+L 230.509145 70.456698 
+L 222.178611 70.456698 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 312.597546 94.521978 
+L 320.928079 94.521978 
+L 320.928079 86.191445 
+L 312.597546 86.191445 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+    <path d="M 413.635473 112.127484 
+L 421.966006 112.127484 
+L 421.966006 103.796951 
+L 413.635473 103.796951 
+z
+" clip-path="url(#pdaca63e0d1)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="patch_3">
+   <path d="M 65.925702 215.725627 
+L 1052.362205 215.725627 
+L 1052.362205 10.629921 
+L 65.925702 10.629921 
+L 65.925702 215.725627 
+z
+" style="fill: none; stroke: #c3c2b7; stroke-width: 0.8; stroke-linejoin: miter"/>
+  </g>
+  <g id="text_10">
+   <!-- Mean over 3 specimens, bars: 95 % CI -->
+   <g style="fill: #555555" transform="translate(776.699705 418.002891) scale(0.16 -0.16)">
+    <defs>
+     <path id="LiberationSans-30" d="M 4269 0 
+L 4269 2938 
+Q 4269 3425 4297 3875 
+Q 4144 3316 4022 3000 
+L 2884 0 
+L 2466 0 
+L 1313 3000 
+L 1138 3531 
+L 1034 3875 
+L 1044 3528 
+L 1056 2938 
+L 1056 0 
+L 525 0 
+L 525 4403 
+L 1309 4403 
+L 2481 1350 
+Q 2544 1166 2601 955 
+Q 2659 744 2678 650 
+Q 2703 775 2783 1029 
+Q 2863 1284 2891 1350 
+L 4041 4403 
+L 4806 4403 
+L 4806 0 
+L 4269 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-48" d="M 863 1572 
+Q 863 991 1103 675 
+Q 1344 359 1806 359 
+Q 2172 359 2392 506 
+Q 2613 653 2691 878 
+L 3184 738 
+Q 2881 -63 1806 -63 
+Q 1056 -63 664 384 
+Q 272 831 272 1713 
+Q 272 2550 664 2997 
+Q 1056 3444 1784 3444 
+Q 3275 3444 3275 1647 
+L 3275 1572 
+L 863 1572 
+z
+M 2694 2003 
+Q 2647 2538 2422 2783 
+Q 2197 3028 1775 3028 
+Q 1366 3028 1127 2754 
+Q 888 2481 869 2003 
+L 2694 2003 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-44" d="M 1294 -63 
+Q 784 -63 528 206 
+Q 272 475 272 944 
+Q 272 1469 617 1750 
+Q 963 2031 1731 2050 
+L 2491 2063 
+L 2491 2247 
+Q 2491 2659 2316 2837 
+Q 2141 3016 1766 3016 
+Q 1388 3016 1216 2887 
+Q 1044 2759 1009 2478 
+L 422 2531 
+Q 566 3444 1778 3444 
+Q 2416 3444 2737 3151 
+Q 3059 2859 3059 2306 
+L 3059 850 
+Q 3059 600 3125 473 
+Q 3191 347 3375 347 
+Q 3456 347 3559 369 
+L 3559 19 
+Q 3347 -31 3125 -31 
+Q 2813 -31 2670 133 
+Q 2528 297 2509 647 
+L 2491 647 
+Q 2275 259 1989 98 
+Q 1703 -63 1294 -63 
+z
+M 1422 359 
+Q 1731 359 1972 500 
+Q 2213 641 2352 886 
+Q 2491 1131 2491 1391 
+L 2491 1669 
+L 1875 1656 
+Q 1478 1650 1273 1575 
+Q 1069 1500 959 1344 
+Q 850 1188 850 934 
+Q 850 659 998 509 
+Q 1147 359 1422 359 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-51" d="M 2578 0 
+L 2578 2144 
+Q 2578 2478 2512 2662 
+Q 2447 2847 2303 2928 
+Q 2159 3009 1881 3009 
+Q 1475 3009 1240 2731 
+Q 1006 2453 1006 1959 
+L 1006 0 
+L 444 0 
+L 444 2659 
+Q 444 3250 425 3381 
+L 956 3381 
+Q 959 3366 962 3297 
+Q 966 3228 970 3139 
+Q 975 3050 981 2803 
+L 991 2803 
+Q 1184 3153 1439 3298 
+Q 1694 3444 2072 3444 
+Q 2628 3444 2886 3167 
+Q 3144 2891 3144 2253 
+L 3144 0 
+L 2578 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-3" transform="scale(0.015625)"/>
+     <path id="LiberationSans-52" d="M 3291 1694 
+Q 3291 806 2900 371 
+Q 2509 -63 1766 -63 
+Q 1025 -63 647 389 
+Q 269 841 269 1694 
+Q 269 3444 1784 3444 
+Q 2559 3444 2925 3017 
+Q 3291 2591 3291 1694 
+z
+M 2700 1694 
+Q 2700 2394 2492 2711 
+Q 2284 3028 1794 3028 
+Q 1300 3028 1079 2704 
+Q 859 2381 859 1694 
+Q 859 1025 1076 689 
+Q 1294 353 1759 353 
+Q 2266 353 2483 678 
+Q 2700 1003 2700 1694 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-59" d="M 1916 0 
+L 1250 0 
+L 22 3381 
+L 622 3381 
+L 1366 1181 
+Q 1406 1056 1581 441 
+L 1691 806 
+L 1813 1175 
+L 2581 3381 
+L 3178 3381 
+L 1916 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-55" d="M 444 0 
+L 444 2594 
+Q 444 2950 425 3381 
+L 956 3381 
+Q 981 2806 981 2691 
+L 994 2691 
+Q 1128 3125 1303 3284 
+Q 1478 3444 1797 3444 
+Q 1909 3444 2025 3413 
+L 2025 2897 
+Q 1913 2928 1725 2928 
+Q 1375 2928 1190 2626 
+Q 1006 2325 1006 1763 
+L 1006 0 
+L 444 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-56" d="M 2969 934 
+Q 2969 456 2608 196 
+Q 2247 -63 1597 -63 
+Q 966 -63 623 145 
+Q 281 353 178 794 
+L 675 891 
+Q 747 619 972 492 
+Q 1197 366 1597 366 
+Q 2025 366 2223 497 
+Q 2422 628 2422 891 
+Q 2422 1091 2284 1216 
+Q 2147 1341 1841 1422 
+L 1438 1528 
+Q 953 1653 748 1773 
+Q 544 1894 428 2066 
+Q 313 2238 313 2488 
+Q 313 2950 642 3192 
+Q 972 3434 1603 3434 
+Q 2163 3434 2492 3237 
+Q 2822 3041 2909 2606 
+L 2403 2544 
+Q 2356 2769 2151 2889 
+Q 1947 3009 1603 3009 
+Q 1222 3009 1040 2893 
+Q 859 2778 859 2544 
+Q 859 2400 934 2306 
+Q 1009 2213 1156 2147 
+Q 1303 2081 1775 1966 
+Q 2222 1853 2419 1758 
+Q 2616 1663 2730 1547 
+Q 2844 1431 2906 1279 
+Q 2969 1128 2969 934 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-53" d="M 3291 1706 
+Q 3291 -63 2047 -63 
+Q 1266 -63 997 525 
+L 981 525 
+Q 994 500 994 -6 
+L 994 -1328 
+L 431 -1328 
+L 431 2691 
+Q 431 3213 413 3381 
+L 956 3381 
+Q 959 3369 965 3292 
+Q 972 3216 980 3056 
+Q 988 2897 988 2838 
+L 1000 2838 
+Q 1150 3150 1397 3295 
+Q 1644 3441 2047 3441 
+Q 2672 3441 2981 3022 
+Q 3291 2603 3291 1706 
+z
+M 2700 1694 
+Q 2700 2400 2509 2703 
+Q 2319 3006 1903 3006 
+Q 1569 3006 1380 2865 
+Q 1191 2725 1092 2426 
+Q 994 2128 994 1650 
+Q 994 984 1206 668 
+Q 1419 353 1897 353 
+Q 2316 353 2508 661 
+Q 2700 969 2700 1694 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-46" d="M 859 1706 
+Q 859 1031 1071 706 
+Q 1284 381 1713 381 
+Q 2013 381 2214 543 
+Q 2416 706 2463 1044 
+L 3031 1006 
+Q 2966 519 2616 228 
+Q 2266 -63 1728 -63 
+Q 1019 -63 645 385 
+Q 272 834 272 1694 
+Q 272 2547 647 2995 
+Q 1022 3444 1722 3444 
+Q 2241 3444 2583 3175 
+Q 2925 2906 3013 2434 
+L 2434 2391 
+Q 2391 2672 2212 2837 
+Q 2034 3003 1706 3003 
+Q 1259 3003 1059 2706 
+Q 859 2409 859 1706 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-4c" d="M 428 4100 
+L 428 4638 
+L 991 4638 
+L 991 4100 
+L 428 4100 
+z
+M 428 0 
+L 428 3381 
+L 991 3381 
+L 991 0 
+L 428 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-50" d="M 2400 0 
+L 2400 2144 
+Q 2400 2634 2265 2821 
+Q 2131 3009 1781 3009 
+Q 1422 3009 1212 2734 
+Q 1003 2459 1003 1959 
+L 1003 0 
+L 444 0 
+L 444 2659 
+Q 444 3250 425 3381 
+L 956 3381 
+Q 959 3366 962 3297 
+Q 966 3228 970 3139 
+Q 975 3050 981 2803 
+L 991 2803 
+Q 1172 3163 1406 3303 
+Q 1641 3444 1978 3444 
+Q 2363 3444 2586 3291 
+Q 2809 3138 2897 2803 
+L 2906 2803 
+Q 3081 3144 3329 3294 
+Q 3578 3444 3931 3444 
+Q 4444 3444 4676 3166 
+Q 4909 2888 4909 2253 
+L 4909 0 
+L 4353 0 
+L 4353 2144 
+Q 4353 2634 4218 2821 
+Q 4084 3009 3734 3009 
+Q 3366 3009 3161 2736 
+Q 2956 2463 2956 1959 
+L 2956 0 
+L 2400 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-f" d="M 1203 684 
+L 1203 159 
+Q 1203 -172 1143 -394 
+Q 1084 -616 959 -819 
+L 575 -819 
+Q 869 -394 869 0 
+L 594 0 
+L 594 684 
+L 1203 684 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-45" d="M 3291 1706 
+Q 3291 -63 2047 -63 
+Q 1663 -63 1408 76 
+Q 1153 216 994 525 
+L 988 525 
+Q 988 428 975 229 
+Q 963 31 956 0 
+L 413 0 
+Q 431 169 431 697 
+L 431 4638 
+L 994 4638 
+L 994 3316 
+Q 994 3113 981 2838 
+L 994 2838 
+Q 1150 3163 1408 3303 
+Q 1666 3444 2047 3444 
+Q 2688 3444 2989 3012 
+Q 3291 2581 3291 1706 
+z
+M 2700 1688 
+Q 2700 2397 2512 2703 
+Q 2325 3009 1903 3009 
+Q 1428 3009 1211 2684 
+Q 994 2359 994 1653 
+Q 994 988 1206 670 
+Q 1419 353 1897 353 
+Q 2322 353 2511 667 
+Q 2700 981 2700 1688 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-1d" d="M 584 2734 
+L 584 3381 
+L 1194 3381 
+L 1194 2734 
+L 584 2734 
+z
+M 584 0 
+L 584 647 
+L 1194 647 
+L 1194 0 
+L 584 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-1c" d="M 3256 2291 
+Q 3256 1156 2842 546 
+Q 2428 -63 1663 -63 
+Q 1147 -63 836 154 
+Q 525 372 391 856 
+L 928 941 
+Q 1097 391 1672 391 
+Q 2156 391 2422 841 
+Q 2688 1291 2700 2125 
+Q 2575 1844 2272 1673 
+Q 1969 1503 1606 1503 
+Q 1013 1503 656 1909 
+Q 300 2316 300 2988 
+Q 300 3678 687 4073 
+Q 1075 4469 1766 4469 
+Q 2500 4469 2878 3925 
+Q 3256 3381 3256 2291 
+z
+M 2644 2834 
+Q 2644 3366 2400 3689 
+Q 2156 4013 1747 4013 
+Q 1341 4013 1106 3736 
+Q 872 3459 872 2988 
+Q 872 2506 1106 2226 
+Q 1341 1947 1741 1947 
+Q 1984 1947 2193 2058 
+Q 2403 2169 2523 2372 
+Q 2644 2575 2644 2834 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-18" d="M 3291 1434 
+Q 3291 738 2877 337 
+Q 2463 -63 1728 -63 
+Q 1113 -63 734 206 
+Q 356 475 256 984 
+L 825 1050 
+Q 1003 397 1741 397 
+Q 2194 397 2450 670 
+Q 2706 944 2706 1422 
+Q 2706 1838 2448 2094 
+Q 2191 2350 1753 2350 
+Q 1525 2350 1328 2278 
+Q 1131 2206 934 2034 
+L 384 2034 
+L 531 4403 
+L 3034 4403 
+L 3034 3925 
+L 1044 3925 
+L 959 2528 
+Q 1325 2809 1869 2809 
+Q 2519 2809 2905 2428 
+Q 3291 2047 3291 1434 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-8" d="M 5463 1356 
+Q 5463 684 5209 323 
+Q 4956 -38 4463 -38 
+Q 3975 -38 3726 314 
+Q 3478 666 3478 1356 
+Q 3478 2069 3717 2417 
+Q 3956 2766 4475 2766 
+Q 4988 2766 5225 2408 
+Q 5463 2050 5463 1356 
+z
+M 1647 0 
+L 1163 0 
+L 4044 4403 
+L 4534 4403 
+L 1647 0 
+z
+M 1231 4441 
+Q 1728 4441 1968 4091 
+Q 2209 3741 2209 3047 
+Q 2209 2369 1961 2003 
+Q 1713 1638 1219 1638 
+Q 725 1638 476 2000 
+Q 228 2363 228 3047 
+Q 228 3744 468 4092 
+Q 709 4441 1231 4441 
+z
+M 5000 1356 
+Q 5000 1916 4879 2167 
+Q 4759 2419 4475 2419 
+Q 4191 2419 4064 2172 
+Q 3938 1925 3938 1356 
+Q 3938 822 4061 564 
+Q 4184 306 4469 306 
+Q 4744 306 4872 567 
+Q 5000 828 5000 1356 
+z
+M 1750 3047 
+Q 1750 3597 1631 3850 
+Q 1513 4103 1231 4103 
+Q 938 4103 813 3854 
+Q 688 3606 688 3047 
+Q 688 2506 813 2248 
+Q 938 1991 1225 1991 
+Q 1497 1991 1623 2253 
+Q 1750 2516 1750 3047 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-26" d="M 2475 3981 
+Q 1744 3981 1337 3511 
+Q 931 3041 931 2222 
+Q 931 1413 1354 920 
+Q 1778 428 2500 428 
+Q 3425 428 3891 1344 
+L 4378 1100 
+Q 4106 531 3614 234 
+Q 3122 -63 2472 -63 
+Q 1806 -63 1320 214 
+Q 834 491 579 1005 
+Q 325 1519 325 2222 
+Q 325 3275 894 3872 
+Q 1463 4469 2469 4469 
+Q 3172 4469 3644 4194 
+Q 4116 3919 4338 3378 
+L 3772 3191 
+Q 3619 3575 3280 3778 
+Q 2941 3981 2475 3981 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-2c" d="M 591 0 
+L 591 4403 
+L 1188 4403 
+L 1188 0 
+L 591 0 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-30"/>
+    <use xlink:href="#LiberationSans-48" transform="translate(83.296875 0)"/>
+    <use xlink:href="#LiberationSans-44" transform="translate(138.90625 0)"/>
+    <use xlink:href="#LiberationSans-51" transform="translate(194.515625 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(250.125 0)"/>
+    <use xlink:href="#LiberationSans-52" transform="translate(277.90625 0)"/>
+    <use xlink:href="#LiberationSans-59" transform="translate(333.515625 0)"/>
+    <use xlink:href="#LiberationSans-48" transform="translate(383.515625 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(439.125 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(472.421875 0)"/>
+    <use xlink:href="#LiberationSans-16" transform="translate(500.203125 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(555.8125 0)"/>
+    <use xlink:href="#LiberationSans-56" transform="translate(583.59375 0)"/>
+    <use xlink:href="#LiberationSans-53" transform="translate(633.59375 0)"/>
+    <use xlink:href="#LiberationSans-48" transform="translate(689.203125 0)"/>
+    <use xlink:href="#LiberationSans-46" transform="translate(744.8125 0)"/>
+    <use xlink:href="#LiberationSans-4c" transform="translate(794.8125 0)"/>
+    <use xlink:href="#LiberationSans-50" transform="translate(817.03125 0)"/>
+    <use xlink:href="#LiberationSans-48" transform="translate(900.328125 0)"/>
+    <use xlink:href="#LiberationSans-51" transform="translate(955.9375 0)"/>
+    <use xlink:href="#LiberationSans-56" transform="translate(1011.546875 0)"/>
+    <use xlink:href="#LiberationSans-f" transform="translate(1061.546875 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(1089.328125 0)"/>
+    <use xlink:href="#LiberationSans-45" transform="translate(1117.109375 0)"/>
+    <use xlink:href="#LiberationSans-44" transform="translate(1172.71875 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(1228.328125 0)"/>
+    <use xlink:href="#LiberationSans-56" transform="translate(1261.625 0)"/>
+    <use xlink:href="#LiberationSans-1d" transform="translate(1311.625 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(1339.40625 0)"/>
+    <use xlink:href="#LiberationSans-1c" transform="translate(1367.1875 0)"/>
+    <use xlink:href="#LiberationSans-18" transform="translate(1422.796875 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(1478.40625 0)"/>
+    <use xlink:href="#LiberationSans-8" transform="translate(1506.1875 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(1595.109375 0)"/>
+    <use xlink:href="#LiberationSans-26" transform="translate(1622.890625 0)"/>
+    <use xlink:href="#LiberationSans-2c" transform="translate(1695.109375 0)"/>
+   </g>
+  </g>
+  <g id="text_11">
+   <!-- Compression Ratio -->
+   <g style="fill: #1a1a1a" transform="translate(465.611297 263.264728) scale(0.22 -0.22)">
+    <defs>
+     <path id="LiberationSans-35" d="M 3638 0 
+L 2494 1828 
+L 1122 1828 
+L 1122 0 
+L 525 0 
+L 525 4403 
+L 2597 4403 
+Q 3341 4403 3745 4070 
+Q 4150 3738 4150 3144 
+Q 4150 2653 3864 2318 
+Q 3578 1984 3075 1897 
+L 4325 0 
+L 3638 0 
+z
+M 3550 3138 
+Q 3550 3522 3289 3723 
+Q 3028 3925 2538 3925 
+L 1122 3925 
+L 1122 2300 
+L 2563 2300 
+Q 3034 2300 3292 2520 
+Q 3550 2741 3550 3138 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-57" d="M 1731 25 
+Q 1453 -50 1163 -50 
+Q 488 -50 488 716 
+L 488 2972 
+L 97 2972 
+L 97 3381 
+L 509 3381 
+L 675 4138 
+L 1050 4138 
+L 1050 3381 
+L 1675 3381 
+L 1675 2972 
+L 1050 2972 
+L 1050 838 
+Q 1050 594 1129 495 
+Q 1209 397 1406 397 
+Q 1519 397 1731 441 
+L 1731 25 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-26"/>
+    <use xlink:href="#LiberationSans-52" transform="translate(72.21875 0)"/>
+    <use xlink:href="#LiberationSans-50" transform="translate(127.828125 0)"/>
+    <use xlink:href="#LiberationSans-53" transform="translate(211.125 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(266.734375 0)"/>
+    <use xlink:href="#LiberationSans-48" transform="translate(300.03125 0)"/>
+    <use xlink:href="#LiberationSans-56" transform="translate(355.640625 0)"/>
+    <use xlink:href="#LiberationSans-56" transform="translate(405.640625 0)"/>
+    <use xlink:href="#LiberationSans-4c" transform="translate(455.640625 0)"/>
+    <use xlink:href="#LiberationSans-52" transform="translate(477.859375 0)"/>
+    <use xlink:href="#LiberationSans-51" transform="translate(533.46875 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(589.078125 0)"/>
+    <use xlink:href="#LiberationSans-35" transform="translate(616.859375 0)"/>
+    <use xlink:href="#LiberationSans-44" transform="translate(689.078125 0)"/>
+    <use xlink:href="#LiberationSans-57" transform="translate(744.6875 0)"/>
+    <use xlink:href="#LiberationSans-4c" transform="translate(772.46875 0)"/>
+    <use xlink:href="#LiberationSans-52" transform="translate(794.6875 0)"/>
+   </g>
+  </g>
+  <g id="text_12">
+   <!-- MS-SSIM (dB) -->
+   <g style="fill: #1a1a1a" transform="translate(26.646523 184.069337) rotate(-90) scale(0.22 -0.22)">
+    <defs>
+     <path id="LiberationSans-36" d="M 3975 1216 
+Q 3975 606 3498 271 
+Q 3022 -63 2156 -63 
+Q 547 -63 291 1056 
+L 869 1172 
+Q 969 775 1294 589 
+Q 1619 403 2178 403 
+Q 2756 403 3070 601 
+Q 3384 800 3384 1184 
+Q 3384 1400 3286 1534 
+Q 3188 1669 3009 1756 
+Q 2831 1844 2584 1903 
+Q 2338 1963 2038 2031 
+Q 1516 2147 1245 2262 
+Q 975 2378 819 2520 
+Q 663 2663 580 2853 
+Q 497 3044 497 3291 
+Q 497 3856 930 4162 
+Q 1363 4469 2169 4469 
+Q 2919 4469 3316 4239 
+Q 3713 4009 3872 3456 
+L 3284 3353 
+Q 3188 3703 2916 3861 
+Q 2644 4019 2163 4019 
+Q 1634 4019 1356 3844 
+Q 1078 3669 1078 3322 
+Q 1078 3119 1186 2986 
+Q 1294 2853 1497 2761 
+Q 1700 2669 2306 2534 
+Q 2509 2488 2711 2439 
+Q 2913 2391 3097 2323 
+Q 3281 2256 3442 2165 
+Q 3603 2075 3722 1944 
+Q 3841 1813 3908 1634 
+Q 3975 1456 3975 1216 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-10" d="M 284 1450 
+L 284 1950 
+L 1847 1950 
+L 1847 1450 
+L 284 1450 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-b" d="M 397 1663 
+Q 397 2566 680 3284 
+Q 963 4003 1550 4638 
+L 2094 4638 
+Q 1509 3988 1236 3256 
+Q 963 2525 963 1656 
+Q 963 791 1233 62 
+Q 1503 -666 2094 -1325 
+L 1550 -1325 
+Q 959 -688 678 32 
+Q 397 753 397 1650 
+L 397 1663 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-47" d="M 2566 544 
+Q 2409 219 2151 78 
+Q 1894 -63 1513 -63 
+Q 872 -63 570 368 
+Q 269 800 269 1675 
+Q 269 3444 1513 3444 
+Q 1897 3444 2153 3303 
+Q 2409 3163 2566 2856 
+L 2572 2856 
+L 2566 3234 
+L 2566 4638 
+L 3128 4638 
+L 3128 697 
+Q 3128 169 3147 0 
+L 2609 0 
+Q 2600 50 2589 231 
+Q 2578 413 2578 544 
+L 2566 544 
+z
+M 859 1694 
+Q 859 984 1046 678 
+Q 1234 372 1656 372 
+Q 2134 372 2350 703 
+Q 2566 1034 2566 1731 
+Q 2566 2403 2350 2715 
+Q 2134 3028 1663 3028 
+Q 1238 3028 1048 2714 
+Q 859 2400 859 1694 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-25" d="M 3931 1241 
+Q 3931 653 3503 326 
+Q 3075 0 2313 0 
+L 525 0 
+L 525 4403 
+L 2125 4403 
+Q 3675 4403 3675 3334 
+Q 3675 2944 3456 2678 
+Q 3238 2413 2838 2322 
+Q 3363 2259 3647 1970 
+Q 3931 1681 3931 1241 
+z
+M 3075 3263 
+Q 3075 3619 2831 3772 
+Q 2588 3925 2125 3925 
+L 1122 3925 
+L 1122 2531 
+L 2125 2531 
+Q 2603 2531 2839 2711 
+Q 3075 2891 3075 3263 
+z
+M 3328 1288 
+Q 3328 2066 2234 2066 
+L 1122 2066 
+L 1122 478 
+L 2281 478 
+Q 2828 478 3078 681 
+Q 3328 884 3328 1288 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-c" d="M 1734 1650 
+Q 1734 747 1451 28 
+Q 1169 -691 581 -1325 
+L 38 -1325 
+Q 625 -669 897 57 
+Q 1169 784 1169 1656 
+Q 1169 2528 895 3256 
+Q 622 3984 38 4638 
+L 581 4638 
+Q 1172 4000 1453 3279 
+Q 1734 2559 1734 1663 
+L 1734 1650 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-30"/>
+    <use xlink:href="#LiberationSans-36" transform="translate(83.296875 0)"/>
+    <use xlink:href="#LiberationSans-10" transform="translate(150 0)"/>
+    <use xlink:href="#LiberationSans-36" transform="translate(183.296875 0)"/>
+    <use xlink:href="#LiberationSans-36" transform="translate(250 0)"/>
+    <use xlink:href="#LiberationSans-2c" transform="translate(316.703125 0)"/>
+    <use xlink:href="#LiberationSans-30" transform="translate(344.484375 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(427.78125 0)"/>
+    <use xlink:href="#LiberationSans-b" transform="translate(455.5625 0)"/>
+    <use xlink:href="#LiberationSans-47" transform="translate(488.859375 0)"/>
+    <use xlink:href="#LiberationSans-25" transform="translate(544.46875 0)"/>
+    <use xlink:href="#LiberationSans-c" transform="translate(611.171875 0)"/>
+   </g>
+  </g>
+  <g id="text_13">
+   <!-- Codec -->
+   <g style="fill: #1a1a1a" transform="translate(116.694945 327.900314) scale(0.2 -0.2)">
+    <defs>
+     <path id="LiberationSans-Bold-26" d="M 2484 663 
+Q 3319 663 3644 1500 
+L 4447 1197 
+Q 4188 559 3686 248 
+Q 3184 -63 2484 -63 
+Q 1422 -63 842 539 
+Q 263 1141 263 2222 
+Q 263 3306 822 3887 
+Q 1381 4469 2444 4469 
+Q 3219 4469 3706 4158 
+Q 4194 3847 4391 3244 
+L 3578 3022 
+Q 3475 3353 3173 3548 
+Q 2872 3744 2463 3744 
+Q 1838 3744 1514 3356 
+Q 1191 2969 1191 2222 
+Q 1191 1463 1523 1063 
+Q 1856 663 2484 663 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-52" d="M 3659 1694 
+Q 3659 872 3203 404 
+Q 2747 -63 1941 -63 
+Q 1150 -63 700 406 
+Q 250 875 250 1694 
+Q 250 2509 700 2976 
+Q 1150 3444 1959 3444 
+Q 2788 3444 3223 2992 
+Q 3659 2541 3659 1694 
+z
+M 2741 1694 
+Q 2741 2297 2544 2569 
+Q 2347 2841 1972 2841 
+Q 1172 2841 1172 1694 
+Q 1172 1128 1367 833 
+Q 1563 538 1931 538 
+Q 2741 538 2741 1694 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-47" d="M 2638 0 
+Q 2625 47 2608 236 
+Q 2591 425 2591 550 
+L 2578 550 
+Q 2294 -63 1497 -63 
+Q 906 -63 584 398 
+Q 263 859 263 1688 
+Q 263 2528 602 2986 
+Q 941 3444 1563 3444 
+Q 1922 3444 2183 3294 
+Q 2444 3144 2584 2847 
+L 2591 2847 
+L 2584 3403 
+L 2584 4638 
+L 3463 4638 
+L 3463 738 
+Q 3463 425 3488 0 
+L 2638 0 
+z
+M 2597 1709 
+Q 2597 2256 2414 2551 
+Q 2231 2847 1875 2847 
+Q 1522 2847 1350 2561 
+Q 1178 2275 1178 1688 
+Q 1178 538 1869 538 
+Q 2216 538 2406 842 
+Q 2597 1147 2597 1709 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-48" d="M 1831 -63 
+Q 1069 -63 659 389 
+Q 250 841 250 1706 
+Q 250 2544 665 2994 
+Q 1081 3444 1844 3444 
+Q 2572 3444 2956 2961 
+Q 3341 2478 3341 1547 
+L 3341 1522 
+L 1172 1522 
+Q 1172 1028 1355 776 
+Q 1538 525 1875 525 
+Q 2341 525 2463 928 
+L 3291 856 
+Q 2931 -63 1831 -63 
+z
+M 1831 2891 
+Q 1522 2891 1355 2675 
+Q 1188 2459 1178 2072 
+L 2491 2072 
+Q 2466 2481 2294 2686 
+Q 2122 2891 1831 2891 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-46" d="M 1856 -63 
+Q 1088 -63 669 395 
+Q 250 853 250 1672 
+Q 250 2509 672 2976 
+Q 1094 3444 1869 3444 
+Q 2466 3444 2856 3144 
+Q 3247 2844 3347 2316 
+L 2463 2272 
+Q 2425 2531 2275 2686 
+Q 2125 2841 1850 2841 
+Q 1172 2841 1172 1706 
+Q 1172 538 1863 538 
+Q 2113 538 2281 695 
+Q 2450 853 2491 1166 
+L 3372 1125 
+Q 3325 778 3123 506 
+Q 2922 234 2594 85 
+Q 2266 -63 1856 -63 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-Bold-26"/>
+    <use xlink:href="#LiberationSans-Bold-52" transform="translate(72.21875 0)"/>
+    <use xlink:href="#LiberationSans-Bold-47" transform="translate(133.296875 0)"/>
+    <use xlink:href="#LiberationSans-Bold-48" transform="translate(194.375 0)"/>
+    <use xlink:href="#LiberationSans-Bold-46" transform="translate(249.984375 0)"/>
+   </g>
+  </g>
+  <g id="line2d_22">
+   <path d="M 199.073537 293.924532 
+L 227.073537 293.924532 
+" clip-path="url(#p19f714a5e6)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_23">
+   <path d="M 199.073537 293.924532 
+L 227.073537 293.924532 
+" clip-path="url(#p19f714a5e6)" style="fill: none; stroke: #2a78d6; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_24">
+   <path d="M 199.073537 293.924532 
+L 227.073537 293.924532 
+" clip-path="url(#p19f714a5e6)" style="fill: none; stroke: #2a78d6; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_25">
+   <path d="M 213.073537 293.924532 
+" clip-path="url(#p19f714a5e6)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m490a970db8" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #2a78d6; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#p19f714a5e6)">
+    <use xlink:href="#m490a970db8" x="213.073537" y="293.924532" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_14">
+   <!-- JPEG 2000 -->
+   <g style="fill: #1a1a1a" transform="translate(234.160152 298.582736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-2d" d="M 1428 -63 
+Q 309 -63 100 1094 
+L 684 1191 
+Q 741 828 937 625 
+Q 1134 422 1431 422 
+Q 1756 422 1943 645 
+Q 2131 869 2131 1300 
+L 2131 3916 
+L 1284 3916 
+L 1284 4403 
+L 2725 4403 
+L 2725 1313 
+Q 2725 672 2378 304 
+Q 2031 -63 1428 -63 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-33" d="M 3931 3078 
+Q 3931 2453 3523 2084 
+Q 3116 1716 2416 1716 
+L 1122 1716 
+L 1122 0 
+L 525 0 
+L 525 4403 
+L 2378 4403 
+Q 3119 4403 3525 4056 
+Q 3931 3709 3931 3078 
+z
+M 3331 3072 
+Q 3331 3925 2306 3925 
+L 1122 3925 
+L 1122 2188 
+L 2331 2188 
+Q 3331 2188 3331 3072 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-28" d="M 525 0 
+L 525 4403 
+L 3866 4403 
+L 3866 3916 
+L 1122 3916 
+L 1122 2503 
+L 3678 2503 
+L 3678 2022 
+L 1122 2022 
+L 1122 488 
+L 3994 488 
+L 3994 0 
+L 525 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-2a" d="M 322 2222 
+Q 322 3294 897 3881 
+Q 1472 4469 2513 4469 
+Q 3244 4469 3700 4222 
+Q 4156 3975 4403 3431 
+L 3834 3263 
+Q 3647 3638 3317 3809 
+Q 2988 3981 2497 3981 
+Q 1734 3981 1331 3520 
+Q 928 3059 928 2222 
+Q 928 1388 1356 905 
+Q 1784 422 2541 422 
+Q 2972 422 3345 553 
+Q 3719 684 3950 909 
+L 3950 1703 
+L 2634 1703 
+L 2634 2203 
+L 4500 2203 
+L 4500 684 
+Q 4150 328 3642 132 
+Q 3134 -63 2541 -63 
+Q 1850 -63 1350 212 
+Q 850 488 586 1005 
+Q 322 1522 322 2222 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-2d"/>
+    <use xlink:href="#LiberationSans-33" transform="translate(50 0)"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(116.703125 0)"/>
+    <use xlink:href="#LiberationSans-2a" transform="translate(183.40625 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(261.1875 0)"/>
+    <use xlink:href="#LiberationSans-15" transform="translate(288.96875 0)"/>
+    <use xlink:href="#LiberationSans-13" transform="translate(344.578125 0)"/>
+    <use xlink:href="#LiberationSans-13" transform="translate(400.1875 0)"/>
+    <use xlink:href="#LiberationSans-13" transform="translate(455.796875 0)"/>
+   </g>
+  </g>
+  <g id="line2d_26">
+   <path d="M 199.073537 322.724532 
+L 227.073537 322.724532 
+" clip-path="url(#pc41659137d)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_27">
+   <path d="M 199.073537 322.724532 
+L 227.073537 322.724532 
+" clip-path="url(#pc41659137d)" style="fill: none; stroke: #eb6834; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_28">
+   <path d="M 199.073537 322.724532 
+L 227.073537 322.724532 
+" clip-path="url(#pc41659137d)" style="fill: none; stroke: #eb6834; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_29">
+   <path d="M 213.073537 322.724532 
+" clip-path="url(#pc41659137d)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="mf7021c8983" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #eb6834; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#pc41659137d)">
+    <use xlink:href="#mf7021c8983" x="213.073537" y="322.724532" style="fill: #ffffff; stroke: #eb6834; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_15">
+   <!-- HTJ2K -->
+   <g style="fill: #1a1a1a" transform="translate(234.160152 327.382736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-2b" d="M 3503 0 
+L 3503 2041 
+L 1122 2041 
+L 1122 0 
+L 525 0 
+L 525 4403 
+L 1122 4403 
+L 1122 2541 
+L 3503 2541 
+L 3503 4403 
+L 4100 4403 
+L 4100 0 
+L 3503 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-37" d="M 2250 3916 
+L 2250 0 
+L 1656 0 
+L 1656 3916 
+L 144 3916 
+L 144 4403 
+L 3763 4403 
+L 3763 3916 
+L 2250 3916 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-2e" d="M 3456 0 
+L 1697 2125 
+L 1122 1688 
+L 1122 0 
+L 525 0 
+L 525 4403 
+L 1122 4403 
+L 1122 2197 
+L 3244 4403 
+L 3947 4403 
+L 2072 2491 
+L 4197 0 
+L 3456 0 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-2b"/>
+    <use xlink:href="#LiberationSans-37" transform="translate(72.21875 0)"/>
+    <use xlink:href="#LiberationSans-2d" transform="translate(133.296875 0)"/>
+    <use xlink:href="#LiberationSans-15" transform="translate(183.296875 0)"/>
+    <use xlink:href="#LiberationSans-2e" transform="translate(238.90625 0)"/>
+   </g>
+  </g>
+  <g id="line2d_30">
+   <path d="M 199.073537 351.524532 
+L 227.073537 351.524532 
+" clip-path="url(#p3a68681cc0)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_31">
+   <path d="M 199.073537 351.524532 
+L 227.073537 351.524532 
+" clip-path="url(#p3a68681cc0)" style="fill: none; stroke: #1baf7a; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_32">
+   <path d="M 199.073537 351.524532 
+L 227.073537 351.524532 
+" clip-path="url(#p3a68681cc0)" style="fill: none; stroke: #1baf7a; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_33">
+   <path d="M 213.073537 351.524532 
+" clip-path="url(#p3a68681cc0)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m45c46486c8" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #1baf7a; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#p3a68681cc0)">
+    <use xlink:href="#m45c46486c8" x="213.073537" y="351.524532" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_16">
+   <!-- JPEG-LS -->
+   <g style="fill: #1a1a1a" transform="translate(234.160152 356.182736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-2f" d="M 525 0 
+L 525 4403 
+L 1122 4403 
+L 1122 488 
+L 3347 488 
+L 3347 0 
+L 525 0 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-2d"/>
+    <use xlink:href="#LiberationSans-33" transform="translate(50 0)"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(116.703125 0)"/>
+    <use xlink:href="#LiberationSans-2a" transform="translate(183.40625 0)"/>
+    <use xlink:href="#LiberationSans-10" transform="translate(261.1875 0)"/>
+    <use xlink:href="#LiberationSans-2f" transform="translate(294.484375 0)"/>
+    <use xlink:href="#LiberationSans-36" transform="translate(350.09375 0)"/>
+   </g>
+  </g>
+  <g id="line2d_34">
+   <path d="M 342.213277 293.924532 
+L 370.213277 293.924532 
+" clip-path="url(#p07b0f80281)" style="fill: none; stroke: #eda100; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_35">
+   <path d="M 342.213277 293.924532 
+L 370.213277 293.924532 
+" clip-path="url(#p07b0f80281)" style="fill: none; stroke: #eda100; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_36">
+   <path d="M 342.213277 293.924532 
+L 370.213277 293.924532 
+" clip-path="url(#p07b0f80281)" style="fill: none; stroke: #eda100; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_37">
+   <path d="M 356.213277 293.924532 
+" clip-path="url(#p07b0f80281)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m9f789dfd8d" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #eda100; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#p07b0f80281)">
+    <use xlink:href="#m9f789dfd8d" x="356.213277" y="293.924532" style="fill: #ffffff; stroke: #eda100; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_17">
+   <!-- JPEG-XL -->
+   <g style="fill: #1a1a1a" transform="translate(377.299891 298.582736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-3b" d="M 3475 0 
+L 2153 1925 
+L 803 0 
+L 144 0 
+L 1819 2288 
+L 272 4403 
+L 931 4403 
+L 2156 2675 
+L 3347 4403 
+L 4006 4403 
+L 2500 2309 
+L 4134 0 
+L 3475 0 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-2d"/>
+    <use xlink:href="#LiberationSans-33" transform="translate(50 0)"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(116.703125 0)"/>
+    <use xlink:href="#LiberationSans-2a" transform="translate(183.40625 0)"/>
+    <use xlink:href="#LiberationSans-10" transform="translate(261.1875 0)"/>
+    <use xlink:href="#LiberationSans-3b" transform="translate(294.484375 0)"/>
+    <use xlink:href="#LiberationSans-2f" transform="translate(361.1875 0)"/>
+   </g>
+  </g>
+  <g id="line2d_38">
+   <path d="M 342.213277 322.724532 
+L 370.213277 322.724532 
+" clip-path="url(#pc82268d595)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_39">
+   <path d="M 342.213277 322.724532 
+L 370.213277 322.724532 
+" clip-path="url(#pc82268d595)" style="fill: none; stroke: #e87ba4; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_40">
+   <path d="M 342.213277 322.724532 
+L 370.213277 322.724532 
+" clip-path="url(#pc82268d595)" style="fill: none; stroke: #e87ba4; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_41">
+   <path d="M 356.213277 322.724532 
+" clip-path="url(#pc82268d595)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m25dab434d5" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #e87ba4; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#pc82268d595)">
+    <use xlink:href="#m25dab434d5" x="356.213277" y="322.724532" style="fill: #ffffff; stroke: #e87ba4; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_18">
+   <!-- LERC -->
+   <g style="fill: #1a1a1a" transform="translate(377.299891 327.382736) scale(0.18 -0.18)">
+    <use xlink:href="#LiberationSans-2f"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(55.609375 0)"/>
+    <use xlink:href="#LiberationSans-35" transform="translate(122.3125 0)"/>
+    <use xlink:href="#LiberationSans-26" transform="translate(194.53125 0)"/>
+   </g>
+  </g>
+  <g id="line2d_42">
+   <path d="M 342.213277 351.524532 
+L 370.213277 351.524532 
+" clip-path="url(#p4fed6812fd)" style="fill: none; stroke: #008300; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_43">
+   <path d="M 342.213277 351.524532 
+L 370.213277 351.524532 
+" clip-path="url(#p4fed6812fd)" style="fill: none; stroke: #008300; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_44">
+   <path d="M 342.213277 351.524532 
+L 370.213277 351.524532 
+" clip-path="url(#p4fed6812fd)" style="fill: none; stroke: #008300; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_45">
+   <path d="M 356.213277 351.524532 
+" clip-path="url(#p4fed6812fd)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m4348613604" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #008300; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#p4fed6812fd)">
+    <use xlink:href="#m4348613604" x="356.213277" y="351.524532" style="fill: #ffffff; stroke: #008300; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_19">
+   <!-- SPERR -->
+   <g style="fill: #1a1a1a" transform="translate(377.299891 356.182736) scale(0.18 -0.18)">
+    <use xlink:href="#LiberationSans-36"/>
+    <use xlink:href="#LiberationSans-33" transform="translate(66.703125 0)"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(133.40625 0)"/>
+    <use xlink:href="#LiberationSans-35" transform="translate(200.109375 0)"/>
+    <use xlink:href="#LiberationSans-35" transform="translate(272.328125 0)"/>
+   </g>
+  </g>
+  <g id="line2d_46">
+   <path d="M 468.323328 293.924532 
+L 496.323328 293.924532 
+" clip-path="url(#paad366bf7d)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_47">
+   <path d="M 468.323328 293.924532 
+L 496.323328 293.924532 
+" clip-path="url(#paad366bf7d)" style="fill: none; stroke: #4a3aa7; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_48">
+   <path d="M 468.323328 293.924532 
+L 496.323328 293.924532 
+" clip-path="url(#paad366bf7d)" style="fill: none; stroke: #4a3aa7; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_49">
+   <path d="M 482.323328 293.924532 
+" clip-path="url(#paad366bf7d)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m00f95b3e94" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #4a3aa7; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#paad366bf7d)">
+    <use xlink:href="#m00f95b3e94" x="482.323328" y="293.924532" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_20">
+   <!-- SZ3 (3D) -->
+   <g style="fill: #1a1a1a" transform="translate(503.409942 298.582736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-3d" d="M 3709 0 
+L 203 0 
+L 203 447 
+L 2884 3916 
+L 431 3916 
+L 431 4403 
+L 3563 4403 
+L 3563 3969 
+L 881 488 
+L 3709 488 
+L 3709 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-27" d="M 4316 2247 
+Q 4316 1566 4050 1055 
+Q 3784 544 3296 272 
+Q 2809 0 2172 0 
+L 525 0 
+L 525 4403 
+L 1981 4403 
+Q 3100 4403 3708 3842 
+Q 4316 3281 4316 2247 
+z
+M 3716 2247 
+Q 3716 3066 3267 3495 
+Q 2819 3925 1969 3925 
+L 1122 3925 
+L 1122 478 
+L 2103 478 
+Q 2588 478 2955 690 
+Q 3322 903 3519 1303 
+Q 3716 1703 3716 2247 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-36"/>
+    <use xlink:href="#LiberationSans-3d" transform="translate(66.703125 0)"/>
+    <use xlink:href="#LiberationSans-16" transform="translate(127.78125 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(183.390625 0)"/>
+    <use xlink:href="#LiberationSans-b" transform="translate(211.171875 0)"/>
+    <use xlink:href="#LiberationSans-16" transform="translate(244.46875 0)"/>
+    <use xlink:href="#LiberationSans-27" transform="translate(300.078125 0)"/>
+    <use xlink:href="#LiberationSans-c" transform="translate(372.296875 0)"/>
+   </g>
+  </g>
+  <g id="line2d_50">
+   <path d="M 468.323328 322.724532 
+L 496.323328 322.724532 
+" clip-path="url(#p95349b55cc)" style="fill: none; stroke: #e34948; stroke-opacity: 0.8; stroke-width: 1.240718"/>
+  </g>
+  <g id="line2d_51">
+   <path d="M 468.323328 322.724532 
+L 496.323328 322.724532 
+" clip-path="url(#p95349b55cc)" style="fill: none; stroke: #e34948; stroke-opacity: 0.501961; stroke-width: 1.063472"/>
+  </g>
+  <g id="line2d_52">
+   <path d="M 468.323328 322.724532 
+L 496.323328 322.724532 
+" clip-path="url(#p95349b55cc)" style="fill: none; stroke: #e34948; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_53">
+   <path d="M 482.323328 322.724532 
+" clip-path="url(#p95349b55cc)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m007d655e36" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #e34948; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#p95349b55cc)">
+    <use xlink:href="#m007d655e36" x="482.323328" y="322.724532" style="fill: #ffffff; stroke: #e34948; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_21">
+   <!-- ZFP -->
+   <g style="fill: #1a1a1a" transform="translate(503.409942 327.382736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-29" d="M 1122 3916 
+L 1122 2278 
+L 3578 2278 
+L 3578 1784 
+L 1122 1784 
+L 1122 0 
+L 525 0 
+L 525 4403 
+L 3653 4403 
+L 3653 3916 
+L 1122 3916 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-3d"/>
+    <use xlink:href="#LiberationSans-29" transform="translate(61.078125 0)"/>
+    <use xlink:href="#LiberationSans-33" transform="translate(122.15625 0)"/>
+   </g>
+  </g>
+  <g id="text_22">
+   <!-- Container, -->
+   <g style="fill: #1a1a1a" transform="translate(676.416817 331.416525) scale(0.2 -0.2)">
+    <defs>
+     <path id="LiberationSans-Bold-51" d="M 2638 0 
+L 2638 1897 
+Q 2638 2788 2034 2788 
+Q 1716 2788 1520 2514 
+Q 1325 2241 1325 1813 
+L 1325 0 
+L 447 0 
+L 447 2625 
+Q 447 2897 439 3070 
+Q 431 3244 422 3381 
+L 1259 3381 
+Q 1269 3322 1284 3064 
+Q 1300 2806 1300 2709 
+L 1313 2709 
+Q 1491 3097 1759 3272 
+Q 2028 3447 2400 3447 
+Q 2938 3447 3225 3115 
+Q 3513 2784 3513 2147 
+L 3513 0 
+L 2638 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-57" d="M 1313 -56 
+Q 925 -56 715 155 
+Q 506 366 506 794 
+L 506 2788 
+L 78 2788 
+L 78 3381 
+L 550 3381 
+L 825 4175 
+L 1375 4175 
+L 1375 3381 
+L 2016 3381 
+L 2016 2788 
+L 1375 2788 
+L 1375 1031 
+Q 1375 784 1469 667 
+Q 1563 550 1759 550 
+Q 1863 550 2053 594 
+L 2053 50 
+Q 1728 -56 1313 -56 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-44" d="M 1228 -63 
+Q 738 -63 463 204 
+Q 188 472 188 956 
+Q 188 1481 530 1756 
+Q 872 2031 1522 2038 
+L 2250 2050 
+L 2250 2222 
+Q 2250 2553 2134 2714 
+Q 2019 2875 1756 2875 
+Q 1513 2875 1398 2764 
+Q 1284 2653 1256 2397 
+L 341 2441 
+Q 425 2934 792 3189 
+Q 1159 3444 1794 3444 
+Q 2434 3444 2781 3128 
+Q 3128 2813 3128 2231 
+L 3128 1000 
+Q 3128 716 3192 608 
+Q 3256 500 3406 500 
+Q 3506 500 3600 519 
+L 3600 44 
+Q 3522 25 3459 9 
+Q 3397 -6 3334 -15 
+Q 3272 -25 3201 -31 
+Q 3131 -38 3038 -38 
+Q 2706 -38 2548 125 
+Q 2391 288 2359 603 
+L 2341 603 
+Q 1972 -63 1228 -63 
+z
+M 2250 1566 
+L 1800 1559 
+Q 1494 1547 1366 1492 
+Q 1238 1438 1170 1325 
+Q 1103 1213 1103 1025 
+Q 1103 784 1214 667 
+Q 1325 550 1509 550 
+Q 1716 550 1886 662 
+Q 2056 775 2153 973 
+Q 2250 1172 2250 1394 
+L 2250 1566 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-4c" d="M 447 3991 
+L 447 4638 
+L 1325 4638 
+L 1325 3991 
+L 447 3991 
+z
+M 447 0 
+L 447 3381 
+L 1325 3381 
+L 1325 0 
+L 447 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-55" d="M 447 0 
+L 447 2588 
+Q 447 2866 439 3052 
+Q 431 3238 422 3381 
+L 1259 3381 
+Q 1269 3325 1284 3039 
+Q 1300 2753 1300 2659 
+L 1313 2659 
+Q 1441 3016 1541 3161 
+Q 1641 3306 1778 3376 
+Q 1916 3447 2122 3447 
+Q 2291 3447 2394 3400 
+L 2394 2666 
+Q 2181 2713 2019 2713 
+Q 1691 2713 1508 2447 
+Q 1325 2181 1325 1659 
+L 1325 0 
+L 447 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-f" d="M 1350 206 
+Q 1350 -169 1270 -456 
+Q 1191 -744 1013 -991 
+L 434 -991 
+Q 619 -769 734 -503 
+Q 850 -238 850 0 
+L 447 0 
+L 447 953 
+L 1350 953 
+L 1350 206 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-Bold-26"/>
+    <use xlink:href="#LiberationSans-Bold-52" transform="translate(72.21875 0)"/>
+    <use xlink:href="#LiberationSans-Bold-51" transform="translate(133.296875 0)"/>
+    <use xlink:href="#LiberationSans-Bold-57" transform="translate(194.375 0)"/>
+    <use xlink:href="#LiberationSans-Bold-44" transform="translate(227.671875 0)"/>
+    <use xlink:href="#LiberationSans-Bold-4c" transform="translate(283.28125 0)"/>
+    <use xlink:href="#LiberationSans-Bold-51" transform="translate(311.0625 0)"/>
+    <use xlink:href="#LiberationSans-Bold-48" transform="translate(372.140625 0)"/>
+    <use xlink:href="#LiberationSans-Bold-55" transform="translate(427.75 0)"/>
+    <use xlink:href="#LiberationSans-Bold-f" transform="translate(461.15625 0)"/>
+   </g>
+   <!-- Data Type -->
+   <g style="fill: #1a1a1a" transform="translate(678.263692 353.184103) scale(0.2 -0.2)">
+    <defs>
+     <path id="LiberationSans-Bold-27" d="M 4353 2234 
+Q 4353 1553 4086 1045 
+Q 3819 538 3330 269 
+Q 2841 0 2209 0 
+L 428 0 
+L 428 4403 
+L 2022 4403 
+Q 3134 4403 3743 3842 
+Q 4353 3281 4353 2234 
+z
+M 3425 2234 
+Q 3425 2944 3056 3317 
+Q 2688 3691 2003 3691 
+L 1350 3691 
+L 1350 713 
+L 2131 713 
+Q 2725 713 3075 1122 
+Q 3425 1531 3425 2234 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-3" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-37" d="M 2416 3691 
+L 2416 0 
+L 1494 0 
+L 1494 3691 
+L 72 3691 
+L 72 4403 
+L 3841 4403 
+L 3841 3691 
+L 2416 3691 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-5c" d="M 884 -1328 
+Q 569 -1328 331 -1288 
+L 331 -663 
+Q 497 -688 634 -688 
+Q 822 -688 945 -628 
+Q 1069 -569 1167 -431 
+Q 1266 -294 1388 34 
+L 50 3381 
+L 978 3381 
+L 1509 1797 
+Q 1634 1456 1825 753 
+L 1903 1050 
+L 2106 1784 
+L 2606 3381 
+L 3525 3381 
+L 2188 -178 
+Q 1919 -828 1630 -1078 
+Q 1341 -1328 884 -1328 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-Bold-53" d="M 3647 1706 
+Q 3647 859 3308 398 
+Q 2969 -63 2350 -63 
+Q 1994 -63 1730 92 
+Q 1466 247 1325 538 
+L 1306 538 
+Q 1325 444 1325 -31 
+L 1325 -1328 
+L 447 -1328 
+L 447 2603 
+Q 447 3081 422 3381 
+L 1275 3381 
+Q 1291 3325 1302 3159 
+Q 1313 2994 1313 2831 
+L 1325 2831 
+Q 1622 3453 2406 3453 
+Q 2997 3453 3322 2998 
+Q 3647 2544 3647 1706 
+z
+M 2731 1706 
+Q 2731 2844 2034 2844 
+Q 1684 2844 1498 2537 
+Q 1313 2231 1313 1681 
+Q 1313 1134 1498 836 
+Q 1684 538 2028 538 
+Q 2731 538 2731 1706 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-Bold-27"/>
+    <use xlink:href="#LiberationSans-Bold-44" transform="translate(72.21875 0)"/>
+    <use xlink:href="#LiberationSans-Bold-57" transform="translate(127.828125 0)"/>
+    <use xlink:href="#LiberationSans-Bold-44" transform="translate(161.125 0)"/>
+    <use xlink:href="#LiberationSans-Bold-3" transform="translate(216.734375 0)"/>
+    <use xlink:href="#LiberationSans-Bold-37" transform="translate(244.515625 0)"/>
+    <use xlink:href="#LiberationSans-Bold-5c" transform="translate(298.171875 0)"/>
+    <use xlink:href="#LiberationSans-Bold-53" transform="translate(353.78125 0)"/>
+    <use xlink:href="#LiberationSans-Bold-48" transform="translate(414.859375 0)"/>
+   </g>
+  </g>
+  <g id="line2d_54">
+   <path d="M 795.46416 293.924532 
+L 823.46416 293.924532 
+" clip-path="url(#p08d14cd682)" style="fill: none; stroke-dasharray: 13.612446,3.403111,2.126945,3.403111; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_55">
+   <path d="M 809.46416 293.924532 
+" clip-path="url(#p08d14cd682)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="md9a734d612" d="M -4.165267 4.165267 
+L 4.165267 4.165267 
+L 4.165267 -4.165267 
+L -4.165267 -4.165267 
+z
+" style="stroke: #000000; stroke-width: 2.126945; stroke-linejoin: miter"/>
+   </defs>
+   <g clip-path="url(#p08d14cd682)">
+    <use xlink:href="#md9a734d612" x="809.46416" y="293.924532" style="fill: #ffffff; stroke: #000000; stroke-width: 2.126945; stroke-linejoin: miter"/>
+   </g>
+  </g>
+  <g id="text_23">
+   <!-- DICOM, uint16 -->
+   <g style="fill: #1a1a1a" transform="translate(830.550774 298.582736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-32" d="M 4672 2222 
+Q 4672 1531 4408 1012 
+Q 4144 494 3650 215 
+Q 3156 -63 2484 -63 
+Q 1806 -63 1314 212 
+Q 822 488 562 1008 
+Q 303 1528 303 2222 
+Q 303 3278 881 3873 
+Q 1459 4469 2491 4469 
+Q 3163 4469 3656 4201 
+Q 4150 3934 4411 3425 
+Q 4672 2916 4672 2222 
+z
+M 4063 2222 
+Q 4063 3044 3652 3512 
+Q 3241 3981 2491 3981 
+Q 1734 3981 1321 3518 
+Q 909 3056 909 2222 
+Q 909 1394 1326 908 
+Q 1744 422 2484 422 
+Q 3247 422 3655 892 
+Q 4063 1363 4063 2222 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-58" d="M 981 3381 
+L 981 1238 
+Q 981 903 1047 718 
+Q 1113 534 1256 453 
+Q 1400 372 1678 372 
+Q 2084 372 2318 650 
+Q 2553 928 2553 1422 
+L 2553 3381 
+L 3116 3381 
+L 3116 722 
+Q 3116 131 3134 0 
+L 2603 0 
+Q 2600 16 2597 84 
+Q 2594 153 2589 242 
+Q 2584 331 2578 578 
+L 2569 578 
+Q 2375 228 2120 82 
+Q 1866 -63 1488 -63 
+Q 931 -63 673 214 
+Q 416 491 416 1128 
+L 416 3381 
+L 981 3381 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-27"/>
+    <use xlink:href="#LiberationSans-2c" transform="translate(72.21875 0)"/>
+    <use xlink:href="#LiberationSans-26" transform="translate(100 0)"/>
+    <use xlink:href="#LiberationSans-32" transform="translate(172.21875 0)"/>
+    <use xlink:href="#LiberationSans-30" transform="translate(250 0)"/>
+    <use xlink:href="#LiberationSans-f" transform="translate(333.296875 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(361.078125 0)"/>
+    <use xlink:href="#LiberationSans-58" transform="translate(388.859375 0)"/>
+    <use xlink:href="#LiberationSans-4c" transform="translate(444.46875 0)"/>
+    <use xlink:href="#LiberationSans-51" transform="translate(466.6875 0)"/>
+    <use xlink:href="#LiberationSans-57" transform="translate(522.296875 0)"/>
+    <use xlink:href="#LiberationSans-14" transform="translate(550.078125 0)"/>
+    <use xlink:href="#LiberationSans-19" transform="translate(605.6875 0)"/>
+   </g>
+  </g>
+  <g id="line2d_56">
+   <path d="M 795.46416 322.724532 
+L 823.46416 322.724532 
+" clip-path="url(#pb7e82686d9)" style="fill: none; stroke: #000000; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_57">
+   <path d="M 809.46416 322.724532 
+" clip-path="url(#pb7e82686d9)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m3450fafd1d" d="M 0 4.165267 
+C 1.104642 4.165267 2.164189 3.726388 2.945288 2.945288 
+C 3.726388 2.164189 4.165267 1.104642 4.165267 0 
+C 4.165267 -1.104642 3.726388 -2.164189 2.945288 -2.945288 
+C 2.164189 -3.726388 1.104642 -4.165267 0 -4.165267 
+C -1.104642 -4.165267 -2.164189 -3.726388 -2.945288 -2.945288 
+C -3.726388 -2.164189 -4.165267 -1.104642 -4.165267 0 
+C -4.165267 1.104642 -3.726388 2.164189 -2.945288 2.945288 
+C -2.164189 3.726388 -1.104642 4.165267 0 4.165267 
+z
+" style="stroke: #000000; stroke-width: 2.126945"/>
+   </defs>
+   <g clip-path="url(#pb7e82686d9)">
+    <use xlink:href="#m3450fafd1d" x="809.46416" y="322.724532" style="fill: #ffffff; stroke: #000000; stroke-width: 2.126945"/>
+   </g>
+  </g>
+  <g id="text_24">
+   <!-- OME-Zarr, uint16 -->
+   <g style="fill: #1a1a1a" transform="translate(830.550774 327.382736) scale(0.18 -0.18)">
+    <use xlink:href="#LiberationSans-32"/>
+    <use xlink:href="#LiberationSans-30" transform="translate(77.78125 0)"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(161.078125 0)"/>
+    <use xlink:href="#LiberationSans-10" transform="translate(227.78125 0)"/>
+    <use xlink:href="#LiberationSans-3d" transform="translate(261.078125 0)"/>
+    <use xlink:href="#LiberationSans-44" transform="translate(322.15625 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(377.765625 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(411.0625 0)"/>
+    <use xlink:href="#LiberationSans-f" transform="translate(438.84375 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(466.625 0)"/>
+    <use xlink:href="#LiberationSans-58" transform="translate(494.40625 0)"/>
+    <use xlink:href="#LiberationSans-4c" transform="translate(550.015625 0)"/>
+    <use xlink:href="#LiberationSans-51" transform="translate(572.234375 0)"/>
+    <use xlink:href="#LiberationSans-57" transform="translate(627.84375 0)"/>
+    <use xlink:href="#LiberationSans-14" transform="translate(655.625 0)"/>
+    <use xlink:href="#LiberationSans-19" transform="translate(711.234375 0)"/>
+   </g>
+  </g>
+  <g id="line2d_58">
+   <path d="M 795.46416 351.524532 
+L 823.46416 351.524532 
+" clip-path="url(#p541a060c47)" style="fill: none; stroke-dasharray: 2.126945,3.509459; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_59">
+   <path d="M 809.46416 351.524532 
+" clip-path="url(#p541a060c47)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="m15d5563d78" d="M -0 5.890576 
+L 5.890576 0 
+L 0 -5.890576 
+L -5.890576 -0 
+z
+" style="stroke: #000000; stroke-width: 2.126945; stroke-linejoin: miter"/>
+   </defs>
+   <g clip-path="url(#p541a060c47)">
+    <use xlink:href="#m15d5563d78" x="809.46416" y="351.524532" style="fill: #ffffff; stroke: #000000; stroke-width: 2.126945; stroke-linejoin: miter"/>
+   </g>
+  </g>
+  <g id="text_25">
+   <!-- OME-Zarr, uint16, 3D -->
+   <g style="fill: #1a1a1a" transform="translate(830.550774 356.182736) scale(0.18 -0.18)">
+    <use xlink:href="#LiberationSans-32"/>
+    <use xlink:href="#LiberationSans-30" transform="translate(77.78125 0)"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(161.078125 0)"/>
+    <use xlink:href="#LiberationSans-10" transform="translate(227.78125 0)"/>
+    <use xlink:href="#LiberationSans-3d" transform="translate(261.078125 0)"/>
+    <use xlink:href="#LiberationSans-44" transform="translate(322.15625 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(377.765625 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(411.0625 0)"/>
+    <use xlink:href="#LiberationSans-f" transform="translate(438.84375 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(466.625 0)"/>
+    <use xlink:href="#LiberationSans-58" transform="translate(494.40625 0)"/>
+    <use xlink:href="#LiberationSans-4c" transform="translate(550.015625 0)"/>
+    <use xlink:href="#LiberationSans-51" transform="translate(572.234375 0)"/>
+    <use xlink:href="#LiberationSans-57" transform="translate(627.84375 0)"/>
+    <use xlink:href="#LiberationSans-14" transform="translate(655.625 0)"/>
+    <use xlink:href="#LiberationSans-19" transform="translate(711.234375 0)"/>
+    <use xlink:href="#LiberationSans-f" transform="translate(766.84375 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(794.625 0)"/>
+    <use xlink:href="#LiberationSans-16" transform="translate(822.40625 0)"/>
+    <use xlink:href="#LiberationSans-27" transform="translate(878.015625 0)"/>
+   </g>
+  </g>
+  <g id="line2d_60">
+   <path d="M 795.46416 380.324532 
+L 823.46416 380.324532 
+" clip-path="url(#pe5671ea235)" style="fill: none; stroke-dasharray: 7.869695,3.403111; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2.126945"/>
+  </g>
+  <g id="line2d_61">
+   <path d="M 809.46416 380.324532 
+" clip-path="url(#pe5671ea235)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+   <defs>
+    <path id="mcb008eeba9" d="M 0 -4.165267 
+L -4.165267 4.165267 
+L 4.165267 4.165267 
+z
+" style="stroke: #000000; stroke-width: 2.126945; stroke-linejoin: miter"/>
+   </defs>
+   <g clip-path="url(#pe5671ea235)">
+    <use xlink:href="#mcb008eeba9" x="809.46416" y="380.324532" style="fill: #ffffff; stroke: #000000; stroke-width: 2.126945; stroke-linejoin: miter"/>
+   </g>
+  </g>
+  <g id="text_26">
+   <!-- OME-Zarr, float32 -->
+   <g style="fill: #1a1a1a" transform="translate(830.550774 384.982736) scale(0.18 -0.18)">
+    <defs>
+     <path id="LiberationSans-49" d="M 1128 2972 
+L 1128 0 
+L 566 0 
+L 566 2972 
+L 91 2972 
+L 91 3381 
+L 566 3381 
+L 566 3763 
+Q 566 4225 769 4428 
+Q 972 4631 1391 4631 
+Q 1625 4631 1788 4594 
+L 1788 4166 
+Q 1647 4191 1538 4191 
+Q 1322 4191 1225 4081 
+Q 1128 3972 1128 3684 
+L 1128 3381 
+L 1788 3381 
+L 1788 2972 
+L 1128 2972 
+z
+" transform="scale(0.015625)"/>
+     <path id="LiberationSans-4f" d="M 431 0 
+L 431 4638 
+L 994 4638 
+L 994 0 
+L 431 0 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#LiberationSans-32"/>
+    <use xlink:href="#LiberationSans-30" transform="translate(77.78125 0)"/>
+    <use xlink:href="#LiberationSans-28" transform="translate(161.078125 0)"/>
+    <use xlink:href="#LiberationSans-10" transform="translate(227.78125 0)"/>
+    <use xlink:href="#LiberationSans-3d" transform="translate(261.078125 0)"/>
+    <use xlink:href="#LiberationSans-44" transform="translate(322.15625 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(377.765625 0)"/>
+    <use xlink:href="#LiberationSans-55" transform="translate(411.0625 0)"/>
+    <use xlink:href="#LiberationSans-f" transform="translate(438.84375 0)"/>
+    <use xlink:href="#LiberationSans-3" transform="translate(466.625 0)"/>
+    <use xlink:href="#LiberationSans-49" transform="translate(494.40625 0)"/>
+    <use xlink:href="#LiberationSans-4f" transform="translate(522.1875 0)"/>
+    <use xlink:href="#LiberationSans-52" transform="translate(544.40625 0)"/>
+    <use xlink:href="#LiberationSans-44" transform="translate(600.015625 0)"/>
+    <use xlink:href="#LiberationSans-57" transform="translate(655.625 0)"/>
+    <use xlink:href="#LiberationSans-16" transform="translate(683.40625 0)"/>
+    <use xlink:href="#LiberationSans-15" transform="translate(739.015625 0)"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdaca63e0d1">
+   <rect x="65.925702" y="10.629921" width="986.436503" height="205.095706"/>
+  </clipPath>
+  <clipPath id="p19f714a5e6">
+   <path d="M 199.073537 308.324532 
+L 199.073537 279.524532 
+L 227.073537 279.524532 
+L 227.073537 308.324532 
+"/>
+  </clipPath>
+  <clipPath id="pc41659137d">
+   <path d="M 199.073537 337.124532 
+L 199.073537 308.324532 
+L 227.073537 308.324532 
+L 227.073537 337.124532 
+"/>
+  </clipPath>
+  <clipPath id="p3a68681cc0">
+   <path d="M 199.073537 365.924532 
+L 199.073537 337.124532 
+L 227.073537 337.124532 
+L 227.073537 365.924532 
+"/>
+  </clipPath>
+  <clipPath id="p07b0f80281">
+   <path d="M 342.213277 308.324532 
+L 342.213277 279.524532 
+L 370.213277 279.524532 
+L 370.213277 308.324532 
+"/>
+  </clipPath>
+  <clipPath id="pc82268d595">
+   <path d="M 342.213277 337.124532 
+L 342.213277 308.324532 
+L 370.213277 308.324532 
+L 370.213277 337.124532 
+"/>
+  </clipPath>
+  <clipPath id="p4fed6812fd">
+   <path d="M 342.213277 365.924532 
+L 342.213277 337.124532 
+L 370.213277 337.124532 
+L 370.213277 365.924532 
+"/>
+  </clipPath>
+  <clipPath id="paad366bf7d">
+   <path d="M 468.323328 308.324532 
+L 468.323328 279.524532 
+L 496.323328 279.524532 
+L 496.323328 308.324532 
+"/>
+  </clipPath>
+  <clipPath id="p95349b55cc">
+   <path d="M 468.323328 337.124532 
+L 468.323328 308.324532 
+L 496.323328 308.324532 
+L 496.323328 337.124532 
+"/>
+  </clipPath>
+  <clipPath id="p08d14cd682">
+   <path d="M 795.46416 308.324532 
+L 795.46416 279.524532 
+L 823.46416 279.524532 
+L 823.46416 308.324532 
+"/>
+  </clipPath>
+  <clipPath id="pb7e82686d9">
+   <path d="M 795.46416 337.124532 
+L 795.46416 308.324532 
+L 823.46416 308.324532 
+L 823.46416 337.124532 
+"/>
+  </clipPath>
+  <clipPath id="p541a060c47">
+   <path d="M 795.46416 365.924532 
+L 795.46416 337.124532 
+L 823.46416 337.124532 
+L 823.46416 365.924532 
+"/>
+  </clipPath>
+  <clipPath id="pe5671ea235">
+   <path d="M 795.46416 394.724532 
+L 795.46416 365.924532 
+L 823.46416 365.924532 
+L 823.46416 394.724532 
+"/>
+  </clipPath>
+ </defs>
+</svg>

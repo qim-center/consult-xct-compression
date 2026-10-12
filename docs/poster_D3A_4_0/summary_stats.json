@@ -1,0 +1,75 @@
+{
+  "filters": {
+    "codec": "JPEG-XL",
+    "distance": 0.5
+  },
+  "n": 6,
+  "rows": [
+    {
+      "dataset": "Canislupus_BM_2600",
+      "data_type": "float32"
+    },
+    {
+      "dataset": "Canislupus_CZM_712",
+      "data_type": "float32"
+    },
+    {
+      "dataset": "Canislupus_UAM_18197",
+      "data_type": "float32"
+    },
+    {
+      "dataset": "Canislupus_BM_2600",
+      "data_type": "uint16"
+    },
+    {
+      "dataset": "Canislupus_CZM_712",
+      "data_type": "uint16"
+    },
+    {
+      "dataset": "Canislupus_UAM_18197",
+      "data_type": "uint16"
+    }
+  ],
+  "metrics": {
+    "compression_ratio": {
+      "mean": 62.35101863821052,
+      "std": 16.278206015267838
+    },
+    "bitrate_compressed": {
+      "mean": 0.27045475733333335,
+      "std": 0.06544471610637825
+    },
+    "space_saving": {
+      "mean": 0.9830965776666666,
+      "std": 0.004090294756648565
+    },
+    "psnr_db": {
+      "mean": 58.83700297749371,
+      "std": 2.3410379579020475
+    },
+    "ssim_mean": {
+      "mean": 0.998946069328498,
+      "std": 0.0004429202723530555
+    },
+    "ms_ssim": {
+      "mean": 0.9999032686443878,
+      "std": 3.8749162127763286e-05
+    },
+    "max_abs_error_u16": {
+      "mean": 2477.367972905329,
+      "std": 322.15393212953524
+    },
+    "linf_normalised": {
+      "mean": 0.03780221214473684,
+      "std": 0.004915753904471432
+    },
+    "compress_wall_time_seconds": {
+      "mean": 50.95129200148707,
+      "std": 2.1913506452571694
+    },
+    "decompress_wall_time_seconds": {
+      "mean": 2.3685293091305843,
+      "std": 0.40810617337455035
+    }
+  }
+}
