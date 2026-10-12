@@ -89,10 +89,10 @@
     - Not sure how to share data in a good way, would like advice
 
 == Codec Performance — Fidelity
-#figure(image("01_ratio_vs_ssim.png"))
+#figure(image("01_ratio_vs_ssim.png"), caption: none)
 
 == Codec Performance — Throughput
-#figure(image("07_throughput_vs_ratio.png"))
+#figure(image("07_throughput_vs_ratio.png"), caption: none)
 
 == Software Support
 - DICOMs appear to work in _Napari_, _3D Slicer_, _Fiji_ for me
@@ -121,11 +121,13 @@
 
 == Follow-up: JPEG-XL across compression axis
 
-#figure(grid(
-  columns: 2,
-  image("2026-09-01_jpegxl_quality_x.png"),
-  image("2026-09-01_jpegxl_quality_z.png")
-))
+#figure(
+  grid(
+    columns: 2,
+    image("2026-09-01_jpegxl_quality_x.png"), image("2026-09-01_jpegxl_quality_z.png"),
+  ),
+  caption: none,
+)
 
 == End of slides
 #progress-marker-lower
@@ -178,6 +180,7 @@ Slides that follow this are from previous meetings and are here just for referen
         },
         fill: (x, y) => if calc.rem(y, 2) == 0 { black.transparentize(90%) },
       ),
+      caption: none,
     ) <tbl:encodings>
   ]
 ]
@@ -376,7 +379,7 @@ Cloud storage cost: Backblaze B2 Object Storage#footnote[#link("https://www.back
 ]
 #[
   #set text(size: 14pt)
-  - Cell rows: data size, storage cost (MorphSource), storage cost (Backblaze B2), storage cost (#link("https://docs.hpc.cam.ac.uk/storage/prices.html", "Cambridge RCS/RFS"))
+  - Cell rows: data size, storage cost (MorphSource), storage cost (#link("https://docs.hpc.cam.ac.uk/storage/prices.html", "Cambridge RCS/RFS")), storage cost (Backblaze B2)
   - Cell columns: 1 recon., 1 week of recons. (shaded, 500), 1 year of recons. (26089)
   - Units have been SI-ified: mkr = milli-kroner, Mkr = mega-kroner/million, etc.
 ]

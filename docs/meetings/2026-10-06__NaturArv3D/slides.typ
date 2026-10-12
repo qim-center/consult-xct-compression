@@ -152,7 +152,7 @@ Alternatives remain:
     - _(due to monotonicity of time)_
 #image("flow_poster.svg", height: 1fr)
 ][#align(right)[
-    #image("poster.pdf")
+    #image("poster.png")
   ]
 ]
 

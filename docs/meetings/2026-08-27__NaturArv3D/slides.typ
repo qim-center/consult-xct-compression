@@ -128,6 +128,7 @@
         },
         fill: (x, y) => if calc.rem(y, 2) == 0 { black.transparentize(90%) },
       ),
+      caption: none,
     ) <tbl:encodings>
   ]
 ]
@@ -408,5 +409,5 @@ Cloud storage cost: Backblaze B2 Object Storage#footnote[#link("https://www.back
   - Demonstrates how good lossy compression is
     - mostly for SNM's benefit
 ][
-  #figure(image("2026-08-11_jpegxl_quality_comparison.png"))
+  #figure(image("2026-08-11_jpegxl_quality_comparison.png"), caption: none)
 ]

@@ -110,7 +110,7 @@ Phase 1 (soon)
 #skip[
 - JPEG-XL cons: very new, immature ecosystem, no support in older software]
 ][
-  #figure(image("2026-08-11_lossless_plot_tall.png"))
+  #figure(image("2026-08-11_lossless_plot_tall.png"), caption: none)
 ]
 
 == Preliminary Experiments: Lossy
@@ -130,7 +130,7 @@ Phase 1 (soon)
   - Future experiments include LERC for error bounds
 ]
 ][
-  #figure(image("2026-08-11_jpegxl_quality_comparison.png"))
+  #figure(image("2026-08-11_jpegxl_quality_comparison.png"), caption: none)
 ]
 
 #progress-marker-upper
