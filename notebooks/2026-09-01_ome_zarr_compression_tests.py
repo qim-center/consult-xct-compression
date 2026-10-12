@@ -616,6 +616,31 @@ for serializer_name in TARGET_SERIALIZERS:
                 "SSIM calculated for config %s: mean=%.9f", config.name, ssim.mean
             )
 
+            # MS-SSIM, also 3D: the same comparison over five successively
+            # halved resolutions, so it also scores structure coarser than the
+            # 11-voxel SSIM window. A scalar, so there is no map to summarise.
+            if min(reference.shape) >= metrics.MS_SSIM_MIN_EXTENT:
+                logger.info("Calculating MS-SSIM for config %s", config.name)
+
+                ms_ssim = metrics.ms_ssim(
+                    reference, decompressed, data_range=data_range
+                )
+
+                logger.info(
+                    "MS-SSIM calculated for config %s: %.9f", config.name, ms_ssim
+                )
+            else:
+                logger.warning(
+                    "Skipping MS-SSIM for config %s: shape %s is below %d along "
+                    "some axis (expected when Z_LIMIT is set)",
+                    config.name,
+                    reference.shape,
+                    metrics.MS_SSIM_MIN_EXTENT,
+                )
+                ms_ssim = None
+
+            extra |= {"ms_ssim": ms_ssim}
+
         # Keep the decompressed volume. Written after every measurement and
         # outside both timed regions, so it cannot affect the reported rates.
         if STORE_VOLUMES:
@@ -750,6 +775,7 @@ summary = pl.DataFrame(
             "compress_wall_time_seconds": test.compress_wall_time_seconds,
             "decompress_wall_time_seconds": test.decompress_wall_time_seconds,
             "ssim_mean": test.ssim.mean if test.ssim is not None else None,
+            "ms_ssim": test.runner_extra.get("ms_ssim"),
             "psnr_db": test.runner_extra.get("psnr_db"),
             "max_abs_error": test.runner_extra.get("max_abs_error"),
         }

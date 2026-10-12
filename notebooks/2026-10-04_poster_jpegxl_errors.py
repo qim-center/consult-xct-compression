@@ -1,24 +1,32 @@
 # %%
+import json
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+
+import imagecodecs.zarr as codecs
 import matplotlib.pyplot as plt
 import numpy as np
 import tifffile
+import zarr
 from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.patches import ConnectionPatch, Rectangle
 from tqdm.auto import tqdm
 
-from comptest.configurations import TIFFFILE_JPEGXL_LOSSY_CONFIGS_EFFORT_7_BIG
-from comptest.constants import PROJECT_SCRATCH_DIR
+from comptest.constants import PROJECT_SCRATCH_DIR, RECONSTRUCTIONS_TRANSFORMED_DIR
 
 # %load_ext autoreload
 # %autoreload 2
 
 # %%
-RECONSTRUCTION = "CIL_basic_binned_2x2"
+# The float32 input of the OME-Zarr runs, so the figure shows the very volume
+# and codestreams behind the rate-distortion plots.
+INPUT_VARIANT = "f32_1000"
 DATASET = "Canislupus_CZM_712"
+# As the rate-distortion plots name it.
+DATASET_LABEL = DATASET.removeprefix("Canislupus_").replace("_", " ")
 
 DISTANCES = [0.1, 1.0, 5.0]
-N_JOBS = None
+JPEGXL_EFFORT = 7
 N_READ_THREADS = 8
 FORCE_RECOMPUTE = False
 
@@ -27,13 +35,13 @@ Z_INDEX = 500  # z slice -> (ny, nx), the compressed plane
 X_INDEX = 500  # x slice -> (nz, ny), across the compressed direction
 
 # (left, upper, right, lower). For the x slice, upper/lower are z bounds.
-Z_CROP_AREA = (560, 630, 560 + 60, 630 + 50)
+Z_CROP_AREA = (575, 630, 575 + 60, 630 + 50)
 Z_OVERVIEW_CROP_AREA = (300, 250, 850, 750)
 X_CROP_AREA = (650, 630, 650 + 60, 630 + 50)
 X_OVERVIEW_CROP_AREA = (300, 250, 850, 750)
 
 # Compression ratios are quoted against a 16-bit uncompressed baseline, as in the
-# poster, not against the float32 files that are actually compressed.
+# poster and the runner, not against the float32 volume that is compressed.
 BASELINE_BYTES_PER_VOXEL = 2
 
 # %%
@@ -48,8 +56,11 @@ INK_MUTED = "#555555"
 FRAME = "#9a9a9a"
 
 FONT = "Liberation Sans"  # poster body font
-SIZE_TITLE = 28
-SIZE_SUBTITLE = 24
+# The rate-distortion plots' sizes: strip titles 22 bold, axis titles 22, axis
+# and legend text 18.
+SIZE_TITLE = 22
+SIZE_SUBTITLE = 18
+SIZE_LABEL = 22
 SIZE_TICK = 20
 LINE_WIDTH = 2.5
 
@@ -81,128 +92,162 @@ plt.rcParams.update(
 )
 
 # %%
-WORK_DIR = PROJECT_SCRATCH_DIR / "quality_viewer_stack" / RECONSTRUCTION / DATASET
-TRANSFORMED_DIR = WORK_DIR / "transformed"
-CACHE_DIR = WORK_DIR / "poster_planes"
+# A notebook has no __file__, and its working directory is notebooks/.
+NOTEBOOK_DIR = (
+    Path(__file__).resolve().parent if "__file__" in globals() else Path().resolve()
+)
+# SVG: the images inside are still raster, resampled (nearest) at the savefig
+# dpi, so each data pixel stays a sharp square.
+POSTER_PLOT_DIR = NOTEBOOK_DIR.parent / "docs" / "poster_D3A_4_0" / "assets" / "plots"
+
+INPUT_DIR = RECONSTRUCTIONS_TRANSFORMED_DIR / INPUT_VARIANT / DATASET
+INPUT_FILES = sorted(INPUT_DIR.glob("slice_z*.tif"))
+assert INPUT_FILES, f"No slices in {INPUT_DIR}"
+
+CACHE_DIR = PROJECT_SCRATCH_DIR / "poster_jpegxl_errors" / INPUT_VARIANT / DATASET
 CACHE_DIR.mkdir(exist_ok=True, parents=True)
 
-TRANSFORMED_FILES = sorted(TRANSFORMED_DIR.glob("*.tiff"))
-assert TRANSFORMED_FILES, (
-    f"No transformed slices in {TRANSFORMED_DIR}; "
-    "run 2026-09-01_lossy_jpegxl_stack_orthoslices.py first"
-)
+# Results of the OME-Zarr runner, to check the codestreams against.
+ZARR_RESULTS_DIR = NOTEBOOK_DIR.parent / "output" / "zarr"
 
-print(f"{len(TRANSFORMED_FILES)} slices, work dir {WORK_DIR}")
+print(f"{len(INPUT_FILES)} slices from {INPUT_DIR}")
+
+# %% [markdown]
+# ## Compression
+#
+# Exactly as `data_gathering/02b_zarr_compression_tests.py` compresses its
+# `zarr_jpegxl_f32_d{d}_e7` configurations: the same input volume, one chunk per
+# slice in 50-slice shards, the JPEG XL serializer with the same settings and no
+# compressor after it. Each chunk is encoded single-threaded, so the result does
+# not depend on zarr's thread count, and the compressed size has to match the
+# runner's to the byte.
 
 # %%
-CONFIGS = {
-    cfg.distance: cfg
-    for cfg in TIFFFILE_JPEGXL_LOSSY_CONFIGS_EFFORT_7_BIG
-    if cfg.distance in DISTANCES
+JPEGXL_KWARGS = {
+    "effort": JPEGXL_EFFORT,
+    "photometric": "GRAY",
+    "transfer": "LINEAR",
+    "numthreads": 1,
 }
+SHARD_DEPTH = 50
 
-assert set(CONFIGS) == set(DISTANCES)
-
-# %%
-# Same layout as the 2026-09-01 notebook, so its outputs are reused.
-compressed_files = {}
-decompressed_files = {}
-
-for distance, cfg in CONFIGS.items():
-    compressed_dir = WORK_DIR / "compressed" / cfg.name
-    decompressed_dir = WORK_DIR / "decompressed" / cfg.name
-    compressed_dir.mkdir(exist_ok=True, parents=True)
-    decompressed_dir.mkdir(exist_ok=True, parents=True)
-
-    compressed_files[distance] = [compressed_dir / f.name for f in TRANSFORMED_FILES]
-    decompressed_files[distance] = [
-        decompressed_dir / f.name for f in TRANSFORMED_FILES
-    ]
-
-    for func_args, sources, destinations in (
-        (cfg.compressor, TRANSFORMED_FILES, compressed_files[distance]),
-        (cfg.decompressor, compressed_files[distance], decompressed_files[distance]),
-    ):
-        todo = [
-            (src, dst)
-            for src, dst in zip(sources, destinations, strict=True)
-            if FORCE_RECOMPUTE or not dst.is_file()
-        ]
-
-        if not todo:
-            continue
-
-        print(f"{cfg.name}: {len(todo)} files -> {destinations[0].parent.parent.name}")
-        func, args, kwargs = func_args
-        func(
-            [src for src, _ in todo],
-            [dst for _, dst in todo],
-            *args,
-            **kwargs | {"n_jobs": N_JOBS},
-        )
+codecs.register_codecs(verbose=False)
 
 
-# %%
-def read_planes(name, files, reference_files=None):
-    """
-    Stream a stack once, keeping only the z and x planes and, against a
-    reference stack, the summed squared error. Cached, as a full pass reads
-    several GB.
-    """
-    cache_path = CACHE_DIR / f"{name}_z{Z_INDEX}_x{X_INDEX}.npz"
-
-    if cache_path.is_file() and not FORCE_RECOMPUTE:
-        cached = np.load(cache_path)
-        return {key: cached[key] for key in cached.files}
-
-    def read_one(i):
-        arr = tifffile.imread(files[i])
-        squared_error = (
-            np.square(
-                arr.astype(np.float64) - tifffile.imread(reference_files[i])
-            ).sum()
-            if reference_files is not None
-            else 0.0
-        )
-        return arr[:, X_INDEX].copy(), squared_error
-
-    with ThreadPoolExecutor(N_READ_THREADS) as pool:
-        results = list(
-            tqdm(pool.map(read_one, range(len(files))), total=len(files), desc=name)
-        )
-
-    first = tifffile.imread(files[0])
-    planes = {
-        "z": tifffile.imread(files[Z_INDEX]),
-        "x": np.stack([column for column, _ in results]),
-        "squared_error": np.array(sum(se for _, se in results)),
-        "n_voxels": np.array(len(files) * first.size),
-    }
-    np.savez(cache_path, **planes)
-
-    return planes
+def config_name(distance: float) -> str:
+    return f"zarr_jpegxl_f32_d{distance:g}_e{JPEGXL_EFFORT}"
 
 
-# %%
-reference = read_planes("reference", TRANSFORMED_FILES)
-
-decoded = {
-    distance: read_planes(
-        CONFIGS[distance].name, decompressed_files[distance], TRANSFORMED_FILES
+def runner_compressed_size(distance: float) -> int | None:
+    """compressed_size the runner recorded for this distance, latest run first."""
+    files = sorted(
+        ZARR_RESULTS_DIR.glob(f"quality_*/{DATASET}/test_{config_name(distance)}.json")
     )
+    if not files:
+        return None
+    return json.loads(files[-1].read_text())["compressed_size"]
+
+
+_volume = None
+
+
+def volume() -> np.ndarray:
+    """The input volume, read once and only if something is not cached."""
+    global _volume
+
+    if _volume is None:
+        first = tifffile.imread(INPUT_FILES[0])
+        _volume = np.empty((len(INPUT_FILES), *first.shape), dtype=first.dtype)
+
+        def read_one(z):
+            _volume[z] = tifffile.imread(INPUT_FILES[z])
+
+        with ThreadPoolExecutor(N_READ_THREADS) as pool:
+            list(tqdm(pool.map(read_one, range(len(INPUT_FILES))), total=len(INPUT_FILES), desc="input"))
+
+    return _volume
+
+
+def cached(name, compute):
+    path = CACHE_DIR / f"{name}_z{Z_INDEX}_x{X_INDEX}.npz"
+
+    if path.is_file() and not FORCE_RECOMPUTE:
+        loaded = np.load(path)
+        return {key: loaded[key] for key in loaded.files}
+
+    result = compute()
+    np.savez(path, **result)
+    return result
+
+
+def reference_planes():
+    vol = volume()
+    return {
+        "z": vol[Z_INDEX].copy(),
+        "x": vol[:, :, X_INDEX].copy(),
+        # The runner's PSNR is against the volume's own range.
+        "data_range": np.array(float(vol.max()) - float(vol.min())),
+    }
+
+
+def decoded_planes(distance: float):
+    vol = volume()
+    _, y, x = vol.shape
+    store: dict = {}
+    array = zarr.create_array(
+        store=zarr.storage.MemoryStore(store),
+        shape=vol.shape,
+        dtype=vol.dtype,
+        chunks=(1, y, x),
+        shards=(SHARD_DEPTH, y, x),
+        serializer=codecs.Jpegxl(**JPEGXL_KWARGS, distance=distance),
+        # An empty list, not None: None would leave zarr's default zstd in place.
+        compressors=[],
+    )
+    array[:] = vol
+    compressed_size = int(array.nbytes_stored())
+    decoded = array[:]
+
+    return {
+        "z": decoded[Z_INDEX].copy(),
+        "x": decoded[:, :, X_INDEX].copy(),
+        # In slabs: the whole volume in float64 would be another 8 GB, twice.
+        "squared_error": np.array(
+            sum(
+                np.square(decoded[z : z + SHARD_DEPTH].astype(np.float64) - vol[z : z + SHARD_DEPTH]).sum()
+                for z in range(0, len(vol), SHARD_DEPTH)
+            )
+        ),
+        "n_voxels": np.array(vol.size),
+        "compressed_size": np.array(compressed_size),
+    }
+
+
+# %%
+reference = cached("reference", reference_planes)
+decoded = {
+    distance: cached(config_name(distance), lambda d=distance: decoded_planes(d))
     for distance in DISTANCES
 }
+
+for distance, planes in decoded.items():
+    expected = runner_compressed_size(distance)
+    size = int(planes["compressed_size"])
+    if expected is None:
+        print(f"d={distance:g}: {size} B, no runner result to compare with")
+    else:
+        assert size == expected, f"d={distance:g}: {size} B, runner had {expected} B"
+        print(f"d={distance:g}: {size} B, identical to the runner")
 
 # %%
 stats = {}
 
 for distance, planes in decoded.items():
     rmse = float(np.sqrt(planes["squared_error"] / planes["n_voxels"]))
-    compressed_bytes = sum(f.stat().st_size for f in compressed_files[distance])
     stats[distance] = {
-        "ratio": int(planes["n_voxels"]) * BASELINE_BYTES_PER_VOXEL / compressed_bytes,
-        # Transformed data spans 0-1, so this is PSNR against full scale.
-        "psnr_db": 20 * np.log10(1.0 / rmse),
+        "ratio": int(planes["n_voxels"]) * BASELINE_BYTES_PER_VOXEL
+        / int(planes["compressed_size"]),
+        "psnr_db": 20 * np.log10(float(reference["data_range"]) / rmse),
     }
     print(
         f"d={distance:g}: CR {stats[distance]['ratio']:.1f}:1, "
@@ -265,7 +310,7 @@ def plot_poster_errors(
     )
 
     columns = [
-        ("Original", "(uncompressed)", original, None),
+        (DATASET_LABEL, f"(original, {INPUT_VARIANT.split('_')[0].replace('f', 'float')})", original, None),
         *(
             (f"JPEG XL, d = {distance:g}", subtitles[distance], dec, errors[distance])
             for distance, dec in decompressed_by_distance.items()
@@ -273,7 +318,7 @@ def plot_poster_errors(
     ]
 
     # Geometry in mm, laid out by hand so the figure width is exact.
-    pad, col_gap, zoom_gap, header = 1.5, 6.0, 14.0, 24.0
+    pad, col_gap, zoom_gap, header = 1.5, 6.0, 14.0, 20.0
     cbar_width, cbar_labels = 7.0, 30.0  # bar, then tick labels and label
     ncols = len(columns)
     width = (
@@ -401,7 +446,7 @@ def plot_poster_errors(
     colorbar.ax.tick_params(labelsize=SIZE_TICK, length=6, width=1.5)
     colorbar.set_label(
         "Error (% of full scale)",
-        fontsize=SIZE_SUBTITLE,
+        fontsize=SIZE_LABEL,
         labelpad=8,
     )
 
@@ -422,7 +467,7 @@ fig = plot_poster_errors(
     Z_CROP_AREA,
     Z_OVERVIEW_CROP_AREA,
 )
-fig.savefig("2026-10-04_poster_jpegxl_errors_z.png", dpi=600)
+fig.savefig(POSTER_PLOT_DIR / "jpegxl_errors_z.svg", dpi=600)
 
 # %%
 # x slice: every row comes from a different, independently compressed slice.
@@ -433,6 +478,6 @@ fig = plot_poster_errors(
     X_CROP_AREA,
     X_OVERVIEW_CROP_AREA,
 )
-fig.savefig("2026-10-04_poster_jpegxl_errors_x.png", dpi=600)
+fig.savefig(POSTER_PLOT_DIR / "jpegxl_errors_x.svg", dpi=600)
 
 # %%
