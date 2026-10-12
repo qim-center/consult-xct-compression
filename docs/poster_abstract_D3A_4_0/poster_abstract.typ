@@ -297,7 +297,7 @@ Input and consent:
 - ✔ Carsten
 - ✔ Christy
 - ✔ Mark
-- ? Kim
+- ✔ Kim
 - ✔ Felipe
 - ✔ Anders
 - ✔ Jakob
