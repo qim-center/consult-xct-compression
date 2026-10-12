@@ -2,13 +2,23 @@ from typing import Any
 
 import jax
 import numpy.typing as npt
-from picax.api.jax import psnr as _psnr, ssim_local as _ssim_local
+from picax.api.jax import (
+    ms_ssim as _ms_ssim,
+    psnr as _psnr,
+    ssim_local as _ssim_local,
+)
 
 # picax promotes to `jnp.result_type(x, y, jnp.float64)`, which silently
 # collapses to float32 unless x64 is enabled
 jax.config.update("jax_enable_x64", True)
 
 SSIM_PRESET = "wang-2004-implementation"
+MS_SSIM_PRESET = "wang-2003"
+
+# MS-SSIM halves every axis between its five scales, rounding up, and the
+# 11-voxel window must still fit at the coarsest: (11 - 1) * 2**4 + 1. A
+# z-truncated smoke-test volume easily falls below this.
+MS_SSIM_MIN_EXTENT = 161
 
 
 def ssim_map(
@@ -30,6 +40,28 @@ def ssim_map(
     """
     return _ssim_local(
         reference, distorted, dynamic_range=data_range, preset=preset, **kwargs
+    )
+
+
+def ms_ssim(
+    reference: npt.NDArray,
+    distorted: npt.NDArray,
+    *,
+    data_range: float,
+    preset: str = MS_SSIM_PRESET,
+    **kwargs: Any,
+) -> float:
+    """Multi-scale SSIM over as many axes as the inputs have, as one number.
+
+    Wang et al. (2003) with the default preset. Unlike `ssim_map` there is no
+    map to summarise: the per-scale means are combined into a scalar.
+
+    Raises if any axis is shorter than `MS_SSIM_MIN_EXTENT`.
+    """
+    return float(
+        _ms_ssim(
+            reference, distorted, dynamic_range=data_range, preset=preset, **kwargs
+        )
     )
 
 
