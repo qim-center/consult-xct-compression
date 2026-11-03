@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 1047 300"
+    width="1047" height="300"
+    style="--_bg: var(--pele-bg,#fff); --_fg: var(--pele-fg,#1f1f1f); --_m: var(--pele-muted,#6e6e6e); --_l: var(--pele-line,#1f1f1f); --_s: var(--pele-surface,#f3f3f3); --_a: var(--pele-surface-alt,#e6e6e6); --_b: var(--pele-border,#8a8a8a); --_c: var(--pele-accent,#5b7bd5); color: rgb(31, 31, 31); --_r: var(--pele-radius,4px); --_w: var(--pele-bold-weight,bold); --_fm: var(--pele-font-mono,OpenMoji, 'FiraCode Nerd Font', 'FiraCode NF'); font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-weight: normal; font-stretch: normal; font-size: 16px; line-height: normal; letter-spacing: normal; word-spacing: normal; text-transform: none; direction: ltr; font-family: var(--pele-font,&quot;Segoe WPC&quot;, &quot;Segoe UI&quot;, sans-serif); --pele-bg: #ffffff; --pele-fg: #1f1f1f; --pele-fg-on-light: #1f1f1f; --pele-fg-on-dark: #ffffff; --pele-muted: #6e6e6e; --pele-line: #1f1f1f; --pele-surface: #f3f3f3; --pele-surface-alt: #e6e6e6; --pele-border: #8a8a8a; --pele-accent: #5b7bd5; --pele-critical: #e45756; --pele-error: #e45756; --pele-font: &quot;Segoe WPC&quot;, &quot;Segoe UI&quot;, sans-serif; --pele-font-mono: OpenMoji, 'FiraCode Nerd Font', 'FiraCode NF'; --pele-series-1: #4c78a8; --pele-series-2: #f58518; --pele-series-3: #54a24b; --pele-series-4: #e45756; --pele-series-5: #72b7b2; --pele-series-6: #eeca3b; --pele-series-7: #b279a2; --pele-series-8: #9d755d;"
+    fill="rgb(31, 31, 31)" role="graphics-document document" aria-roledescription="flowchart"
+    xmlns:xlink="http://www.w3.org/1999/xlink" stroke="none" stroke-width="1px">
+    <rect x="0" y="0" width="100%" height="100%" fill="#ffffff" />
+    <g class="pele-clusters" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+        <g class="pele-cluster" data-id="subGraph0" fill="rgb(31, 31, 31)" stroke="none"
+            stroke-width="1px">
+            <rect x="8" y="92.5" width="236.12" height="126" fill="rgb(230, 230, 230)"
+                fill-opacity="0.5" stroke="rgb(138, 138, 138)" style="rx:var(--_r)"
+                stroke-width="1px" rx="4px" />
+            <text class="pele-cluster-label" fill="rgb(110, 110, 110)" text-anchor="middle"
+                xml:space="preserve" stroke="none" stroke-width="1px"><tspan x="90.33" y="116.6" fill="rgb(110, 110, 110)" stroke="none" stroke-width="1px">Networked Storage</tspan><tspan x="90.33" y="137.6" font-style="italic" fill="rgb(110, 110, 110)" stroke="none" stroke-width="1px">S3 or HTTPS</tspan></text>
+        </g>
+    </g>
+    <g class="pele-edges" fill="none" stroke="rgb(31, 31, 31)" stroke-linecap="round"
+        stroke-width="1px">
+        <g class="pele-edge" data-id="L_Data_OmeZarrExport_0" fill="none" stroke="rgb(31, 31, 31)"
+            stroke-width="1px">
+            <path
+                d="M204.12,162.5L244.12,162.5C261.48,162.5 272.12,143.41 272.12,112.25C272.12,81.1 282.38,62 299.12,62L305.12,62"
+                fill="none" stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M312.12,62L304.12,65.36L304.12,58.64Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_OmeZarrExport_TIFFOutput_0" fill="none"
+            stroke="rgb(31, 31, 31)" stroke-width="1px">
+            <path d="M535.2,62L576.2,62" fill="none" stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M583.2,62L575.2,65.36L575.2,58.64Z" fill="rgb(31, 31, 31)"
+                stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_TIFFOutput_LegacyViewer_0" fill="none"
+            stroke="rgb(31, 31, 31)" stroke-width="1px">
+            <path d="M776.74,62L817.74,62" fill="none" stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M824.74,62L816.74,65.36L816.74,58.64Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_Data_OmeZarrDownload_0" fill="none" stroke="rgb(31, 31, 31)"
+            stroke-width="1px">
+            <path d="M204.12,178.5L244.12,178.5C271.62,178.5 271.62,214.5 299.12,214.5L305.12,214.5"
+                fill="none" stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M312.12,214.5L304.12,217.86L304.12,211.14Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_OmeZarrDownload_DataLocal_0" fill="none"
+            stroke="rgb(31, 31, 31)" stroke-width="1px">
+            <path d="M535.2,214.5L604.6,214.5" fill="none" stroke="rgb(31, 31, 31)"
+                stroke-width="1px" />
+            <path class="pele-marker" d="M611.6,214.5L603.6,217.86L603.6,211.14Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_Data_QimVolumeExplorer_0" fill="none"
+            stroke="rgb(31, 31, 31)" stroke-width="1px">
+            <path d="M204.12,170.5L272.12,170.5C292.12,170.5 292.12,153.5 312.12,153.5L817.74,153.5"
+                fill="none" stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M824.74,153.5L816.74,156.86L816.74,150.14Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_DataLocal_QimVolumeExplorer_0" fill="none"
+            stroke="rgb(31, 31, 31)" stroke-width="1px">
+            <path d="M748.34,206.5C780.04,206.5 780.04,169.5 811.74,169.5L817.74,169.5" fill="none"
+                stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M824.74,169.5L816.74,172.86L816.74,166.14Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_Data_InSegt3D_0" fill="none" stroke="rgb(31, 31, 31)"
+            stroke-width="1px">
+            <path d="M204.12,186.5L244.12,186.5C278.12,186.5 278.12,275.5 312.12,275.5L817.74,275.5"
+                fill="none" stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M824.74,275.5L816.74,278.86L816.74,272.14Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+        <g class="pele-edge" data-id="L_DataLocal_InSegt3D_0" fill="none" stroke="rgb(31, 31, 31)"
+            stroke-width="1px">
+            <path d="M748.34,222.5C780.04,222.5 780.04,259.5 811.74,259.5L817.74,259.5" fill="none"
+                stroke="rgb(31, 31, 31)" stroke-width="1px" />
+            <path class="pele-marker" d="M824.74,259.5L816.74,262.86L816.74,256.14Z"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px" />
+        </g>
+    </g>
+    <g class="pele-nodes" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+        <g class="pele-node pele-shape-rect" data-id="Data" transform="translate(116.06,174.5)"
+            fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+            <rect x="-88.06" y="-24" width="176.12" height="48" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" text-anchor="middle" xml:space="preserve"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px"><tspan x="0" y="5.6" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">📂</tspan><tspan font-family="var(--_fm)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">vol.ome.zarr</tspan></text>
+        </g>
+        <g class="pele-node pele-shape-rect" data-id="OmeZarrExport"
+            transform="translate(423.66,62)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+            <rect x="-111.54" y="-43.5" width="223.08" height="87" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" font-family="var(--_fm)" text-anchor="middle"
+                xml:space="preserve" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px"><tspan x="0" y="-15.4" font-weight="var(--_w)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">ome_zarr export</tspan><tspan x="0" y="5.6" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">server/vol.ome.zarr</tspan><tspan x="0" y="26.6" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">--format tiff-stack</tspan></text>
+        </g>
+        <g class="pele-node pele-shape-rect" data-id="TIFFOutput" transform="translate(679.97,62)"
+            fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+            <rect x="-96.77" y="-54" width="193.54" height="108" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" text-anchor="middle" xml:space="preserve"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px"><tspan x="0" y="-25.9" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">📂</tspan><tspan x="0" y="-4.9" font-family="var(--_fm)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">slice_z0000.tiff</tspan><tspan x="0" y="16.1" font-family="var(--_fm)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">slice_z0001.tiff</tspan><tspan x="0" y="37.1" font-family="var(--_fm)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">...</tspan></text>
+        </g>
+        <g class="pele-node pele-shape-rect" data-id="OmeZarrDownload"
+            transform="translate(423.66,214.5)" fill="rgb(31, 31, 31)" stroke="none"
+            stroke-width="1px">
+            <rect x="-111.54" y="-33" width="223.08" height="66" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" font-family="var(--_fm)" text-anchor="middle"
+                xml:space="preserve" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px"><tspan x="0" y="-4.9" font-weight="var(--_w)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">ome_zarr download</tspan><tspan x="0" y="16.1" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">server/vol.ome.zarr</tspan></text>
+        </g>
+        <g class="pele-node pele-shape-rect" data-id="DataLocal" transform="translate(679.97,214.5)"
+            fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+            <rect x="-68.37" y="-24" width="136.74" height="48" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" text-anchor="middle" xml:space="preserve"
+                fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px"><tspan x="0" y="5.6" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">📂</tspan><tspan font-family="var(--_fm)" fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">vol.zarr</tspan></text>
+        </g>
+        <g class="pele-node pele-shape-rect" data-id="LegacyViewer" transform="translate(931.53,62)"
+            fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+            <rect x="-106.79" y="-24" width="213.59" height="48" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" x="0" y="5.6" text-anchor="middle" fill="rgb(31, 31, 31)"
+                stroke="none" stroke-width="1px">Legacy Viewer / Software</text>
+        </g>
+        <g class="pele-node pele-shape-rect" data-id="QimVolumeExplorer"
+            transform="translate(917.46,161.5)" fill="rgb(31, 31, 31)" stroke="none"
+            stroke-width="1px">
+            <rect x="-92.72" y="-24" width="185.45" height="48" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" x="0" y="5.6" text-anchor="middle" fill="rgb(31, 31, 31)"
+                stroke="none" stroke-width="1px">Qim Volume Explorer</text>
+        </g>
+        <g class="pele-node pele-shape-rect" data-id="InSegt3D" transform="translate(875.17,267.5)"
+            fill="rgb(31, 31, 31)" stroke="none" stroke-width="1px">
+            <rect x="-50.43" y="-24" width="100.87" height="48" fill="rgb(243, 243, 243)"
+                stroke="rgb(138, 138, 138)" style="rx:var(--_r)" stroke-width="1px" rx="4px" />
+            <text class="pele-label" x="0" y="5.6" text-anchor="middle" fill="rgb(31, 31, 31)"
+                stroke="none" stroke-width="1px">InSegt3D</text>
+        </g>
+    </g>
+</svg>

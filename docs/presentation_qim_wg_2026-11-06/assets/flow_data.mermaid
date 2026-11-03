@@ -1,0 +1,33 @@
+flowchart LR
+
+    subgraph "Networked Storage
+    <i>S3 or HTTPS</i>
+    "
+        Data["📂<code>vol.ome.zarr</code>"]
+    end
+
+    OmeZarrExport["<code><b>ome_zarr export</b> server/vol.ome.zarr --format tiff-stack</code>"]
+
+    TIFFOutput["📂
+    <code>slice_z0000.tiff</code>
+    <code>slice_z0001.tiff</code>
+    <code>...</code>"
+    ]
+
+    OmeZarrDownload["<code><b>ome_zarr download</b> server/vol.ome.zarr </code>"]
+    DataLocal["📂<code>vol.zarr</code>"]
+
+    LegacyViewer["Legacy Viewer / Software"]
+
+    QimVolumeExplorer["Qim Volume Explorer"]
+    InSegt3D["InSegt3D"]
+
+    Data --> OmeZarrExport --> TIFFOutput --> LegacyViewer
+    Data --> OmeZarrDownload --> DataLocal
+
+    Data --> QimVolumeExplorer
+    DataLocal --> QimVolumeExplorer
+
+    Data --> InSegt3D
+    DataLocal --> InSegt3D
+

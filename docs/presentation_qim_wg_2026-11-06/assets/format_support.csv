@@ -1,0 +1,25 @@
+Format,ImageJ/Fiji,Napari,VGSTUDIO,Amira/Avizo,3DSlicer,Dragonfly,Checkpoint,Morphosource,Data Types,Comment
+BioFormats,Yes#footnote[With plugin]<plugin>,Yes@plugin,No,Yes,No,No,No,No,,
+TIFF,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,"u/i[8/16/32], f16/32 ",
+BigTiff,Yes,Yes@plugin,No?,Yes,No?,No?,No?,No?,"u/i[8/16/32], f16/32 ",
+JPEG-1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,u8 (u16 LL),
+JPEG-2000,Yes,?,Yes,Yes,No?,No?,No?,Yes?,u1-38,
+JPEG-XR,No@czi,?,No?,No#footnote[Supported through `.czi` format]<czi>,No?,No?,No?,No?,u8/16/32,
+JPEG-LS,No?,?,No?,No?,No?,No?,No?,No?,u8/16/32,
+JPEG-XL,No,Yes@plugin,No,No,No,No,No,No,u8/16/32,
+DICOM,Yes,Yes@plugin,Yes,Yes,Yes,Yes,Yes,Yes,u8/16,Likely no JXL support?
+OME-XML,Yes@plugin,Yes@plugin,No,Yes,No,No,No,No,"u/i[8/16/32], f16/32, ...",
+OME-TIFF,Yes@plugin,Yes@plugin,No,Yes,No?,No?,No?,No,"u/i[8/16/32], f16/32, ...",
+OME-ZARR,Yes@plugin,Yes@plugin,No,"Yes#footnote[With #link(""https://github.com/janelia-cellmap/amira_python_extensions"", ""plugin by Janelia"")]",No,No,No,No,"u/i[8/16/32], f16/32, ...",
+HDF5,Yes,Yes@plugin,No#footnote[Does support HDF4],Yes@plugin,No,Yes?,No,No,"u/i[8/16/32], f16/32, ...",
+PNG,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes?,u8/16,
+PPM,Yes,?,Yes,Yes,No?,No?,No,No,u8/16,
+RAW,Yes,?,Yes,Yes,Yes,Yes,No,No?,,
+BMP,Yes,?,Yes,Yes,Yes,Yes,No,Yes,u8,
+Analyze/HDR,Yes?,Yes@plugin,No,Yes,Yes,Yes,Yes,No,"u8, i16/32, f32/64, ...",
+NifTI,Yes,Yes@plugin,No,Yes,Yes,Yes,Yes,No,"u/i[8/16/32], f32/64, ...",
+Other notable,,,,,Many,,"FITS (.fits), Kitware VTK (.vtk)",,,
+Source,,,E-Mail with _Technical Solutions Export_,,"#link(""https://slicer.readthedocs.io/en/v4.11/user_guide/data_loading_and_saving.html"", ""3D Slicer Wiki"")","#link(""https://www.theobjects.com/dragonfly/dfhelp/4-1/Content/Key%20Features/Supported%20File%20Formats.htm"", ""Dragonfly Manual"")","#link(""https://www.stratovan.com/products/checkpoint/info"", ""Checkpoint"")","#link(""https://duke.atlassian.net/wiki/spaces/MD/pages/35422892/Critical+Formatting+Details"", ""Duke"")",,
+Comment,FOSS (GPLv3),"FOSS (BSD-3),\
+Plugin system",Proprietary,Proprietary,"FOSS (BSD),\
+Anything via Python",,Proprietary,Museum data repository,,

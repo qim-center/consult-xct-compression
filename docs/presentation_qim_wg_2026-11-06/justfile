@@ -1,0 +1,7 @@
+compile:
+    typst compile presentation.typ --pdf-standard a-2b --input pympress=false --font-path fonts
+    typst compile presentation.typ presentation_handout.pdf --pdf-standard a-2b --input pympress=false --input handout=true --font-path fonts
+    typst compile presentation.typ presentation_pympress.pdf --pdf-standard a-2b --input pympress=true --font-path fonts
+
+    # pdfpc support
+    # typst eval --root . --in presentation.typ 'query(<pdfpc-file>).first().value' > presentation.pdfpc
