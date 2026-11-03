@@ -1,5 +1,4 @@
-#import "@local/dutten-poster:0.1.0": template
-#import "@local/dutten:0.1.0": poster
+#import "@local/dutten:0.2.0": poster.poster-1
 #import "@local/jutils:0.1.0"
 #import "attribution.typ": authors
 #import "deps.typ": (
@@ -208,7 +207,7 @@
 ))
 
 
-#show: poster.with(
+#show: poster-1.with(
   authors: render-authors(authors, corresponding-marker: "*").join(", "),
   header-block: header-block,
   footer-block: footer-block,
@@ -360,7 +359,7 @@ Three representative specimens, each as both a 16-bit unsigned-integer and a 32-
 ]
 
 #figure(
-  image("assets/plots/jpegxl_errors_z.svg", width: 100%),
+  image("assets/plots/jpegxl_errors_x.svg", width: 100%),
 )
 #let d1_CR = 111.7
 #let d1_SS = (1 - 1/d1_CR) * 100

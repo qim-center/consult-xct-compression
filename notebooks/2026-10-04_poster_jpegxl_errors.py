@@ -37,8 +37,8 @@ X_INDEX = 500  # x slice -> (nz, ny), across the compressed direction
 # (left, upper, right, lower). For the x slice, upper/lower are z bounds.
 Z_CROP_AREA = (575, 630, 575 + 60, 630 + 50)
 Z_OVERVIEW_CROP_AREA = (300, 250, 850, 750)
-X_CROP_AREA = (650, 630, 650 + 60, 630 + 50)
-X_OVERVIEW_CROP_AREA = (300, 250, 850, 750)
+X_CROP_AREA = (680, 630, 680 + 60, 630 + 50)
+X_OVERVIEW_CROP_AREA = (225, 275, 775, 775)
 
 # Compression ratios are quoted against a 16-bit uncompressed baseline, as in the
 # poster and the runner, not against the float32 volume that is compressed.
