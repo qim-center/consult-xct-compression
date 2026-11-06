@@ -23,7 +23,7 @@
 
 #let title = "NaturArv3D and Compression Strategies"
 #set document(
-  date: datetime(year: 2026, month: 10, day: 28),
+  date: datetime(year: 2026, month: 11, day: 06),
   author: "Jeppe Klitgaard",
   title: title,
 )
@@ -76,6 +76,10 @@
 }
 
 =
+#speaker-note[
+  - Will go over some of slides quite quickly to spare audience
+
+]
 
 #align(center)[
   #set text(size: 36pt, weight: "bold")
@@ -88,23 +92,24 @@
   Jeppe Klitgaard\
   #[
     #set text(size: 0.7em)
-    #link("mailto:s250250@dtu.dk")
+    #link("mailto:jepkl@dtu.dk")
   ]
 ]
 
-== Outline <outline>
-#speaker-note[
-- NaturArv3D: Why storage is a problem
-]
+// // No meaningful content
+// == Outline <outline>
+// #speaker-note[
+// - NaturArv3D: Why storage is a problem
+// ]
 
-- Brief introduction to NaturArv3D Project
-  - Estimated data size and cost
+// - Brief introduction to NaturArv3D Project
+//   - Estimated data size and cost
 
-- Format considerations
+// - Format considerations
 
-- Compression
-  - Lossless
-  - Lossy
+// - Compression
+//   - Lossless
+//   - Lossy
 
 == Poster at D3A 4.0
 #cols(columns: (1fr, auto))[
@@ -126,7 +131,7 @@ New X-ray scanner and infrastructure:
 - Samples prepared in cardboard boxes
 - *Autonomous sample handling* using robot mounted in ceiling gantry
 
-Purpose: Digitize large specimen collections
+Purpose: Digitize large collections
 - Pilot: Seal skulls, vertebrate collection
 
 #pb
@@ -249,10 +254,10 @@ How to get around this?
 #pause
 
 #alternatives[
-- _Fire Jeppe, he costs #calc.round(jeppe_cost_per_year_samples) (cropped) samples per year!_
-][
-- #strike[_Fire Jeppe, he costs #calc.round(jeppe_cost_per_year_samples) (cropped) samples per year!_]
-][
+// - _Fire Jeppe, he costs #calc.round(jeppe_cost_per_year_samples) (cropped) samples per year!_
+// ][
+// - #strike[_Fire Jeppe, he costs #calc.round(jeppe_cost_per_year_samples) (cropped) samples per year!_]
+// ][
 #v(1fr)
 #align(center)[
   💡 _*What about compression?*_ 💡
@@ -407,7 +412,7 @@ Leaves us with #strike[3] #alert[1] option:
 #pb
 - OME-Zarr
   - #red[Sparse software support], but #green[rapidly improving] (FOSS especially)
-  - #green[Excellent support in Python] (and Rust)
+  - #green[Excellent support in Python and on Web], (also Rust)
   - #green[Advanced features]
     #alternatives[
     - #green[chunking, sharding]
@@ -424,26 +429,37 @@ Leaves us with #strike[3] #alert[1] option:
 
 == Lossless compression
 #cols(columns: (1fr, auto))[
+- 375 combinations of codecs, parameters, dataset
 - JPEG codecs perform well, #skip[including JPEG XL]
   #skip[
   - Very recent format
     - Adopted by browsers in last 2 months
     - Next PDF standard, latest DICOM spec. @ref:DICOM-ps3.5-2026c
   ]
-- Generally
+
+- $"CR" ≈ #ratio[2.8:1]$ best case (JPEG-LS)
+
+- Why do we get $"CR" > #ratio[2:1]$, contrary to literature?
+  - Wolf skulls reconstructed with CIL compress worse
+  - Quirk of the seal skull dataset
+    - Masked corners (const value outside reconstruction circle)
+    - Lower noise than CIL reconstructions
 ][
   #image("assets/lossless_plot_tall_uint16.svg", height: 90%)
 ]
 
 == Lossy compression
+- 318 combinations of codecs, parameters, dataset
 - For our $2×3$ seal skull datasets try a bunch of different codecs in *DICOM* and *OME-Zarr*
-  - JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, LERC, ZFP, SZ3, SPERR
+  - #skip[JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, LERC, ZFP, SZ3, SPERR]
+
 - Compute full-reference measures against original data
   - $ℓ_∞$, PSNR, 3D SSIM, MS-SSIM
 
 #pb
 #cols(columns: (1fr, 1fr))[
 - *Large CR with relatively modest quality loss!*
+#skip[
   - SZ3: $ℓ_∞ < 10^(-2)$ gives $"CR">100$
 
 - Transform coders superior in PSNR
@@ -451,15 +467,35 @@ Leaves us with #strike[3] #alert[1] option:
 
 - Error bounded codecs superior in $ℓ_∞$
   - JPEG-LS, SZ3
-
-- `f32` representation is 'free' (see JPEG XL)
-
-- SZ3 performs _a bit_ better in 3D than in 2D
-  - ⇒ 2D codecs don't leave that much on table
+]
 ][
   #image("assets/rd_stack_psnr_db+linf_by_specimen.svg")
 ]
 
+#pb
+#cols(columns: (1fr, 1fr))[
+- JPEG XL:
+  - `f32` representation is 'free' when compressed
+][
+  #figure(image("assets/rd_stack_jpegxl_f32_vs_u16.svg", height: 80%), caption:
+  [
+    Compression ratio against uint 16-bit baseline for JPEG XL with $d∈[0.05, 5.0]$, `effort=7` across the 3 seal skull datasets.
+  ])
+]
+
+#pb
+#cols(columns: (1fr, 1fr))[
+- SZ3 2D vs 3D to gauge cost of 2D compression in 3D volumes
+
+- Performs better given 3D data than 2D slices
+
+- Difference small enough that 2D codecs are still viable for 3D volumes
+][
+  #figure(image("assets/rd_stack_sz3_2d_vs_3d.svg", height: 80%), caption:
+  [
+    Compression ratio for SZ3 using 3D chunks vs 2D slices across the 3 seal skull datasets.
+  ])
+]
 #pb
 #speaker-note[
 Sample: CZM 712
